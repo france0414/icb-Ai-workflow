@@ -5,6 +5,38 @@
 
 此文件為生成 Odoo 14 網頁 XML 與 SCSS 的核心規則。AI 在執行生成任務時必須嚴格遵守此文件中的結構與規範。
 
+---
+## 【重要補充】頁面外層結構規則
+
+### 1. 一般頁面（非首頁）
+外層結構必須如下，內容只能放在 `<div id="wrap" ...>` 內，**不能自動多包一層 `<t>` 或其他 layout**：
+```xml
+<t t-name="website.頁面名稱">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <!-- 內容區塊 -->
+        </div>
+    </t>
+</t>
+```
+
+### 2. 首頁（homepage）
+首頁必須多加一行 `<t t-set="pageName" t-value="'homepage'"/>`，這樣 Odoo 才能給首頁額外的 class name 或樣式。結構如下：
+```xml
+<t t-name="website.home-1">
+    <t t-call="website.layout">
+        <t t-set="pageName" t-value="'homepage'"/>
+        <div id="wrap" class="oe_structure oe_empty">
+            <!-- 首頁內容 -->
+        </div>
+    </t>
+</t>
+```
+> [!NOTE]
+> 只有首頁要加 `<t-set pageName>`，其他頁面**不要自動加這一行**。
+
+---
+
 ## 0. 頁面基本結構 (Page Root Structure)
 若 AI 需生成「整頁」代碼，請使用以下 QWeb 模板結構。所有內容必須放置於 `<div id="wrap">` 內部。
 
@@ -885,7 +917,7 @@ A fully functional contact form integrated with Odoo's backend (e.g., creating C
   <div class="container">
     <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-model_name="mail.mail">
       <div class="s_website_form_rows row s_col_no_bgcolor">
-        
+
         <!-- Hidden Field (e.g. Recipient) -->
         <div class="form-group s_website_form_field col-12 s_website_form_dnone" data-name="Field">
           <div class="row s_col_no_resize s_col_no_bgcolor">
