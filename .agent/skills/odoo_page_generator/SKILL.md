@@ -12,9 +12,10 @@ This skill ensures that all generated Odoo pages strictly adhere to the `ODOO_LA
 ### Step 1: Context Loading
 **CRITICAL:** Before generating ANY code, you MUST first read the Rules of Engagement:
 1.  **Primary Rule Source:** `d:/gemini/odoo/docs/ODOO_RULES_AI.md` (Read this first for core syntax and design strategies).
-2.  **Dynamic Content Rule:** If the page involves **Dynamic Products** or **Dynamic Blogs**, you **MUST** read `d:/gemini/odoo/docs/ODOO_DYNAMIC_RULES.md`.
-3.  **Button Styling Rule:** If the page involves specific button styles (Skew, Arrows, Flash, etc.), you **MUST** read `d:/gemini/odoo/docs/ODOO_BUTTON_STYLES.md`.
-4.  **Full Reference (Optional):** `d:/gemini/odoo/docs/ODOO_LAYOUT_RULES.md` (Consult for detailed code examples if needed).
+2.  **Project Theme Colors:** `d:/gemini/odoo/docs/PROJECT_THEME.css` (**MUST** read this to understand project-specific colors like --primary, o_cc1, etc.).
+3.  **Dynamic Content Rule:** If the page involves **Dynamic Products** or **Dynamic Blogs**, you **MUST** read `d:/gemini/odoo/docs/ODOO_DYNAMIC_RULES.md`.
+4.  **Button Styling Rule:** If the page involves specific button styles (Skew, Arrows, Flash, etc.), you **MUST** read `d:/gemini/odoo/docs/ODOO_BUTTON_STYLES.md`.
+5.  **Full Reference (Optional):** `d:/gemini/odoo/docs/ODOO_LAYOUT_RULES.md` (Consult for detailed code examples if needed).
 
 ### Step 2: Content Analysis
 Analyze the user's request to identify:
