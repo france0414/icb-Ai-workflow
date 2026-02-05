@@ -3,6 +3,9 @@
 This is a high-density reference for AI to generate Odoo 14 XML/SCSS correctly.
 
 ## 1. Core Structure
+## 0. SCSS/CSS 樣式規範
+- **所有樣式必須獨立寫在 SCSS 檔案**（如 docs/user_custom_rules.scss），**禁止在 XML 頁面內寫 <style> 或 style="" 或直接寫 CSS**。
+- XML 只負責結構與 class，樣式由 SCSS 控制，方便彈性合併與管理。
 - **Root:** `<div id="wrap" class="oe_structure oe_empty">`
 - **Container Sizes:**
     - `.container`: Standard width (Max 1550px, **90% width on LG+ screens**). Most common.
@@ -11,7 +14,7 @@ This is a high-density reference for AI to generate Odoo 14 XML/SCSS correctly.
 - **Horizontal Padding:** All containers use `var(--container-pd-x)` (Base 30px, RWD adjusted from 26px to 60px).
 - **Nesting:** `#wrap` > `section (Snippet)` > `[.container | .container-fluid | .o_container_small]` > `.row` > `.col` > `Content`.
 - **Snippet Requirement:** MUST use `data-snippet` and `data-name` on the root `section`.
-- **SEO Heading Rule:** 
+- **SEO Heading Rule:**
     - **One `<h1>`** per page (Hero Title).
     - **Strict Hierarchy:** `<h1>` -> `<h2>` -> `<h3>` -> `<h4>`. Do not skip levels.
     - **Visual Sizing:** If text is NOT a heading but needs size, use classes `.h1` ~ `.h6` on `<div>` or `<p>`.
