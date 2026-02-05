@@ -1,3 +1,25 @@
+## Section 主題色與命名規則
+
+### 主題色 class（背景色層級）
+- `o_cc1`：全站主要背景色（最常用，通常為白色或品牌主色）
+- `o_cc2`：全站次要背景色（如灰色、次品牌色）
+- `o_cc3` ~ `o_cc5`：重點區塊、特殊主題色（如強調、分隔、特殊活動等）
+
+> **注意：** section 請勿直接寫 `bg-white`、`bg-light` 等，統一用 `o_cc1` ~ `o_cc5` 控制背景色。
+
+### Section 命名規則
+- 每個 section 需加上 `data-custom-name`，可多個名稱（空格分隔），如：
+    - `data-custom-name="NewsCards ScaleL"`
+- 每個 section 需加上對應的客製 class，格式為：
+    - `s_custom_YourName`（如 `s_custom_HeroNavigator`）
+- 範例：
+    ```xml
+    <section class="s_text_block pt80 pb80 o_cc1 s_custom_CompanyIntro" data-snippet="s_text_block" data-name="Company Intro" data-custom-name="CompanyIntro">
+    ```
+
+### 實作建議
+- 主體內容區塊建議依照設計稿分配 o_cc1（主）、o_cc2（次）、o_cc3~o_cc5（重點）
+- 客製樣式請集中於 SCSS，勿於 section 內寫 style。
 # Odoo 14 排版規則書與代碼生成指南
 
 > [!TIP]

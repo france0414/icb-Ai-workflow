@@ -4,13 +4,36 @@
 > This file is the **SINGLE SOURCE OF TRUTH** for generating Dynamic Products and Dynamic Blogs/News.
 > **DO NOT** invent new structures. You **MUST** use the exact XML patterns below.
 
-## 1. Global Precautions
+## 1. Design Consistency Rules
+
+> [!CAUTION]
+> **一個網站使用一種版型！** 選擇後全站統一，除非明確說明某區塊需要不同設計。
+
+### Default Templates (預設版型)
+| Content Type | Default Template | Class |
+|--------------|------------------|-------|
+| **Products** | Borderless Card 1 | `s_product_product_borderless_1` |
+| **Blogs/News** | Card Layout | `s_blog_post_card` |
+
+### When to Use Different Templates
+- 使用者明確要求不同風格時
+- 提供的圖片比例不適合預設版型時（例如橫幅圖適合 `horizontal`）
+- 特定區塊設計需求與全站不同時（需使用者說明）
+
+### Consistency Principle
+```
+選擇 s_product_product_borderless_1 作為產品版型
+    → 全站所有產品區塊都使用 borderless_1 的 SCSS
+    → 只有使用者明確說「這個區塊要不同」時才客製
+```
+
+## 2. Global Precautions
 > [!WARNING]
 > **White Background Issue**: Odoo's default `.card` and `.card-body` have a white background (`#FFFFFF`).
 > - This often obscures custom colored backgrounds.
 > - **Fix**: If the design requires a transparent or colored background, you **MUST** override this in SCSS or use a custom class associated with background removal.
 
-## 2. Nesting & Placement (CRITICAL)
+## 3. Nesting & Placement (CRITICAL)
 > [!TIP]
 > **Safe Nesting**: While Dynamic Snippets are typically top-level `<section>` elements, they **CAN** be placed inside specific layout snippets if multi-column design is needed.
 >
@@ -26,7 +49,7 @@
 
 ---
 
-## 3. Dynamic Products (E-Commerce)
+## 4. Dynamic Products (E-Commerce)
 
 ### A. Strict XML Structure
 **Snippet:** `s_dynamic_snippet_products` OR `s_dynamic_snippet_carousel`
@@ -79,7 +102,7 @@
 
 ---
 
-## 4. Dynamic Blogs / Latest News
+## 5. Dynamic Blogs / Latest News
 
 ### A. Strict XML Structure
 **Snippet:** `s_dynamic_snippet` OR `s_dynamic_snippet_carousel`
@@ -129,7 +152,7 @@
 
 ---
 
-## 5. Helper Table: Which Snippet Do I Use?
+## 6. Helper Table: Which Snippet Do I Use?
 
 | Content Type | Display Mode | Snippet Name (`data-snippet`) |
 | :--- | :--- | :--- |
@@ -137,3 +160,63 @@
 | **Products** | Carousel / Slider | `s_dynamic_snippet_carousel` |
 | **News / Blogs** | Grid / List | `s_dynamic_snippet` |
 | **News / Blogs** | Carousel / Slider | `s_dynamic_snippet_carousel` |
+
+---
+
+## 7. Styling Reference (Target Selectors)
+
+為了確保樣式一致性，AI 生成 SCSS 時必須針對以下官方結構編寫選擇器。
+
+### A. Product (Borderless 1) - `s_product_product_borderless_1`
+
+主要目標是 `.o_carousel_product_card`。
+
+```scss
+// 適用於 Grid & Carousel
+.s_product_product_borderless_1 {
+    .o_carousel_product_card {
+        // 卡片容器 (預設有 p-3 padding)
+    }
+    .o_carousel_product_card_img_top {
+        // 產品圖片
+    }
+    .card-title {
+        // 產品標題 (.h6)
+    }
+    .o_carousel_product_card_alias {
+        // 產品摘要/別名
+    }
+}
+```
+
+### B. Blog (Card Layout) - `s_blog_post_card`
+
+主要目標是 `.s_blog_posts_post .card`。
+
+```scss
+// 適用於 Grid & Carousel
+.s_blog_post_card {
+    .s_blog_posts_post {
+        .card {
+            // 卡片容器
+        }
+        .s_blog_posts_post_cover {
+            // 封面圖容器 (內含 background-image div)
+            .o_record_cover_image {
+                // 實際圖片 div
+            }
+        }
+        .card-body {
+            h4 {
+                // 文章標題 (預設是 h4)
+            }
+            .s_blog_posts_post_teaser {
+                // 文章摘要
+            }
+        }
+        .card-footer {
+            // 底部資訊 (日期、分類)
+        }
+    }
+}
+```
