@@ -1,0 +1,17 @@
+# 忽略個別頁面檔案
+about_parker.xml
+homepage_machine_tool.scss
+homepage_machine_tool.xml
+homepage_machine_tool_v3.xml
+homepage_machine_tool_v4.xml
+homepage_parker.xml
+homepage_parker_v2.xml
+temp_page.xml
+
+# 忽略 webInfo 資料夾
+webInfo/
+
+# 可以加入其他不需要版本控制的檔案
+*.tmp
+*.log
+*.cache
