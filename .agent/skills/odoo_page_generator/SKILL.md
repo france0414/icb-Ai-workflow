@@ -42,18 +42,23 @@ Provide the output in two distinct blocks:
 
 ## Component Library Reference
 
-**Location:** `d:/gemini/odoo/library/component_library.xml`
+**Location:** `d:/gemini/odoo/docs/ODOO_COMPONENT_LIBRARY.md`
 
-This file contains ready-to-use UI components with embedded JS. **Always read this file before implementing interactive components.**
+This Markdown file contains clean, AI-optimized UI component documentation with separated XML structure, JavaScript, and SCSS. **Always read this file before implementing interactive components.**
 
 ### Available JS Components
 
-| Component Name | Custom Class | Description |
-|----------------|--------------|-------------|
-| `fullImgHoevr1` | `s_custom_fullImgHoevr1` | Hover 切換大圖，按鈕導航 (Max 6 items) |
-| `fullImgHoevr2` | `s_custom_fullImgHoevr2` | Hover 顯示背景大圖 (Max 7 items) |
-| `exhibitionUpdates` | `s_custom_exhibitionUpdates s_custom_fixed` | 右側固定滑入新聞面板 |
-| `productRightScroll` | `s_custom_productRightScroll` | 水平滾動產品卡片 (Max 6 items) |
+| Component Name | Custom Class | Description | Max Items |
+|----------------|--------------|-------------|-----------|
+| Full Image Hover 1 | `s_custom_fullImgHoevr1` | Hover 切換大圖，左側導航按鈕 | 6 |
+| Full Image Hover 2 | `s_custom_fullImgHoevr2` | Hover 滑入顯示背景大圖 | 7 |
+| Exhibition Updates | `s_custom_exhibitionUpdates` | 右側固定滑入新聞面板 | - |
+| Product Right Scroll | `s_custom_productRightScroll` | 水平滾動產品卡片列 | 6 |
+| Interactive Map | `s_custom_mapEffect` | 地圖互動標記點 | 5 |
+| Sticky Background | `s_custom_stickyBG` | 內文固定 + 背景圖 fix | - |
+| Full Hover Background | `s_custom_fullHoverBackground` | Icon 觸發背景圖切換 | 6 |
+| Worldwide Scroll | `s_custom_worldwide` | 上圖下文卡片水平捲軸 | - |
+| Worldwide RWD Collapse | `s_custom_worldwideRWDcollapse` | 桌機捲軸 / RWD 收合 | - |
 
 ---
 
