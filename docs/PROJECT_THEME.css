@@ -1,6 +1,7 @@
 /* 
    Project Theme Colors (One-Time Setup) 
    請將網站 F12 Computed Styles 中的變數貼在此處 
+   依你專案的配色貼入
 */
 
 :root {
@@ -36,15 +37,20 @@
     --o-cc1-text: #212529;
     --o-cc1-headings: #212529;
     --o-cc1-btn-primary: #35979c;
+    --o-cc1-btn-primary-border: #42476d;
     --o-cc1-btn-secondary: #42476d;
+    --o-cc1-btn-secondary-border: #35979c;
     --o-cc1-link: #276e72;
 
     /* [o_cc2] Light Gray Background (淺灰底 - 用於區隔) */
+    --o-cc2-bg: #EDEDED;
     --o-cc2-text: #212529;
     --o-cc2-headings: #35979c;
     /* 標題變為主色 */
     --o-cc2-btn-primary: #35979c;
+    --o-cc2-btn-primary-border: #35979c;
     --o-cc2-btn-secondary: #42476d;
+    --o-cc2-btn-secondary-border: #42476d;
 
     /* [o_cc3] Primary Background (主色底 - 強調區塊) */
     --o-cc3-bg: #35979c;
@@ -60,7 +66,9 @@
     --o-cc4-text: #FFFFFF;
     --o-cc4-headings: #FFFFFF;
     --o-cc4-btn-primary: #383E45;
+    --o-cc4-btn-primary-border: #42476d;
     --o-cc4-btn-secondary: #42476d;
+    --o-cc4-btn-secondary-border: #383E45;
 
     /* [o_cc5] Dark Background (深色底 - Footer/Hero) */
     --o-cc5-bg: #383E45;
