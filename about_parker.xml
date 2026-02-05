@@ -1,0 +1,227 @@
+<t t-name="website.about_parker_page">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            
+            <!-- 1. HERO: Dark Parallax (o_cc5) -->
+            <section class="s_cover parallax s_parallax_is_fixed pt128 pb128 o_colored_level o_cc o_cc5" data-scroll-background-ratio="1" data-snippet="s_cover" data-name="Cover">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('https://picsum.photos/1920/1080?random=1&amp;grayscale'); background-position: 50% 50%;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container s_allow_columns">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <!-- Removed manual font-weight-bold, relying on global SCSS -->
+                            <h1 class="display-3">Parker Plastic Machinery Co., Ltd.</h1>
+                            <p class="lead mt-4">Your Reliable Source for Automatic Blow Molding Machines Since 1989</p>
+                            <div class="s_hr text-center pt16 pb16">
+                                <hr class="w-100 mx-auto" style="border-top-width: 1px; border-color: rgba(255,255,255,0.2); width: 100px !important;"/>
+                            </div>
+                            <p class="w-75 mx-auto d-none d-lg-block hue-rotate-15">
+                                Specializing in High Quality Extrusion Blow Molding (EBM) Machines &amp; Turnkey Plant Solutions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. PROFILE: White (o_cc1) -->
+            <section class="s_text_image pt96 pb96 o_colored_level o_cc o_cc1" data-snippet="s_text_image" data-name="Company Overview">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7 pt16 pb16">
+                            <h2 class="mb-4">Innovation &amp; Expertise</h2>
+                            <h4 class="text-primary mb-4">"The prerequisite of excellent products are fine tools."</h4>
+                            <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+                                We have amassed many years of experience in the <strong>blow molding industry</strong>, striving to advance blow mold technology. We are always creating new ways to optimize plastic machine performance to meet the rigorous demands of the global market.
+                            </p>
+                            <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">
+                                Our global sales continue to rise, and you can find <strong>Parker plastic blow molding machinery</strong> on 5 continents and in 102 countries. This extensive reach is a major indicator of the trust PARKER has earned among its clients and our firm grasp of market trends. 
+                            </p>
+                        </div>
+                        <div class="col-lg-5 pt16 pb16">
+                            <img src="/web/image/website.s_text_image_default_image" class="img img-fluid mx-auto rounded shadow-lg border" alt="Parker Plastic Machinery Factory" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. FEATURES: Dark/Colored (o_cc4) -->
+            <section class="s_features_grid parallax s_parallax_is_fixed pt80 pb80 o_colored_level o_cc o_cc4" data-scroll-background-ratio="1" data-snippet="s_features_grid" data-name="Why Choose Parker">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('https://picsum.photos/1920/1080?random=2&amp;blur=2'); background-position: 50% 50%;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <div class="row mb-5">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="">Comprehensive Technical Support</h2>
+                            <p class="">We provide total blow mold plant planning from start to finish.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Feature 1 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="p-4 h-100 rounded text-center border shadow-sm" style="background: rgba(255,255,255,0.1);">
+                                <i class="fa fa-comments fa-3x mb-3"/>
+                                <h4 class="">Pre-sales</h4>
+                                <p class="small opacity-75">
+                                    Our trained personnel analyze your production requirements thoroughly.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="p-4 h-100 rounded text-center border shadow-sm" style="background: rgba(255,255,255,0.1);">
+                                <i class="fa fa-cogs fa-3x mb-3"/>
+                                <h4 class="">Planning</h4>
+                                <p class="small opacity-75">
+                                    Total blow mold plant planning for optimal layout and efficiency.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="p-4 h-100 rounded text-center border shadow-sm" style="background: rgba(255,255,255,0.1);">
+                                <i class="fa fa-wrench fa-3x mb-3"/>
+                                <h4 class="">Training</h4>
+                                <p class="small opacity-75">
+                                    Comprehensive training to make your EBM machines work profitably.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Feature 4 -->
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="p-4 h-100 rounded text-center border shadow-sm" style="background: rgba(255,255,255,0.1);">
+                                <i class="fa fa-globe fa-3x mb-3"/>
+                                <h4 class="">Global</h4>
+                                <p class="small opacity-75">
+                                    Engineers respond to your needs in the shortest possible time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. STATS: Light Gray (o_cc2) -->
+            <section class="s_numbers pt96 pb96 o_colored_level o_cc o_cc2" data-snippet="s_numbers" data-name="Global Statistics">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 text-center pt24 pb24 border-right border-secondary">
+                            <h2 class="display-3 text-primary">30+</h2>
+                            <span class="text-muted font-weight-bold text-uppercase">Years Experience</span>
+                        </div>
+                        <div class="col-lg-3 text-center pt24 pb24 border-right border-secondary">
+                            <h2 class="display-3 text-primary">102</h2>
+                            <span class="text-muted font-weight-bold text-uppercase">Countries Served</span>
+                        </div>
+                        <div class="col-lg-3 text-center pt24 pb24 border-right border-secondary">
+                            <h2 class="display-3 text-primary">5</h2>
+                            <span class="text-muted font-weight-bold text-uppercase">Continents</span>
+                        </div>
+                        <div class="col-lg-3 text-center pt24 pb24">
+                            <h2 class="display-3 text-primary">9001</h2>
+                            <span class="text-muted font-weight-bold text-uppercase">ISO Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5. HISTORY: White (o_cc1) -->
+            <section class="s_text_block pt96 pb96 o_colored_level o_cc o_cc1" data-snippet="s_text_block" data-name="History">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-5 text-center">
+                            <h2 class="">Our Glory &amp; Certifications</h2>
+                            <p class="text-muted w-50 mx-auto">Recognition of our commitment to quality and innovation.</p>
+                        </div>
+                        <div class="col-lg-10 mx-auto">
+                            <!-- Timeline items -->
+                            <div class="card border mb-3 text-left o_cc o_cc1 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="mr-4 text-center" style="min-width: 100px;">
+                                        <h3 class="text-primary mb-0">1998</h3>
+                                        <small class="text-nowrap text-muted">August</small>
+                                    </div>
+                                    <div class="border-left pl-4 w-100">
+                                        <h5 class="">ISO-9002 Certification</h5>
+                                        <p class="mb-0 text-muted">Obtained through Moody International AOQC.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border mb-3 o_cc o_cc1 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="mr-4 text-center" style="min-width: 100px;">
+                                        <h3 class="text-primary mb-0">1999</h3>
+                                        <small class="text-nowrap text-muted">June</small>
+                                    </div>
+                                    <div class="border-left pl-4 w-100">
+                                        <h5 class="">CE Certification</h5>
+                                        <p class="mb-0 text-muted">Received through TUV Rheinland.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border mb-3 o_cc o_cc1 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="mr-4 text-center" style="min-width: 100px;">
+                                        <h3 class="text-primary mb-0">2004</h3>
+                                    </div>
+                                    <div class="border-left pl-4 w-100">
+                                        <h5 class="">ISO-9001:2000</h5>
+                                        <p class="mb-0 text-muted">Granted by TUV Rheinland.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border mb-3 o_cc o_cc1 shadow-sm">
+                                <div class="card-body p-4 d-flex align-items-center">
+                                    <div class="mr-4 text-center" style="min-width: 100px;">
+                                        <h3 class="text-primary mb-0">Awards</h3>
+                                    </div>
+                                    <div class="border-left pl-4 w-100">
+                                        <h5 class="">Excellence in Design</h5>
+                                        <p class="mb-0 text-muted">
+                                            Winner of "Design and Innovation Plastics &amp; Rubber Machinery 2004" &amp; "Taiwan Excellence Award 2006".
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- 6. MISSION: Dark (o_cc5) -->
+            <section class="s_text_block parallax s_parallax_is_fixed pt96 pb96 o_colored_level o_cc o_cc5" data-scroll-background-ratio="1" data-snippet="s_text_block" data-name="Mission">
+                <span class="s_parallax_bg oe_img_bg" style="background-image: url('https://picsum.photos/1920/1080?random=3&amp;grayscale'); background-position: 50% 50%;"/>
+                <div class="o_we_bg_filter bg-black-50"/>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 text-center">
+                            <i class="fa fa-quote-left fa-3x mb-4 opacity-50"/>
+                            <h3 class="font-weight-light font-italic mb-4">
+                                "Our aim is to be the best partner with the highest quality EBM machines for our customer's requirement."
+                            </h3>
+                            <div class="s_hr text-center pt16 pb16">
+                                <hr class="w-100 mx-auto" style="border-top-width: 3px; border-color: var(--primary); width: 60px !important;"/>
+                            </div>
+                            <h5 class="text-uppercase letter-spacing-2">Parker Plastic Machinery</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 7. CTA: Primary (o_cc3) -->
+            <section class="s_call_to_action pt96 pb96 o_colored_level o_cc o_cc3" data-snippet="s_call_to_action" data-name="Call to Action">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h3 class="mb-2">Ready to optimize your production?</h3>
+                            <p class="mb-0 text-white-75" style="font-size: 1.25rem;">Contact Parker today for your automatic blow molding machine needs.</p>
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <a href="/contact" class="btn btn-light btn-lg font-weight-bold rounded-pill px-5 py-3 text-primary shadow hover-grow">Contact Us Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </t>
+</t>

@@ -1,0 +1,691 @@
+﻿<t t-name="website.homepage_machine_tool_v4">
+  <t t-call="website.layout">
+    <div id="wrap" class="oe_structure oe_empty">
+      <section class="s_embed_code o_colored_level pt0 pb0 s_custom_noRemove" data-snippet="s_embed_code" data-name="Machine Tool V4 Styles" data-custom-name="noRemove">
+        <div class="s_embed_code_embedded o_not_editable container">
+          <style>
+:root {
+  --mt-green: #00A651;
+  --mt-green-light: #E8F5E9;
+  --mt-dark: #333333;
+  --mt-gray: #666666;
+  --mt-light: #F5F5F5;
+}
+/* ===== HERO SECTION ===== */
+/* ===== HERO SECTION (KATATA v2) ===== */
+.s_custom_heroKatata {
+  position: relative;
+  background: #fff;
+  padding-bottom: 80px; /* Increased bottom space */
+}
+/* Title Section */
+.s_custom_heroKatata .title-area {
+  padding: 80px 0 40px; /* More space around title */
+  position: relative;
+  z-index: 2;
+}
+.s_custom_heroKatata .title-area h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900;
+  color: var(--mt-dark);
+  line-height: 1;
+  margin-bottom: 0;
+  letter-spacing: -2px;
+}
+.s_custom_heroKatata .title-area h1 span {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--mt-green);
+  font-weight: 500;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+/* Green Arrows Decoration */
+.s_custom_heroKatata .green-arrows {
+  position: absolute;
+  top: 80px;
+  right: 5%;
+  font-size: 60px;
+  color: var(--mt-green-light);
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Carousel Styles */
+.s_custom_heroKatata .carousel-control-prev,
+.s_custom_heroKatata .carousel-control-next {
+  width: 50px;
+  background: rgba(0, 166, 81, 0.5);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.s_custom_heroKatata .hero-img-wrap:hover .carousel-control-prev,
+.s_custom_heroKatata .hero-img-wrap:hover .carousel-control-next {
+  opacity: 1;
+}
+.s_custom_heroKatata .carousel-control-prev:hover,
+.s_custom_heroKatata .carousel-control-next:hover {
+  background: rgba(0, 166, 81, 0.9);
+}
+.s_custom_heroKatata .carousel-indicators li {
+  background-color: var(--mt-green);
+}
+
+/* Image Carousel Container */
+.s_custom_heroKatata .hero-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto 40px; /* Added bottom margin */
+  z-index: 2;
+}
+.s_custom_heroKatata .hero-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.15); /* Stronger shadow */
+}
+.s_custom_heroKatata .hero-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== INDEPENDENT GREEN OVERLAP SECTION ===== */
+.s_custom_greenSeparator {
+  height: 120px;
+  background: var(--mt-green);
+  z-index: 1;
+  position: relative;
+  margin-bottom: 64px; /* Space after the green block */
+}
+/* Color Block Decoration (Vertical on left of green section) */
+.s_custom_greenSeparator .deco-block-left {
+  position: absolute;
+  top: -50px; /* Extend upwards a bit */
+  left: 0;
+  width: 30px;
+  height: 100px;
+  background: var(--mt-green);
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .s_custom_heroKatata .hero-image-container {
+      width: 100%;
+      margin-bottom: 0 !important;
+  }
+  .s_custom_greenSeparator {
+      height: 80px;
+  }
+}
+.s_custom_heroKatata {
+  background: transparent !important; /* Allow green section to show behind if needed, but title area has white bg */
+  padding-bottom: 0 !important;
+  z-index: 2; /* Hero on top of green section */
+}
+.s_custom_heroKatata .title-area {
+  background: #fff; /* Ensure title area is white */
+}
+.s_custom_heroKatata .green-arrows {
+  z-index: 3;
+}
+.s_custom_heroKatata .hero-image-container {
+  margin-bottom: -60px !important; /* Push carousel down to overlap next section */
+}
+@media (max-width: 767.98px) {
+  .s_custom_heroKatata .hero-image-container {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .s_custom_heroKatata .green-bottom-block {
+      height: 60px;
+      bottom: 0px;
+  }
+}
+/* ===== PICKUP CARDS (Dynamic Blog Styling) ===== */
+.s_custom_pickup .card {
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 0;
+}
+.s_custom_pickup .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+.s_custom_pickup .s_blog_posts_post_cover {
+  margin: 0 !important;
+  overflow: hidden;
+}
+.s_custom_pickup .s_blog_posts_post_cover .o_record_cover_image {
+  aspect-ratio: 4/3;
+  transition: transform 0.4s ease;
+}
+.s_custom_pickup .card:hover .o_record_cover_image {
+  transform: scale(1.05);
+}
+.s_custom_pickup .card-body {
+  padding: 20px !important;
+}
+.s_custom_pickup .card-body h4 {
+  font-size: 15px !important;
+  font-weight: 600;
+  color: var(--mt-dark);
+  line-height: 1.5;
+  margin-bottom: 0 !important;
+}
+.s_custom_pickup .card-footer {
+  display: none !important;
+}
+/* ===== ABOUT SECTION ===== */
+.s_custom_aboutKatata {
+  position: relative;
+  background: var(--mt-light);
+}
+/* White triangle overlap from above */
+.s_custom_aboutKatata::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 120px;
+  background: #fff;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+  z-index: 1;
+}
+@media (max-width: 991.98px) {
+  .s_custom_aboutKatata::before {
+    display: none;
+  }
+}
+.s_custom_aboutKatata &gt; .container {
+  position: relative;
+  z-index: 2;
+}
+/* About left image */
+.s_custom_aboutImg {
+  position: relative;
+}
+.s_custom_aboutImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* ===== ABOUT CONTENT ===== */
+.s_custom_aboutContent h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--mt-dark);
+  margin-bottom: 20px;
+}
+.s_custom_aboutContent .subtitle {
+  color: var(--mt-green);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.s_custom_aboutContent .highlight-text {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--mt-dark);
+  margin-bottom: 20px;
+}
+.s_custom_aboutContent .highlight-text strong {
+  color: var(--mt-green);
+}
+.s_custom_aboutContent .link-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  color: var(--mt-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.s_custom_aboutContent .link-item:hover {
+  color: var(--mt-green);
+}
+.s_custom_aboutContent .link-item i {
+  margin-left: auto;
+}
+/* ===== BANNER - TRIANGLE MASK ===== */
+
+      </section>
+      <section class="s_text_block pt0 pb0 o_cc s_custom_heroKatata" data-snippet="s_text_block" data-name="Hero Katata" data-custom-name="heroKatata">
+        <!-- 1. Title Area (Independent White Background) -->
+        <div class="container title-area">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>
+                KATATA
+                <span>KATATA ELECTRIC CO., LTD. &amp;gt;</span>
+              </h1>
+            </div>
+          </div>
+          <!-- Right Arrow Decoration -->
+          <div class="green-arrows">&amp;gt;&amp;gt;&amp;gt;</div>
+        </div>
+
+        <!-- 2. Image Container (Pushed down to overlap next section) -->
+        <div class="hero-image-container">
+          <div class="hero-img-wrap">
+             <!-- Carousel -->
+             <div id="heroCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+               <!-- Indicators -->
+               <ol class="carousel-indicators">
+                 <li data-target="#heroCarousel" data-slide-to="0" class="active"/>
+                 <li data-target="#heroCarousel" data-slide-to="1"/>
+                 <li data-target="#heroCarousel" data-slide-to="2"/>
+               </ol>
+               <!-- Slides -->
+               <div class="carousel-inner h-100">
+                 <div class="carousel-item active h-100">
+                   <img src="https://picsum.photos/1920/900?random=factoryNew" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 1"/>
+                 </div>
+                 <div class="carousel-item h-100">
+                   <img src="https://picsum.photos/1920/900?random=machine1" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 2"/>
+                 </div>
+                 <div class="carousel-item h-100">
+                   <img src="https://picsum.photos/1920/900?random=worker1" class="d-block w-100 h-100" style="object-fit: cover;" alt="Slide 3"/>
+                 </div>
+               </div>
+               <!-- Controls -->
+               <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"/>
+                 <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"/>
+                 <span class="sr-only">Next</span>
+               </a>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NEW: INDEPENDENT GREEN OVERLAP SECTION ========== -->
+      <section class="s_text_block pt0 pb0 o_cc s_custom_greenSeparator" data-snippet="s_text_block" data-name="Green Separator">
+        <div class="deco-block-left"/>
+      </section>
+      <section class="s_text_block pt80 pb0 o_cc o_cc1" data-snippet="s_text_block" data-name="Pickup Title">
+        <div class="container">
+          <div class="d-flex align-items-center justify-content-between mb-3">
+            <div>
+              <span style="color: var(--mt-green); font-weight: 600;"></span>
+              <span class="h4 font-weight-bold ml-2">Pickup</span>
+            </div>
+            <a href="/blog" class="text-dark font-weight-500">View All <i class="fa fa-arrow-right ml-1"/></a>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level s_blog_post_card pt24 pb64 o_cc o_cc1 s_custom_pickup o_dynamic_empty" data-name="Pickup Dynamic" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="4" data-custom-name="pickup">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt96 pb80 o_cc s_custom_aboutKatata" data-snippet="s_text_block" data-name="About Katata" data-custom-name="aboutKatata">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="s_custom_aboutImg">
+                <img src="https://picsum.photos/500/600?random=about1" alt="About" loading="lazy"/>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="s_custom_aboutContent pl-lg-5">
+                <h2>About</h2>
+                <div class="subtitle">Expert in Precision Manufacturing</div>
+                <p class="text-muted mb-3">Serving the global manufacturing industry with precision machining and innovative manufacturing.</p>
+                <div class="highlight-text">
+                  Contribution to Society<br/>
+                  <strong>Sustainable Development</strong>
+                </div>
+                <p class="text-muted mb-4" style="font-size: 14px;">
+                  Since our establishment, we have always upheld the philosophy of "Precision, Innovation, and Sustainability".
+                </p>
+                <a href="/technology" class="link-item">
+                  <div><small class="text-muted d-block">Technology</small>
+                    Precision Technology
+                  </div>
+                  <i class="fa fa-chevron-right"/>
+                </a>
+                <a href="/about" class="link-item">
+                  <div><small class="text-muted d-block">About</small>
+                    About Us
+                  </div>
+                  <i class="fa fa-chevron-right"/>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block o_colored_level o_cc o_cc5 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pt112 pb112" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-scroll-background-ratio="1">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" data-original-id="1571" data-original-src="/web/image/1571-5da0c6a5/banner-2.png" data-mimetype="image/png" data-resize-width="1920" style="background-image: url(&quot;/web/image/4478-8e558aba/banner-2.png&quot;);"/>
+        <div class="o_we_bg_filter bg-black-75"/>
+        <div class="s_allow_columns container">
+          <div class="row">
+            <div class="col-lg-12 o_colored_level">
+              <p class="o_default_snippet_text">Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
+              <p class="o_default_snippet_text">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it? genuine for the one, it? genuine for the rest.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s_text_block pt64 pb0 o_cc o_cc1" data-snippet="s_text_block" data-name="Products Title">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-end mb-3">
+            <div>
+              <span style="color: var(--mt-green); font-weight: 600;">●</span>
+              <span class="h4 font-weight-bold ml-2">Products</span>
+            </div>
+            <a href="/shop" class="text-dark font-weight-500">View All <i class="fa fa-arrow-right ml-1"/></a>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level s_product_product_borderless_1 pt24 pb64 s_custom_scaleL s_custom_nameHoverUnderLine o_dynamic_empty" data-name="Dynamic Products" data-filter-id="3" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-custom-name="scaleL nameHoverUnderLine" style="background-image: none;">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt64 pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="News Title">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-end mb-3">
+            <div>
+              <span style="color: var(--mt-green); font-weight: 600;">●</span>
+              <span class="h4 font-weight-bold ml-2">News</span>
+            </div>
+            <a href="/blog" class="text-dark font-weight-500">View All <i class="fa fa-arrow-right ml-1"/></a>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level s_blog_post_card pt24 pb80 o_cc o_cc2 s_custom_cardRadius s_custom_hoverUnderLine o_dynamic_empty" data-name="Dynamic News Carousel" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="9" data-carousel-interval="5000" data-custom-name="cardRadius hoverUnderLine">
+        <div class="o_not_editable container">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+      <section class="s_text_block pt64 pb64 o_cc" data-snippet="s_text_block" data-name="Contact CTA" style="background: var(--mt-green);">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8 text-white mb-4 mb-lg-0">
+              <h3 class="text-white mb-2">Contact Us</h3>
+              <p class="mb-0" style="color: rgba(255,255,255,0.8);">Contact us for more information and quotes.</p>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+              <a href="/contact" class="btn btn-lg btn-light px-5 py-3 font-weight-bold">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== NEW INTEGRATED SECTIONS (V4 REFINEMENT) ========== -->
+      
+      <!-- 1. Geometric Triangle Banner -->
+       <section class="s_carousel_wrapper o_full_screen_height s_custom_bannerGeometricTriangle" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="bannerGeometricTriangle">
+        <div class="s_carousel s_carousel_default carousel slide pointer-event" data-interval="10000" data-ride="carousel" data-pause="false" id="bannerGeometric1">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-target="#bannerGeometric1" data-slide-to="0" class="active"/>
+            <li data-target="#bannerGeometric1" data-slide-to="1"/>
+            <li data-target="#bannerGeometric1" data-slide-to="2"/>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center active">
+              <div class="oe_unremovable container">
+                <div class="row content">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-3 offset-lg-9">
+                    <h2 style="text-align: left;">Banner 01</h2>
+                    <div class="s_hr pt8 pb24">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p style="text-align: left;"><a href="/" class="btn btn-primary mb-2">Start your journey</a>&#160;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="https://picsum.photos/400/400?random=1" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center">
+              <div class="oe_unremovable container">
+                <div class="row content">
+                   <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-4">
+                    <h2 style="text-align: left;">Banner 02</h2>
+                    <div class="s_hr pt8 pb24">
+                       <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                     <p style="text-align: left;"><a href="/" class="btn btn-primary mb-2">Start your journey</a>&#160;<br/></p>
+                  </div>
+                   <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="https://picsum.photos/400/400?random=2" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center">
+              <div class="oe_unremovable container">
+                <div class="row content">
+                   <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-3 offset-lg-9">
+                    <h2 style="text-align: left;">Banner 03</h2>
+                    <div class="s_hr pt8 pb24">
+                       <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                     <p style="text-align: left;"><a href="/" class="btn btn-primary mb-2">Start your journey</a>&#160;<br/></p>
+                  </div>
+                   <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="https://picsum.photos/400/400?random=3" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" href="#bannerGeometric1" role="button">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" href="#bannerGeometric1" role="button">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 2. Icon Horizontal Cards -->
+      <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pb32 pt32 s_custom_iconCardHorizontal s_custom_1x1" data-name="Icon Cards Horizontal" data-custom-name="iconCardHorizontal 1x1">
+        <div class="container">
+          <div class="row">
+            <!-- Icon Item 1 -->
+            <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+              <div class="o_carousel_product_card card-s bg-transparent w-100 p-3">
+                <div class="row h-100">
+                  <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content" style="background-color: #ededed !important;">
+                    <img class="img img-fluid mx-auto" src="/web/image/website.s_company_team_image_1" alt=""/>
+                  </div>
+                  <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                    <div>
+                      <div class="card-title"><h4><font class="text-o-color-1">L</font>ong established fact</h4></div>
+                      <div class="mb-2"><p>It is a long established fact that a reader will be distracted.</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Icon Item 2 -->
+             <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+              <div class="o_carousel_product_card card-s bg-transparent w-100 p-3">
+                <div class="row h-100">
+                  <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content rounded" style="background-color: #ededed !important; border-radius: 50% !important;">
+                     <img class="img img-fluid mx-auto rounded-circle" src="/web/image/website.s_company_team_image_2" alt=""/>
+                  </div>
+                  <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                    <div>
+                      <div class="card-title"><h4><font class="text-o-color-1">C</font>ontrary to popular belief</h4></div>
+                      <div class="mb-2"><p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Overlapped Sections (UpperNext + Dynamic Products) -->
+      <section class="s_column_layout o_colored_level pt80 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb0 o_auto_screen_height o_cc o_cc1 s_custom_upperNext s_custom_fullContainer s_custom_hasArrowL" data-snippet="s_column_layout" data-name="Upper Next Layout" data-custom-name="upperNext fullContainer hasArrowL">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-color: #121212 !important;"/>
+        <div class="col-wrapper container-fluid">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-8 offset-lg-2">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section class="s_text_image o_colored_level pt0 s_custom_titleUnderLine pb32" data-snippet="s_image_text">
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="pt16 pb16 o_colored_level col-lg-7">
+                        <h2 class="mb-4">Products<br/></h2>
+                        <p class="mb-0">Explore our wide range of precision machine tools designed for excellence.</p>
+                      </div>
+                      <div class="pt16 o_colored_level offset-lg-1 col-lg-3 pb0">
+                        <p class="text-md-right"><a href="#" class="btn btn-primary mb-2">Learn more</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-10">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                 <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 pb0 s_product_product_borderless_1 o_cc o_cc1 dingL s_custom_products01 s_custom_titleUp s_custom_nameHoverUnderLine s_custom_arrowRight s_custom_arrowL s_custom_arrowNoSeparate s_custom_arrowNoGap s_custom_noGap s_custom_scaleL s_custom_fullContainer s_custom_default o_dynamic_empty" data-name="Products" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-custom-name="products01 titleUp nameHoverUnderLine arrowRight arrowL arrowNoSeparate arrowNoGap noGap scaleL fullContainer default">
+                  <div class="o_not_editable container-fluid">
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Sticky News Summary -->
+      <section class="s_column_layout o_colored_level pt72 pb72 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Sticky News Layout">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch">
+            <div class="s_col_no_bgcolor col-left col-lg-12 pb40">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 83px;">
+                <section class="s_title o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_title" data-custom-name="titleUnderLine">
+                  <div class="s_allow_columns container">
+                    <h2 style="text-align: left;">News</h2>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="s_col_no_bgcolor col-left pb24 col-lg-5">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 83px;">
+                 <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_dynamic o_colored_level s_blog_post_big_picture pt0 pb0 s_custom_hoverUnderLine o_dynamic_empty" data-name="Blog Posts Big" data-filter-id="9" data-template-key="website_blog.dynamic_filter_template_blog_post_big_picture" data-number-of-elements="1" data-custom-name="hoverUnderLine">
+                  <div class="o_not_editable container">
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-7">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb32 o_colored_level pt0 s_blog_post_card s_custom_newsSummary s_custom_noPic s_custom_hoverUnderLine s_custom_dateLeft s_custom_default o_dynamic_empty" data-name="Blog Posts List" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="1" data-custom-name="newsSummary noPic hoverUnderLine dateLeft default">
+                  <div class="o_not_editable container">
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pb0 pt0">
+                  <div class="container s_allow_columns">
+                    <p style="text-align: center;">
+                      <a href="#" class="btn btn-primary">More News</a>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Hover Effect Carousel -->
+      <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt0 pb88 o_cc o_cc4 s_custom_carouselHoverBgEffect s_custom_arrowTop s_custom_arrowRight s_custom_default" data-name="Hover Effect Carousel" data-custom-name="carouselHoverBgEffect arrowTop arrowRight default">
+        <div class="container">
+          <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1 pointer-event" data-interval="10000" data-ride="carousel" id="carouselHover1">
+             <div class="carousel-inner">
+               <div class="carousel-item o_colored_level active">
+                 <div class="row my-4 s_col_no_resize">
+                    <!-- Carousel Item 1 -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                         <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#">
+                           <img class="o_carousel_product_card_img_top card-img-top" src="https://picsum.photos/400/300?random=10" alt=""/>
+                         </a>
+                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                           <div class="mt-2">
+                             <h4 class="card-header" style="text-align: center;"><font class="text-white">Feature 01</font></h4>
+                             <div class="card-body"><p class="card-text text-white">Hover to see the effect.</p></div>
+                             <div class="card-footer"></div>
+                           </div>
+                         </div>
+                      </div>
+                    </div>
+                    <!-- Carousel Item 2 -->
+                     <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                         <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#">
+                           <img class="o_carousel_product_card_img_top card-img-top" src="https://picsum.photos/400/300?random=11" alt=""/>
+                         </a>
+                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                           <div class="mt-2">
+                             <h4 class="card-header" style="text-align: center;"><font class="text-white">Feature 02</font></h4>
+                             <div class="card-body"><p class="card-text text-white">Background zooms in.</p></div>
+                             <div class="card-footer"></div>
+                           </div>
+                         </div>
+                      </div>
+                    </div>
+                     <!-- Carousel Item 3 -->
+                     <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                      <div class="o_carousel_product_card w-100 card-s p-3">
+                         <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#">
+                           <img class="o_carousel_product_card_img_top card-img-top" src="https://picsum.photos/400/300?random=12" alt=""/>
+                         </a>
+                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                           <div class="mt-2">
+                             <h4 class="card-header" style="text-align: center;"><font class="text-white">Feature 03</font></h4>
+                             <div class="card-body"><p class="card-text text-white">Nice interaction.</p></div>
+                             <div class="card-footer"></div>
+                           </div>
+                         </div>
+                      </div>
+                    </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>
+
+

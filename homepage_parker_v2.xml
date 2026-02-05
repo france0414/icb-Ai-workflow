@@ -1,0 +1,431 @@
+<t t-name="website.homepage_parker_v2">
+  <t t-call="website.layout">
+    <t t-set="pageName" t-value="'homepage_v2'"/>
+    <div id="wrap" class="oe_structure oe_empty">
+      
+      <!-- 0. EMBEDDED STYLES (Teraoka / Japanese Industrial) -->
+      <div class="s_embed_code" data-snippet="s_embed_code" data-name="Teraoka Styles">
+        <div class="s_embed_code_embedded container o_not_editable">
+          <style>
+            /* 
+               THEME: Teraoka V2 (Japanese Industrial)
+               COLORS: Green/Teal (#00A99D), Dark Grey (#333), White
+            */
+            :root {
+                --tera-green: #00857a; /* Slightly darker for contrast */
+                --tera-dark: #2c2c2c;
+                --tera-light: #f4f6f6;
+            }
+            
+            /* HERO */
+            .s_tera_hero {
+                position: relative;
+                overflow: hidden;
+            }
+            .s_tera_hero .floating-box {
+                position: absolute;
+                bottom: 50px;
+                right: 50px;
+                background: rgba(255, 165, 0, 0.9); /* Orange accent from ref */
+                color: white;
+                max-width: 300px;
+                z-index: 10;
+            }
+            
+            /* PROBLEM GRID */
+            .s_tera_problem_left {
+                background-color: var(--tera-green);
+                color: white;
+                padding: 60px 40px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .s_tera_problem_grid .problem-item {
+                border: 1px solid #eee;
+                padding: 30px 20px;
+                text-align: center;
+                transition: all 0.3s;
+            }
+            .s_tera_problem_grid .problem-item:hover {
+                box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+                transform: translateY(-5px);
+                border-color: var(--tera-green);
+            }
+            
+            /* DARK CARDS */
+            .s_tera_dark_card {
+                background: #333;
+                color: white;
+                border-bottom: 3px solid #555;
+                transition: 0.3s;
+                height: 100%;
+            }
+            .s_tera_dark_card:hover {
+                border-bottom-color: var(--tera-green);
+            }
+            
+            /* UTILS */
+            .text-tera-green { color: var(--tera-green) !important; }
+            .bg-tera-light { background-color: var(--tera-light) !important; }
+          </style>
+        </div>
+      </div>
+
+      <!-- 1. Hero Section (Image + Floating Box) -->
+      <section class="s_cover s_tera_hero parallax s_parallax_is_fixed pt160 pb160 o_colored_level" data-snippet="s_cover" data-name="Cover" style="background-image: url('https://picsum.photos/1920/1080?random=warehouse'); background-position: 50% 50%;">
+        <div class="o_we_bg_filter" style="background-color: rgba(0, 0, 0, 0.2);"/>
+        <div class="container s_allow_columns">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h1 class="display-3 font-weight-bold text-white mb-4" style="text-shadow: 0 5px 15px rgba(0,0,0,0.5);">THINKING FUTURE,<br/>MOVING PLASTICS.</h1>
+              <p class="lead text-white mb-5 font-weight-bold" style="text-shadow: 0 2px 5px rgba(0,0,0,0.5);">Advanced material handling solutions for the plastic industry.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Floating Interaction Box (Bottom Right) -->
+        <div class="floating-box p-4 shadow-lg d-none d-lg-block">
+            <div class="d-flex align-items-center mb-3">
+                <i class="fa fa-play-circle-o fa-3x mr-3"></i>
+                <div>
+                    <h6 class="m-0 font-weight-bold">WATCH VIDEO</h6>
+                    <small>Logistics Solutions</small>
+                </div>
+            </div>
+            <a href="/contact" class="btn btn-dark btn-block btn-sm font-weight-bold">SUBSCRIBE NEWSLETTER</a>
+        </div>
+      </section>
+
+      <!-- 2. Problem / Solution Grid -->
+      <section class="s_complex_grid" data-name="Problem Solution">
+          <div class="container-fluid p-0">
+              <div class="row no-gutters">
+                  <!-- Left: The "Ask" (Green) -->
+                  <div class="col-lg-4">
+                      <div class="s_tera_problem_left">
+                          <h6 class="text-white-50 text-uppercase mb-2">For Logistics Managers</h6>
+                          <h2 class="font-weight-bold mb-4">DO YOU HAVE<br/>THESE PROBLEMS?</h2>
+                          <ul class="list-unstyled lead" style="font-size: 1.1rem;">
+                              <li class="mb-3"><i class="fa fa-check-circle-o mr-2"></i> High Labor Costs?</li>
+                              <li class="mb-3"><i class="fa fa-check-circle-o mr-2"></i> Sorting Errors?</li>
+                              <li><i class="fa fa-check-circle-o mr-2"></i> Space Efficiency?</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- Right: The "Solutions" (White Grid) -->
+                  <div class="col-lg-8 bg-white">
+                      <div class="row no-gutters s_tera_problem_grid">
+                          <div class="col-md-4 problem-item">
+                              <i class="fa fa-balance-scale fa-3x text-tera-green mb-3"></i>
+                              <h6 class="font-weight-bold">Reduce Errors</h6>
+                          </div>
+                          <div class="col-md-4 problem-item">
+                              <i class="fa fa-tachometer fa-3x text-tera-green mb-3"></i>
+                              <h6 class="font-weight-bold">Efficiency Up</h6>
+                          </div>
+                          <div class="col-md-4 problem-item">
+                              <i class="fa fa-money fa-3x text-tera-green mb-3"></i>
+                              <h6 class="font-weight-bold">Cost Down</h6>
+                          </div>
+                          <div class="col-md-4 problem-item">
+                              <i class="fa fa-print fa-3x text-tera-green mb-3"></i>
+                              <h6 class="font-weight-bold">Smart Printing</h6>
+                          </div>
+                          <div class="col-md-4 problem-item">
+                              <i class="fa fa-cubes fa-3x text-tera-green mb-3"></i>
+                              <h6 class="font-weight-bold">Auto Picking</h6>
+                          </div>
+                          <div class="col-md-4 problem-item">
+                              <i class="fa fa-arrows-alt fa-3x text-tera-green mb-3"></i>
+                              <h6 class="font-weight-bold">Optimize Size</h6>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!-- 3. Solutions Banner -->
+      <section class="s_text_block pt64 pb64 text-center bg-tera-light" data-snippet="s_text_block" data-name="Solution Banner">
+        <div class="container">
+          <h3 class="text-tera-green font-weight-bold">Your logistics worries, Parker solves them!</h3>
+        </div>
+      </section>
+
+      <!-- 4. Feature Cards (Dark) -->
+      <section class="s_three_columns pt0 pb0" data-snippet="s_three_columns" data-name="Dark Features">
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+                <div class="s_tera_dark_card p-5">
+                    <img src="https://picsum.photos/400/300?random=tech1" class="img-fluid mb-4 w-100" style="opacity: 0.8; height: 200px; object-fit: cover;"/>
+                    <h3 class="font-weight-bold mb-3">MEASURE</h3>
+                    <p class="small text-white-50 mb-0">High precision measurement solutions for absolute quality control.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="s_tera_dark_card p-5" style="background: #2b2b2b;">
+                    <img src="https://picsum.photos/400/300?random=tech2" class="img-fluid mb-4 w-100" style="opacity: 0.8; height: 200px; object-fit: cover;"/>
+                    <h3 class="font-weight-bold mb-3">COUNT</h3>
+                    <p class="small text-white-50 mb-0">Automated picking and counting systems for warehouse efficiency.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="s_tera_dark_card p-5">
+                    <img src="https://picsum.photos/400/300?random=tech3" class="img-fluid mb-4 w-100" style="opacity: 0.8; height: 200px; object-fit: cover;"/>
+                    <h3 class="font-weight-bold mb-3">SORT</h3>
+                    <p class="small text-white-50 mb-0">Intelligent sorting logistics to streamline your delivery flow.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. PARKER LOGISTICS SOLUTIONS (fullHoverBackground - Component 07) -->
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level o_cc o_cc1 pb0 pt80 s_custom_fullHoverBackground" data-name="Parker Solutions" style="background-image: none;" data-custom-name="fullHoverBackground">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <!-- Title Section -->
+            <section class="s_text_block o_colored_level pt0 pb0 o_cc o_cc1 s_custom_textUppercase s_custom_textCenter" data-snippet="s_text_block" data-name="Title" data-custom-name="textUppercase textCenter" style="background-color: rgba(255, 255, 255, 0) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h2 style="text-align: center;">PARKER LOGISTICS SOLUTIONS</h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt4 pb24" data-snippet="s_text_block" data-name="Subtitle" style="background-image: none;">
+              <div class="s_allow_columns container">
+                <p style="text-align: center;">Streamline your operations with our industry-leading solutions.</p>
+              </div>
+            </section>
+            <!-- Interactive Application Showcase -->
+            <section data-snippet="s_static_snippet" class="s_static_snippet pt32 pb32 o_colored_level o_cc o_cc1 s_custom_indexApplication" data-name="Static Snippet" data-staticsnippet-template="horizontal" data-custom-name="indexApplication" style="background-image: none;">
+              <div class="container">
+                <div class="static_snippet_template s_product_product_horizontal">
+                  <div class="row my-4">
+                    <!-- Card 1: Conveyors -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="https://picsum.photos/690/400?random=conveyor" alt="Conveyors" loading="lazy"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title"><h4><strong>Conveyor Systems</strong></h4></div>
+                              <div class="mb-2"><p>High-speed automated conveyor belts designed for efficient material flow and seamless integration with your production line.</p></div>
+                              <div class="btn-wrap"><a href="/solutions/conveyors">Learn More &#160;<i class="fa fa-angle-right"/></a></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="/solutions/conveyors" class="cus-icon-btn"><i class="fa fa-cogs fa-2x" style="color: var(--tera-green, #00857a);"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 2: Sorting -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="https://picsum.photos/690/400?random=sorting" alt="Sorting" loading="lazy"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title"><h4><strong>Intelligent Sorting</strong></h4></div>
+                              <div class="mb-2"><p>AI-powered sorting technology that minimizes errors and maximizes throughput in your logistics operations.</p></div>
+                              <div class="btn-wrap"><a href="/solutions/sorting">Learn More &#160;<i class="fa fa-angle-right"/></a></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="/solutions/sorting" class="cus-icon-btn"><i class="fa fa-random fa-2x" style="color: var(--tera-green, #00857a);"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 3: Storage -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="https://picsum.photos/690/400?random=warehouse" alt="Storage" loading="lazy"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title"><h4><strong>Automated Storage</strong></h4></div>
+                              <div class="mb-2"><p>Vertical space optimization with robotic retrieval systems for maximum warehouse efficiency.</p></div>
+                              <div class="btn-wrap"><a href="/solutions/storage">Learn More &#160;<i class="fa fa-angle-right"/></a></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="/solutions/storage" class="cus-icon-btn"><i class="fa fa-database fa-2x" style="color: var(--tera-green, #00857a);"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 4: Packaging -->
+                    <div class="d-flex flex-grow-0 flex-shrink-0 col-sm-6 col-md-6 col-lg-4 o_colored_level">
+                      <div class="o_carousel_product_card card-s w-100 bg-light p-3">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-12">
+                            <img class="img img-fluid mx-auto" src="https://picsum.photos/690/400?random=packaging" alt="Packaging" loading="lazy"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
+                            <div class="info-wrap">
+                              <div class="card-title"><h4><strong>Smart Packaging</strong></h4></div>
+                              <div class="mb-2"><p>End-to-end packaging automation for consistent quality, reduced waste, and faster delivery times.</p></div>
+                              <div class="btn-wrap"><a href="/solutions/packaging">Learn More &#160;<i class="fa fa-angle-right"/></a></div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center flex-wrap icon-wrap">
+                              <div class="o_dynamic_snippet_btn_wrapper">
+                                <a href="/solutions/packaging" class="cus-icon-btn"><i class="fa fa-cube fa-2x" style="color: var(--tera-green, #00857a);"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Background Image Layers (for desktop hover effect) -->
+              <div class="bg-image bg1 active" style="background-image: url('https://picsum.photos/1920/1080?random=conveyor');"></div>
+              <div class="bg-image bg2" style="background-image: url('https://picsum.photos/1920/1080?random=sorting');"></div>
+            </section>
+            <!-- All Solutions Button -->
+            <section class="s_text_block o_colored_level pt0 mt-4 mt-lg-0 text-center pb0 s_custom_allCatBtn" data-snippet="s_text_block" data-name="CTA" style="background-image: none;" data-custom-name="allCatBtn">
+              <div class="s_allow_columns container">
+                <p><a href="/solutions" class="btn btn-primary">View All Solutions</a></p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- fullHoverBackground EMBEDDED CSS (s_custom_noRemove) -->
+      <section class="s_embed_code o_colored_level pt0 pb0 s_custom_noRemove" data-snippet="s_embed_code" data-name="fullHoverBackground CSS" data-custom-name="noRemove">
+        <div class="s_embed_code_embedded o_not_editable container">
+          <style>
+@media (min-width: 992px) {body:not(.editor_started) .s_custom_fullHoverBackground .s_custom_allCatBtn {display: none;}}body:not(.editor_started) .s_custom_indexApplication{background-repeat:no-repeat;background-size:cover;aspect-ratio:10/3.3;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding-top:clamp(50px,10vw,80px) !important;padding-bottom:clamp(50px,10vw,80px) !important;position:relative;overflow:hidden}@media(max-width: 1199.98px){body:not(.editor_started) .s_custom_indexApplication{aspect-ratio:12/5.5}}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication{aspect-ratio:unset;padding-top:0 !important;padding-bottom:0 !important;background-color:#fff !important}}body:not(.editor_started) .s_custom_indexApplication .bg-image{position:absolute;inset:0;background-size:cover;background-position:center;-webkit-transition:opacity .8s ease;transition:opacity .8s ease;background-attachment:fixed;z-index:1;opacity:0;pointer-events:none}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .bg-image{display:none}}body:not(.editor_started) .s_custom_indexApplication .bg-image::before{content:"";width:100%;height:100%;background:linear-gradient(66deg, #bfbfbf 0%, #f4f4f4 35%, rgba(244, 244, 244, 0) 56%);display:block;position:absolute;left:0;top:0;right:0;bottom:0;opacity:0;-webkit-transition:opacity .8s ease;transition:opacity .8s ease}body:not(.editor_started) .s_custom_indexApplication .bg-image.active{opacity:1;z-index:2}body:not(.editor_started) .s_custom_indexApplication .bg-image.active::before{opacity:1}@media(min-width: 992px){body:not(.editor_started) .s_custom_indexApplication .s_product_product_horizontal .row.my-4{display:none}}body:not(.editor_started) .s_custom_indexApplication .cus-wrap{width:660px;background-color:rgba(59,59,59,.7);color:#fff;padding:50px 40px 50px;position:relative;z-index:3}@media(max-width: 1199.98px){body:not(.editor_started) .s_custom_indexApplication .cus-wrap{padding:30px}}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .cus-wrap{display:none}}body:not(.editor_started) .s_custom_indexApplication .cus-wrap h4{color:#fff;font-size:var(--h3)}body:not(.editor_started) .s_custom_indexApplication .cus-info-wrap{position:relative;min-height:200px}@media(max-width: 1199.98px){body:not(.editor_started) .s_custom_indexApplication .cus-info-wrap{min-height:180px}}body:not(.editor_started) .s_custom_indexApplication .cus-info-wrap .info-wrap{margin-bottom:20px}body:not(.editor_started) .s_custom_indexApplication .cus-info-wrap .info-wrap .mb-2 p{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2*var(--font-size-base)*1.5)}body:not(.editor_started) .s_custom_indexApplication .cus-info-list{opacity:0;position:absolute;top:0;pointer-events:none;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}body:not(.editor_started) .s_custom_indexApplication .cus-info-list.show{opacity:1;position:relative;-webkit-animation:fadeOut .5s ease forwards;animation:fadeOut .5s ease forwards;pointer-events:fill}body:not(.editor_started) .s_custom_indexApplication .cus-info-list .btn-wrap a{color:#fff !important;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}body:not(.editor_started) .s_custom_indexApplication .cus-info-list .btn-wrap a:hover{color:var(--tera-green, #00857a) !important}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;margin:0 -10px}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap .cus-btn-list{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;margin:0 10px;padding:10px;border-radius:8px;-webkit-transition:all .3s ease;transition:all .3s ease}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap .cus-btn-list .cus-icon-btn i{color:var(--tera-green, #00857a);-webkit-transition:all .3s ease;transition:all .3s ease}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap .cus-btn-list.active{background-color:var(--tera-green, #00857a)}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap .cus-btn-list.active .cus-icon-btn i{color:#fff !important}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap .cus-btn-list:hover{background-color:var(--tera-green, #00857a)}body:not(.editor_started) .s_custom_indexApplication .cus-btn-wrap .cus-btn-list:hover .cus-icon-btn i{color:#fff !important}body:not(.editor_started) .s_custom_indexApplication .cus-all-btn-wrap{margin-top:30px}body:not(.editor_started) .s_custom_indexApplication .cus-all-btn-wrap a.btn{width:100%;background-color:rgba(0,0,0,.25) !important;border:0;padding:8px 20px !important;border-radius:0;color:#fff !important;border-radius:0 !important}body:not(.editor_started) .s_custom_indexApplication .cus-all-btn-wrap a.btn:hover{background-color:rgba(0,0,0,.65) !important}body:not(.editor_started) .s_custom_indexApplication .cus-all-btn-wrap a.btn::before{display:none}body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card .position-static{overflow:hidden}body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card .position-static img{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card:hover .position-static img{-webkit-transform:scale(1.05);-ms-transform:scale(1.05);transform:scale(1.05)}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card_body{position:static}}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card_body .icon-wrap{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card_body .icon-wrap .o_dynamic_snippet_btn_wrapper{margin-top:-40px;margin-left:15px;z-index:2}}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card_body .btn-wrap a{color:var(--tera-green, #00857a)}}@media(max-width: 991.98px){body:not(.editor_started) .s_custom_indexApplication .o_carousel_product_card_body .btn-wrap a::before{content:"";width:100%;height:100%;left:0;top:0;right:0;bottom:0;position:absolute}}
+          </style>
+        </div>
+      </section>
+      <!-- fullHoverBackground JS (s_custom_noRemove) -->
+      <section class="s_embed_code o_colored_level pt0 pb0 s_custom_jqCode s_custom_noRemove" data-snippet="s_embed_code" data-name="fullHoverBackground JS" data-custom-name="jqCode noRemove">
+        <div class="s_embed_code_embedded o_not_editable container">
+          <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const isLargeScreen = window.innerWidth > 991;
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.type === 'attributes' &amp;&amp; mutation.target.classList.contains('editor_started')) {
+        document.querySelectorAll('.cus-wrap').forEach(wrap => wrap.remove());
+      }
+    });
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  if (!document.body.classList.contains('editor_started') &amp;&amp; isLargeScreen) {
+    const sections = document.querySelectorAll('.s_custom_fullHoverBackground');
+    sections.forEach(sectionBlock => {
+      if (sectionBlock.classList.contains('s_custom_hidden')) return;
+      const section = sectionBlock.querySelector('.s_product_product_horizontal');
+      if (!section) return;
+      if (section.querySelector('.cus-wrap')) return;
+      let bg1 = sectionBlock.querySelector('.bg-image.bg1');
+      let bg2 = sectionBlock.querySelector('.bg-image.bg2');
+      if (!bg1 || !bg2) {
+        bg1 = document.createElement('div');
+        bg2 = document.createElement('div');
+        bg1.className = 'bg-image bg1 active';
+        bg2.className = 'bg-image bg2';
+        sectionBlock.appendChild(bg1);
+        sectionBlock.appendChild(bg2);
+      }
+      const switchBackground = function (url) {
+        const current = sectionBlock.querySelector('.bg-image.active');
+        const next = current === bg1 ? bg2 : bg1;
+        next.style.backgroundImage = `url('${url}')`;
+        next.classList.add('active');
+        current.classList.remove('active');
+      };
+      const wrap = document.createElement('div');
+      wrap.className = 'cus-wrap';
+      const infoWrap = document.createElement('div');
+      infoWrap.className = 'cus-info-wrap';
+      const btnWrap = document.createElement('div');
+      btnWrap.className = 'cus-btn-wrap';
+      const cards = section.querySelectorAll('.o_carousel_product_card');
+      cards.forEach((card, index) => {
+        const info = card.querySelector('.o_carousel_product_card_body .info-wrap');
+        const btn = card.querySelector('.d-flex.justify-content-between');
+        const infoList = document.createElement('div');
+        infoList.className = 'cus-info-list';
+        if (info) infoList.appendChild(info.cloneNode(true));
+        infoWrap.appendChild(infoList);
+        const btnList = document.createElement('div');
+        btnList.className = 'cus-btn-list';
+        if (btn) {
+          const btnIcon = btn.querySelector('.cus-icon-btn');
+          if (btnIcon) btnList.appendChild(btnIcon.cloneNode(true));
+        }
+        btnList.dataset.index = index;
+        btnWrap.appendChild(btnList);
+      });
+      wrap.appendChild(infoWrap);
+      wrap.appendChild(btnWrap);
+      section.appendChild(wrap);
+      const btnLists = wrap.querySelectorAll('.cus-btn-list');
+      const infoLists = wrap.querySelectorAll('.cus-info-list');
+      if (btnLists[0]) btnLists[0].classList.add('active');
+      if (infoLists[0]) infoLists[0].classList.add('show');
+      const defaultImg = cards[0]?.querySelector('.position-static img');
+      if (defaultImg?.src) switchBackground(defaultImg.src);
+      btnLists.forEach((btn, idx) => {
+        btn.addEventListener('mouseenter', () => {
+          btnLists.forEach(b => b.classList.remove('active'));
+          infoLists.forEach(i => i.classList.remove('show'));
+          btn.classList.add('active');
+          if (infoLists[idx]) infoLists[idx].classList.add('show');
+          const img = cards[idx]?.querySelector('.position-static img');
+          if (img?.src) switchBackground(img.src);
+        });
+      });
+      const allCatBlock = sectionBlock.querySelector('.s_custom_allCatBtn');
+      if (allCatBlock) {
+        const allBtns = allCatBlock.querySelectorAll('a.btn');
+        if (allBtns.length > 0) {
+          const allBtnWrap = document.createElement('div');
+          allBtnWrap.className = 'cus-all-btn-wrap';
+          allBtns.forEach(btn => allBtnWrap.appendChild(btn.cloneNode(true)));
+          btnWrap.insertAdjacentElement('afterend', allBtnWrap);
+        }
+      }
+    });
+  }
+});
+          </script>
+        </div>
+      </section>
+
+      <!-- 6. MANDATORY NEWS CAROUSEL (Strict Base Structure) -->
+      <section class="s_text_block pt80 pb0" data-snippet="s_text_block" data-name="News Title">
+        <div class="container">
+          <h3 class="font-weight-bold text-uppercase border-bottom pb-3 mb-5">LATEST UPDATES</h3>
+        </div>
+      </section>
+      <section data-snippet="s_dynamic_snippet_carousel" class="s_dynamic_snippet_carousel s_dynamic o_colored_level pt0 s_blog_post_list pb56 o_dynamic_empty" data-name="Dynamic Carousel" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_list" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000">
+        <div class="container o_not_editable">
+          <div class="css_non_editable_mode_hidden">
+            <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+          </div>
+          <div class="dynamic_snippet_template"/>
+        </div>
+      </section>
+
+    </div>
+  </t>
+</t>

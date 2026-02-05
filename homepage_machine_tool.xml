@@ -1,0 +1,220 @@
+<t t-name="website.homepage_machine_tool">
+  <t t-call="website.layout">
+    <t t-set="pageName" t-value="'homepage'"/>
+    <div id="wrap" class="oe_structure oe_empty">
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt0 pb0 o_cc o_cc5 o_colored_level" data-name="Hero Layout" style="background-image: none;">
+        <div class="container-fluid px-0">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_banner parallax s_parallax_is_fixed bg-black-50 pt152 pb256 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_banner" data-name="Hero Banner">
+              <span class="s_parallax_bg oe_img_bg" style="background-image: url('https://picsum.photos/1920/1080?random=hero'); background-position: 50% 50%;"/>
+              <div class="o_we_bg_filter bg-black-50"/>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <h1 class="display-3 font-weight-bold text-white mb-3" style="text-shadow: 0 4px 20px rgba(0,0,0,0.8);">
+                                            OUTSMART.<br/>OUTPACE.<br/>OUTPERFORM.
+                                        </h1>
+                    <a href="/contact" class="btn btn-fill-primary rounded-circle btn-lg font-weight-bold px-5 mt-3">
+                                            CONTACT US
+                                        </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- 2. Floating Product Navigator (Unified Static) -->
+            <section class="s_text_block pb80 s_custom_HeroNavigator o_colored_level" data-snippet="s_text_block" data-name="Floating Nav" data-custom-name="HeroNavigator" style="background-image: none;">
+              <div class="container">
+                <div class="p-5 bg-black rounded shadow-lg border border-secondary" style="background: linear-gradient(180deg, rgba(20,20,30,0.95) 0%, rgba(10,10,20,1) 100%); margin-top: -100px; position: relative; z-index: 10;">
+                  
+                  <!-- Top Performer -->
+                  <div class="row align-items-center mb-5 border-bottom border-secondary pb-4">
+                    <div class="col-lg-5">
+                      <div class="h5 text-primary text-uppercase mb-2">Top Performer</div>
+                      <h3 class="h2 text-white font-weight-bold mb-3">The Okuma LT2000EX</h3>
+                      <p class="text-white-50">High-performance turning center for complex machining.</p>
+                      <a href="#" class="btn btn-fill-primary rounded-circle btn-sm">LEARN MORE</a>
+                    </div>
+                    <div class="col-lg-7 text-center">
+                      <img src="https://picsum.photos/800/500?random=machine_hero" class="img-fluid" alt="Featured Machine" loading="lazy"/>
+                    </div>
+                  </div>
+
+                  <!-- Product Categories (Static Grid) -->
+                  <div class="row justify-content-center">
+                        <div class="col-lg-3 col-6 mb-4 mb-lg-0 text-center text-white s_custom_scaleL">
+                             <a href="#" class="d-block text-decoration-none">
+                                 <img src="https://picsum.photos/400/300?random=p1" class="img-fluid w-100 mb-2 opacity-75 border border-secondary hover-grow" alt="Lathes"/>
+                                 <div class="h6 font-weight-bold text-white mt-3">Lathes</div>
+                             </a>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4 mb-lg-0 text-center text-white s_custom_scaleL">
+                             <a href="#" class="d-block text-decoration-none">
+                                 <img src="https://picsum.photos/400/300?random=p2" class="img-fluid w-100 mb-2 opacity-75 border border-secondary hover-grow" alt="Machining Centers"/>
+                                 <div class="h6 font-weight-bold text-white mt-3">Machining Centers</div>
+                             </a>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4 mb-lg-0 text-center text-white s_custom_scaleL">
+                             <a href="#" class="d-block text-decoration-none">
+                                 <img src="https://picsum.photos/400/300?random=p3" class="img-fluid w-100 mb-2 opacity-75 border border-secondary hover-grow" alt="Grinders"/>
+                                 <div class="h6 font-weight-bold text-white mt-3">Grinders</div>
+                             </a>
+                        </div>
+                        <div class="col-lg-3 col-6 mb-4 mb-lg-0 text-center text-white s_custom_scaleL">
+                             <a href="#" class="d-block text-decoration-none">
+                                 <img src="https://picsum.photos/400/300?random=p4" class="img-fluid w-100 mb-2 opacity-75 border border-secondary hover-grow" alt="5-Axis"/>
+                                 <div class="h6 font-weight-bold text-white mt-3">5-Axis</div>
+                             </a>
+                        </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt80 pb80 o_cc o_cc2 o_colored_level" data-name="News Section" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title pb40 o_colored_level" data-snippet="s_title" data-name="Title" style="background-image: none;">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12 text-center">
+                    <h2 class="font-weight-bold">News &amp;amp; Notable</h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section data-snippet="s_dynamic_snippet" class="s_dynamic_snippet s_dynamic o_colored_level s_blog_post_card s_custom_scaleL s_custom_NewsCards o_dynamic_empty" data-name="News Cards" data-custom-name="NewsCards scaleL" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="3" data-filter-id="1" data-number-of-records="16" data-number-of-elements-small-devices="1">
+              <div class="o_not_editable container">
+                <div class="css_non_editable_mode_hidden">
+                  <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text">
+                        Your Dynamic Snippet will be displayed here...
+                   </div>
+                </div>
+                <div class="dynamic_snippet_template"/>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_call_to_action pt48 pb48" data-snippet="s_call_to_action" data-name="Blue CTA" style="background: linear-gradient(90deg, #005eb8 0%, #00a4e4 100%);">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-8">
+              <h2 class="text-white font-weight-bold mb-0">Open Possibilities</h2>
+            </div>
+            <div class="col-lg-4 text-lg-right">
+              <a href="#" class="btn btn-fill-primary rounded-circle font-weight-bold px-4 py-2">
+                                EXPLORE MORE
+                            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout pt80 pb80 o_cc o_cc1" data-name="Featured Content">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_title text-center pb48" data-snippet="s_title" data-name="Title">
+              <div class="container">
+                <h5 class="text-uppercase text-muted letter-spacing-2">Hear and Connect</h5>
+                <h2 class="font-weight-bold display-4">Okuma in Action</h2>
+              </div>
+            </section>
+            <section class="s_text_image pt0" data-snippet="s_text_image" data-name="Featured Video">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <div class="position-relative shadow-lg rounded overflow-hidden s_custom_scaleS" data-custom-name="scaleS">
+                      <img src="https://picsum.photos/800/450?random=video" class="img-fluid" alt="Video Thumbnail" loading="lazy"/>
+                      <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center" style="top:0; left:0; background: rgba(0,0,0,0.3);">
+                        <i class="fa fa-play-circle fa-5x text-white opacity-75"/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 pl-lg-5">
+                    <h3 class="font-weight-bold text-primary mb-3">5-Axis Vertical Machining</h3>
+                    <p class="lead text-muted mb-4">Experience the precision and speed of our latest GENOS M460V-5AX. Designed for high-accuracy parts manufacturing.</p>
+                    <ul class="list-unstyled font-weight-bold text-primary">
+                      <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center"><i class="fa fa-chevron-right mr-2 small"/> WATCH DEMO VIDEO</a>
+                      </li>
+                      <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center"><i class="fa fa-chevron-right mr-2 small"/> READ CUSTOMER STORY</a>
+                      </li>
+                      <li class="mb-3">
+                        <a href="#" class="d-flex align-items-center"><i class="fa fa-chevron-right mr-2 small"/> DOWNLOAD BROCHURE</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_references pt80 pb80 bg-light" data-snippet="s_references" data-name="Partners">
+        <div class="container text-center">
+          <h5 class="text-uppercase text-muted letter-spacing-2 mb-3">Stronger Together</h5>
+          <h2 class="font-weight-bold display-4 mb-3">Our Partners Make Us Who We Are</h2>
+          <p class="lead text-muted w-75 mx-auto mb-5">Collaborating with industry leaders to deliver integrated manufacturing solutions.</p>
+          <div class="row justify-content-center filter-grayscale mb-5 align-items-center">
+            <div class="col-lg-2 col-4 mb-4 text-center">
+              <img src="https://picsum.photos/150/60?random=p1" class="img-fluid" alt="Partner" loading="lazy"/>
+            </div>
+            <div class="col-lg-2 col-4 mb-4 text-center">
+              <img src="https://picsum.photos/150/60?random=p2" class="img-fluid" alt="Partner" loading="lazy"/>
+            </div>
+            <div class="col-lg-2 col-4 mb-4 text-center">
+              <img src="https://picsum.photos/150/60?random=p3" class="img-fluid" alt="Partner" loading="lazy"/>
+            </div>
+            <div class="col-lg-2 col-4 mb-4 text-center">
+              <img src="https://picsum.photos/150/60?random=p4" class="img-fluid" alt="Partner" loading="lazy"/>
+            </div>
+            <div class="col-lg-2 col-4 mb-4 text-center">
+              <img src="https://picsum.photos/150/60?random=p5" class="img-fluid" alt="Partner" loading="lazy"/>
+            </div>
+            <div class="col-lg-2 col-4 mb-4 text-center">
+              <img src="https://picsum.photos/150/60?random=p6" class="img-fluid" alt="Partner" loading="lazy"/>
+            </div>
+          </div>
+          <a href="/partners" class="btn btn-fill-primary rounded-circle btn-lg px-5">BECOME A PARTNER</a>
+        </div>
+      </section>
+      <section class="s_text_image pt80 pb80 o_cc o_cc5" data-snippet="s_text_image" data-name="Distributor">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <div class="h5 text-primary text-uppercase letter-spacing-2 mb-3">Global Support</div>
+              <h2 class="font-weight-bold display-4 mb-4">Your Local Distributor</h2>
+              <p class="lead mb-5">Find your nearest Okuma distributor for sales, service, and support. We are everywhere you need us to be.</p>
+              
+              <!-- Static Country List (Replaces non-functional Search) -->
+              <div class="row text-white small font-weight-bold mb-4">
+                  <div class="col-4 mb-2"><i class="fa fa-map-marker mr-1 text-primary"/> USA</div>
+                  <div class="col-4 mb-2"><i class="fa fa-map-marker mr-1 text-primary"/> GERMANY</div>
+                  <div class="col-4 mb-2"><i class="fa fa-map-marker mr-1 text-primary"/> JAPAN</div>
+                  <div class="col-4 mb-2"><i class="fa fa-map-marker mr-1 text-primary"/> CHINA</div>
+                  <div class="col-4 mb-2"><i class="fa fa-map-marker mr-1 text-primary"/> TAIWAN</div>
+                  <div class="col-4 mb-2"><i class="fa fa-map-marker mr-1 text-primary"/> INDIA</div>
+              </div>
+
+              <div class="mt-2">
+                <a href="#" class="btn btn-fill-primary rounded-circle px-4">VIEW GLOBAL NETWORK</a>
+              </div>
+            </div>
+            <div class="col-lg-7 pl-lg-5">
+              <div class="position-relative">
+                <img src="https://picsum.photos/800/500?random=map" class="img-fluid rounded shadow-lg opacity-75" alt="Global Network" loading="lazy"/>
+                <i class="fa fa-map-marker text-primary position-absolute fa-2x" style="top: 30%; left: 20%;"/>
+                <i class="fa fa-map-marker text-primary position-absolute fa-2x" style="top: 40%; left: 50%;"/>
+                <i class="fa fa-map-marker text-primary position-absolute fa-2x" style="top: 60%; left: 70%;"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="oe_structure"/>
+    </div>
+  </t>
+</t>

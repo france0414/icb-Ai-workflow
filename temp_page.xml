@@ -1,0 +1,1808 @@
+<t t-name="website.home-1">
+  <t t-call="website.layout">
+    <t t-set="pageName" t-value="'homepage'"/>
+    <div id="wrap" class="oe_structure oe_empty">
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pt32 pb16 o_cc o_cc2 bg-black-15" data-name="Vertical Layout" style="background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pb16 pt0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
+              <div class="s_allow_columns container">
+                <h3>
+                  <strong>Home1</strong>
+                </h3>
+                <section class="s_embed_code o_colored_level pt8 pb0 text-left" data-snippet="s_embed_code" style="background-image: none;" data-name="複製SCSS按鈕">
+                  <div class="s_embed_code_embedded o_not_editable container">
+                    <section>
+                      <pre id="scss-code" class="d-none"> 
+//  -------------------------------------                   Header 區  開始                     -------------------------------------  //
+//引用系統上選單文字大小設定變數, 執行RWD 文字大小變化
+@include laptop {
+  :root {
+    --header-font-size: var(--header-font-size) * 0.95 !important;
+  }
+}
+@include laptop-m {
+  :root {
+    --header-font-size: var(--header-font-size) * 0.89 !important;
+  }
+}
+//上選單文字顏色
+$line-color:#ddd;
+$menu-link: var(--o-color-5);
+$menu-link-hover: var(--o-color-1);
+//下拉選單
+$sub-menu: var(--o-color-5);
+$sub-menu-hover: var(--o-color-1);
+header#top.o_header_affixed.o_header_is_scrolled{
+  .navbar-brand img{
+    height: 50px;
+  }
+  .dropdown-menu:not(.o_mega_menu){
+    @include media-breakpoint-up(lg) {
+       margin-top: 21px !important;
+    }
+  }
+}
+header#top {
+  .navbar {
+    padding: 15px 0;
+    @include media-breakpoint-down(md) {
+      padding: 10px 0;
+    }
+  }
+  .navbar-brand.logo {
+    display: flex;
+    align-items: end;
+    margin-right: 5px !important;
+  }
+  .o_no_autohide_item {
+    .font-weight-bold {
+      font-weight: normal;
+      font-size: 15px !important;
+    }
+    .dropdown-menu {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+  #top_menu {
+    &amp;gt;.nav-item {
+      &amp;gt;a.nav-link {
+        color: $menu-link;
+        padding: 5px 15px;
+        margin: 0 5px;
+        font-weight: 600;
+        position: relative;
+        @include transition;
+        @include laptop {
+          padding: 5px 10px;
+          margin: 0 1px;
+          font-size: 17px;
+        }
+        span {
+          position: relative;
+          z-index: 2;
+        }
+        &amp;amp;:hover {
+          color: $menu-link-hover;
+        }
+      }
+      &amp;amp;.show,
+      &amp;amp;.active {
+        &amp;gt;a.nav-link {
+          color: $menu-link-hover;
+          &amp;amp;:hover {
+            color: $menu-link-hover;
+          }
+        }
+      }
+      &amp;amp;.o_wsale_quote_cart {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      &amp;amp;.o_wsale_quote_cart,
+      &amp;amp;.o_portal_header_user_dropdown,
+      &amp;amp;.addon_nav_searchbar {
+        .nav-link {
+          @include media-breakpoint-up(lg) {
+            padding: 5px 10px;
+            margin: 0;
+          }
+          &amp;amp;::after {
+            display: none;
+          }
+          &amp;amp;:hover {
+            color: $menu-link-hover;
+          }
+        }
+      }
+      .dropdown-toggle {
+        &amp;amp;::after {
+          border: 0;
+        }
+      }
+    }
+    .dropdown-menu{
+      .dropdown-item,
+      a.nav-link{
+        font-size: 17px;
+        padding:8px 10px;
+        color: $sub-menu;
+        @include transition;
+        &amp;amp;:hover{
+          color: $sub-menu-hover;
+        }
+      }
+    }
+    .dropdown-menu:not(.o_mega_menu) {
+      @include media-breakpoint-up(lg) {
+        padding: 0;
+        margin-top: 26px;
+      }
+      &amp;gt;li+li {
+        @include media-breakpoint-up(lg) {
+          border-top: 1px solid $line-color;
+        }
+      }
+      .dropdown-item {
+        @include media-breakpoint-up(lg) {
+          @include transition;
+        }
+        &amp;amp;.active {
+          @include media-breakpoint-up(lg) {
+            color: #fff !important;
+            background-color: $primary;
+          }
+          @include media-breakpoint-down(md) {
+            background-color: transparent;
+            color: $primary !important;
+          }
+          &amp;amp;:hover {
+            background-color: $primary;
+            @include media-breakpoint-down(md) {
+              background-color: transparent;
+              color: $primary !important;
+            }
+          }
+        }
+        &amp;amp;:hover:not(.active) {
+          @include media-breakpoint-up(lg) {
+            color: #fff !important;
+            background-color: $primary;
+          }
+          @include media-breakpoint-down(md) {
+            background-color: transparent;
+            color: $primary !important;
+          }
+        }
+      }
+    }
+    .addon_nav_searchbar.dropdown{
+      @include media-breakpoint-up(lg) {
+        position: static;
+      }
+      &amp;gt;.dropdown-menu{
+        @include media-breakpoint-up(lg) {
+          left: 0;
+          margin-top: 0;
+          padding-left: var(--container-pd-x) !important;
+          padding-right: var(--container-pd-x) !important;
+          background-color: $line-color;
+          padding-top: 16px !important;
+          padding-bottom: 16px !important;
+        }
+        .o_searchbar_form{
+          @include media-breakpoint-up(lg) {
+            max-width: 800px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .addon_nav_searchbar {
+    .dropdown-toggle {
+      &amp;gt;.fa-search::before {
+        font-size: calc(var(--header-font-size) + 0.2rem);
+      }
+    }
+    .dropdown-menu {
+      padding: 10px !important;
+      border: 1px solid rgba(0, 0, 0, 0.15) !important;
+      @include media-breakpoint-down(md) {
+        padding: 0 !important;
+        border: 0 !important;
+      }
+      .oe_search_button {
+        padding: 2px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .fa-search {
+          &amp;amp;::before {
+            filter: brightness(10);
+            @include transition;
+          }
+        }
+        &amp;amp;:hover {
+          background-color: $secondary;
+          border-color: $secondary;
+          .fa-search {
+            filter: none;
+          }
+        }
+      }
+    }
+    .nav-link {
+      line-height: 1;
+    }
+  }
+  .js_language_selector {
+    margin-top: 0 !important;
+    .dropdown-menu {
+      right: 0;
+      left: auto;
+      margin-top: 8px;
+      padding:0;
+    }
+    .btn-outline-secondary {
+      padding: 0;
+      color: var(--o-color-5);
+      &amp;amp;::after {
+        display: none;
+      }
+      &amp;amp;::before {
+        content: "\f0ac";
+        font-family: "fontawesome";
+        font-size: calc(var(--header-font-size) + 0.2rem);
+        @include transition;
+      }
+      img {
+        margin-right: 0;
+        display: none;
+      }
+      span.align-middle {
+        display: none;
+      }
+    }
+    &amp;amp;:hover,
+    &amp;amp;.show {
+      .btn-outline-secondary {
+        background-color: transparent;
+        &amp;amp;::before {
+          color: $menu-link-hover;
+        }
+      }
+    }
+    .js_change_lang img {
+      display: none;
+    }
+    .dropdown-menu {
+      .js_change_lang {
+        font-size: 17px;
+      }
+      .js_change_lang.active {
+        color: #fff !important;
+      }
+    }
+  }
+}
+.navbar-expand-lg&amp;gt;.container {
+  @include media-breakpoint-down(md) {
+    padding-left: var(--container-pd-x);
+    padding-right: var(--container-pd-x);
+  }
+}
+header .navbar .dropdown-menu {
+  @include media-breakpoint-up(lg) {
+    max-height: 75vh;
+  }
+}
+//手機版三條線選單按鈕
+.navbar-toggler {
+  width: 30px;
+  height: 26px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  outline: 0;
+  border: 0 !important;
+  cursor: pointer;
+  margin-left: 10px !important;
+  margin-right: 0;
+  @include mobile-xs {
+    width: 28px;
+    height: 22px;
+  }
+  &amp;amp;::before,
+  &amp;amp;::after {
+    content: "";
+  }
+  &amp;amp;:focus {
+    outline: 0;
+  }
+  .navbar-toggler-icon {
+    background-image: none !important;
+  }
+  &amp;amp;::before,
+  &amp;amp;::after,
+  .navbar-toggler-icon {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  &amp;amp;::before {
+    top: 0;
+  }
+  .navbar-toggler-icon {
+    top: 10px;
+    @include mobile-xs {
+      top: 8px;
+    }
+  }
+  &amp;amp;:after {
+    top: 20px;
+    @include mobile-xs {
+      top: 16px;
+    }
+  }
+  &amp;amp;[aria-expanded="true"] {
+    &amp;amp;::before {
+      top: 12px;
+      transform: rotate(135deg);
+      @include mobile-xs {
+        top: 10px;
+      }
+    }
+    .navbar-toggler-icon {
+      opacity: 0;
+      left: -60px;
+    }
+    &amp;amp;:after {
+      top: 12px;
+      transform: rotate(-135deg);
+      @include mobile-xs {
+        top: 10px;
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+  /* 滾動時不考慮 #oe_main_menu_navbar，只留 header &amp;gt; nav 的高度 */
+  /*登入時手機板選單距離 選單高度 + 編輯控制區塊 開始*/
+  body.o_connected_user{
+    &amp;amp;.scrolled{
+      header#top .navbar-collapse {
+        top: 70px; //   header高度 70px
+        height: calc(100vh - (var(--o-we-toolbar-height) + 70px)); // 扣除 往下滾動後  header高度 70px
+      }
+    }
+    header#top{
+      .navbar-collapse {
+        top: calc(var(--o-we-toolbar-height) + 80px);
+        height: calc(100vh - (var(--o-we-toolbar-height) + 80px)); // 扣除  header 高度 80px
+      }
+    }
+  }
+  /*登入時手機板選單距離 選單高度 + 編輯控制區塊  結束*/
+  /*非登入手機板選單距離 選單高度 開始*/
+  body:not(.o_connected_user){
+    &amp;amp;.scrolled{
+      header#top .navbar-collapse {
+        top: 70px;  //   header高度 70px
+        height: calc(100vh -  70px); // 扣除 往下滾動後  header高度 70px
+      }
+    }
+    header#top{
+      .navbar-collapse{
+        top:  80px; // header 高度 80px
+        height: calc(100vh - 80px); // 扣除  header 高度 80px
+      }
+    }
+  }
+  /*非登入手機板選單距離 選單高度 結束*/
+  header#top{
+    .show #top_menu,
+      #top_menu{
+        text-align: left;
+        &amp;gt;.nav-item{
+          //border-bottom: 1px solid $line-color;
+          &amp;amp;.o_wsale_quote_cart{
+            display: none !important;
+          }
+          &amp;amp;.addon_nav_searchbar{
+            &amp;gt;.dropdown-toggle{
+              display: none;
+            }
+            .dropdown-menu{
+              display: block !important;
+              position: static;
+              padding-top:10px !important;
+              padding-bottom:10px !important;
+              background-color: transparent !important;
+            }
+          }
+          &amp;amp;.show{
+            padding-bottom: 10px;
+          }
+          &amp;gt;a.nav-link{
+            padding:  10px var(--container-pd-x);
+            font-size: 19px;
+            font-weight: normal;
+            margin: 0;
+          }
+          &amp;amp;.o_portal_header_user_dropdown &amp;gt;a.nav-link.dropdown-toggle,
+          &amp;gt;a.nav-link.dropdown-toggle{
+            position: relative;
+            padding-right:  calc(15px + var(--container-pd-x));
+            &amp;amp;::after{
+              content: "\f107";
+              font-family: "fontawesome";
+              position: absolute;
+              right: var(--container-pd-x);
+              top:12px;
+              display: block;
+            }
+            &amp;amp;[aria-expanded="true"]{
+              &amp;amp;::after{
+                content: "\f106";
+              }
+            }
+          }
+        }
+        .dropdown-menu{
+          border: 0;
+          padding:5px 0;
+          background-color: #f5f5f5;
+          .dropdown-item{
+            padding:5px 15px;
+            font-size: 16px;
+          }
+          &amp;amp;:not(.o_mega_menu){
+           margin: 0 var(--container-pd-x);
+          }
+        }
+        .o_mega_menu{
+          .container{
+            padding-left: var(--container-pd-x);
+            padding-right: var(--container-pd-x);
+          }
+        }
+      }
+      /* 讓選單變成滿版 */
+      .navbar-collapse {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        background: white;
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        max-height: none;
+        transition: opacity 0.5s ease-in-out, transform 0.5s, visibility 0.5s;
+      }
+        /* 展開選單時 (淡入) */
+      .navbar-collapse.show {
+        opacity: 1;
+        visibility: visible;
+        max-height: none;
+      }
+      /* 關閉時 (修正 Bootstrap 的 .collapsing) */
+      .navbar-collapse.collapsing {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease-in-out, transform 0.2s, visibility 0.2s;
+      }
+      .js_language_selector{
+        padding: 0 var(--container-pd-x);
+        .dropdown-toggle{
+          display: none;
+        }
+        .dropdown-menu{
+          position: static;
+          float: none;
+          display: flex;
+          flex-wrap: wrap; /* 允許 `.dropdown-item` 自動換行 */
+          justify-content: space-between; /* 均分按鈕 */
+          padding: 5px 0;
+          border:0;
+          border-radius: 0;
+          margin-bottom: 20px !important;
+          gap: 5px;
+          .dropdown-item{
+            flex: 1 1 auto; /* 讓每個 `.dropdown-item` 均分寬度，自適應內容 */
+            min-width: 120px; /* 設定最小寬度，避免過小 */
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap; /* 確保 `span` 內文字不換行 */
+            text-align: center;
+            border-radius: var(--btn-border-radius-sm);
+            border:1px solid $line-color;
+          }
+        }
+      }
+  }
+  #navbar_subnav{
+    display: block !important;
+    margin-left: auto;
+    &amp;gt;.navbar-nav{
+      .o_wsale_quote_cart.nav-item{
+        display: block !important;
+      }
+    }
+  }
+  .oe_structure_solo{
+    .btn_cta{
+        padding:5px 8px;
+        font-size: 15px;
+    }
+  }
+  /* 禁止滾動 */
+  body.overflow-hidden {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    main,
+    footer {
+      pointer-events: none;
+    }
+  }
+}
+@include mobile-s{
+  .oe_structure_solo{
+    .btn_cta{
+        padding:5px;
+        font-size: 12px;
+    }
+  }
+}
+//  -------------------------------------                   Header 區結束                        -------------------------------------  //
+//  -------------------------------------                   RWD詢價圖片飄移調整  開始                     -------------------------------------  //
+header:not(.o_top_menu_collapse_shown) {
+  // 1199.98px
+  // 自行調整成漢堡選單出現的尺寸
+  @include media-breakpoint-down(lg) {
+    height: unset !important;
+    &amp;amp;#top #top_menu_collapse {
+      height: 0 !important;
+      padding: 0 !important;
+      display: block !important;
+      margin: 0 !important;
+      opacity: 0 !important;
+      pointer-events: none;
+    }
+    &amp;amp;#top #top_menu_collapse #top_menu .o_wsale_quote_cart {
+      display: block !important;
+      position: absolute;
+      top: 15px;
+      right: 140px; // 位置如果有偏移，再自己調一下這邊的數字
+      width: auto !important;
+    }
+  }
+}
+//  -------------------------------------                   RWD詢價圖片飄移調整 結束                        -------------------------------------  //
+ //  -------------------------------------                   Banner - 三角形遮罩                       -------------------------------------  //           
+.s_custom_bannerGeometricTriangle {
+  .carousel-item {
+    // 遮罩顏色設定
+    &amp;amp;::before {
+      content:"";
+      background: rgb(255,255,255);
+      background: linear-gradient(121deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 53%, rgb(255, 255, 255) 53%, rgba(255, 255, 255, 1) 88%, rgb(231, 231, 231) 88%, rgb(231, 231, 231) 96%, var(--o-color-1) 96%, var(--o-color-1) 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include media-breakpoint-down(md) {
+        background: linear-gradient(121deg, rgba(255, 255, 255, .5) 0%, rgba(255, 255, 255, .5) 53%, rgba(255, 255, 255, .5) 53%, rgba(255, 255, 255, .5) 88%, rgb(231, 231, 231) 88%, rgb(231, 231, 231) 96%, var(--o-color-1) 96%, var(--o-color-1) 100%);
+      }
+    }
+    &amp;gt;.container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 80vh !important;
+      &amp;amp;::before,
+      &amp;amp;::after {
+        content: none !important;
+      }
+      &amp;gt;.row {
+        align-content: center;
+        position: static;
+        @include media-breakpoint-down(md) {
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;
+        }
+        @include media-breakpoint-down(sm) {
+            height: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+    }
+    .carousel-content {
+       position: relative;
+      z-index: 2;
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+    .carousel-img {
+      position: absolute;
+      width: 43%;
+      top: 50%;
+      left: 55%;
+      transform:translate(-50%, -50%);
+      margin-top: 83px;   /*header height*/
+      z-index: 1;
+      @include media-breakpoint-down(md) {
+        width: 50%;
+        margin: 0;
+        position: static;
+        transform: none;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 60%;
+        order: -1;
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+}
+//  -------------------------------------               Banner - 三角形遮罩 結束          -------------------------------------  //
+//  -------------------------------------                   icon 特色清單 開始                       -------------------------------------  //
+.s_custom_iconCardHorizontal {
+  .o_carousel_product_card {
+    padding: 0 !important;
+    border-color: transparent !important;
+    background-color: unset !important;
+    &amp;amp;:hover {
+      border-color: transparent !important;
+    }
+    &amp;amp;::after {
+      content: none;
+    }
+    &amp;gt;.row {
+      align-items: flex-start;
+      gap: 10px 30px;
+      margin: 0;
+      @include media-breakpoint-down(md) {
+        gap: 10px 0;
+      }
+      &amp;gt;div.icon-content {
+        padding: 10px !important;
+      }
+      &amp;gt;.o_carousel_product_card_body {
+        padding-top: 0;
+        // padding-right: 20px !important;
+        padding-left: 0 !important;
+          padding-right: 0 !important;
+        // @include media-breakpoint-down(md) {
+        //   padding-right: 0 !important;
+        // }
+        @include media-breakpoint-down(sm) {
+          text-align: left;
+        }
+        &amp;amp;.col-lg-1 {
+          @include media-breakpoint-up(lg) {
+               flex: 0 0 calc(8.33333333% - 30px);
+               max-width: calc(8.33333333% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-2 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(16.66666667% - 30px);
+            max-width: calc(16.66666667% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-3 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(25% - 30px);
+            max-width: calc(25% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-4 {
+           @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(33.33333333% - 30px);
+            max-width: calc(33.33333333% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-5 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(41.66666667% - 30px);
+            max-width: calc(41.66666667% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-6 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(50% - 30px);
+            max-width: calc(50% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-7 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(58.33333333% - 30px);
+            max-width: calc(58.33333333% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-8 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(66.66666667% - 30px);
+            max-width: calc(66.66666667% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-9 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(75% - 30px);
+            max-width: calc(75% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-10 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(83.33333333% - 30px);
+            max-width: calc(83.33333333% - 30px);
+          }
+        }
+        &amp;amp;.col-lg-11 {
+          @include media-breakpoint-up(lg) {
+            flex: 0 0 calc(91.66666667% - 30px);
+            max-width: calc(91.66666667% - 30px);
+          }
+        }
+      }
+    }
+  }
+  .card-title&amp;gt;* {
+    margin-bottom: 0;
+  }
+}
+//  icon 特色清單 -- icon 比例 1:1
+.s_custom_iconCardHorizontal.s_custom_1x1 .o_carousel_product_card &amp;gt; .row &amp;gt; .icon-content {
+  aspect-ratio: 1/1;
+  @media(max-width: 991px) {
+    flex: 0 0 130px;
+  }
+}
+//  -------------------------------------                   icon 特色清單 結束                      -------------------------------------  //
+//  -------------------------------------                   上下區塊，交疊效果                       -------------------------------------  //
+:root {
+	--upperSection: 150px;
+}
+ @include media-breakpoint-down(sm) {
+ 	:root {
+ 		--upperSection: 30vh;
+	}
+}
+ @include mobile-s {
+    :root {
+		--upperSection: 10vh;
+	}
+ }
+.s_custom_upperNext {
+	&amp;amp;:not(.s_column_layout):not(.s_vertical_layout)&amp;gt;[class*='container'] {
+		z-index: 2;
+	}
+	section:last-child {
+		z-index: 2;
+	}
+  .o_carousel_product_img_link{
+    margin: auto 15px 15px;
+		padding: 0 !important;
+  }
+  .o_carousel_product_card_body{
+    padding:15px 15px 0 !important;
+		.o_carousel_product_img_link{
+			margin: auto 0 15px ;
+		}
+  }
+  .card-title{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // 控制多行的行數
+    -webkit-box-orient: vertical;
+    max-height: calc(2 * var(--h5) * 1.5);
+  }
+  .o_carousel_product_card_alias{
+    white-space: nowrap;    // 禁止換行
+    overflow: hidden;       // 超出隱藏
+    text-overflow: ellipsis; // 顯示省略號
+    margin-bottom: 15px;
+    flex-wrap:  inherit !important;
+  }
+	+section {
+		margin-top: calc(var(--upperSection) * -1);
+		z-index: 1;
+		&amp;amp;::before {
+			content: "";
+			display: block;
+			height: calc(var(--upperSection));
+			background-color: inherit;
+		}
+	}
+	// 區塊交疊時，上方交疊區塊有左右側箭頭的狀況
+	&amp;amp;.s_custom_hasArrow,
+	&amp;amp;.s_custom_hasArrowL {
+		section:last-child {
+			&amp;amp;.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom),
+			&amp;amp;.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) {
+				a[class*='carousel-control-'] {
+					// top: auto;
+					transform: none;
+				}
+				a.carousel-control-prev {
+					margin-bottom: var(--arrowWidth);
+				}
+			}
+		}
+	}
+	&amp;amp;.s_custom_hasArrow {
+		+ section {
+			margin-top: calc(var(--arrowWidth) * -1);
+			&amp;amp;::before {
+				height: calc(var(--arrowWidth));
+			}
+		}
+		.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'],
+		.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'] {
+			top: calc(100% - var(--arrowWidth) * 2.5);
+		}
+	}
+	&amp;amp;.s_custom_hasArrowL {
+		+ section {
+			margin-top: calc(var(--arrowL) * -1);
+			&amp;amp;::before {
+				height: calc(var(--arrowL));
+			}
+		}
+		.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'],
+		.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*='carousel-control-'] {
+			top: calc(100% - var(--arrowL) * 2.5);
+		}
+	}
+}
+//  -------------------------------------                   上下區塊，交疊效果                       -------------------------------------  //
+//  -----------最新消息 左邊帶圖消息  右邊列表沒帶圖  s_custom_newsSummary --------------  //
+.s_custom_dateLeft{
+  .s_blog_posts_post{
+    .card{
+      background-color:  transparent;
+      border:0;
+      border-bottom: 1px solid $borderColor;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      @include media-breakpoint-down(xs) {
+        flex-direction: column-reverse;
+      }
+    }
+    .card-body{
+      padding:0 0 30px ;
+      @include media-breakpoint-up(sm) {
+        width: calc(100% - 160px);
+        padding:20px;
+      }
+      .s_blog_posts_post_teaser{
+        @include clamp-2;
+      }
+    }
+    .card-footer{
+      padding:0 0 8px !important;
+      justify-content: flex-end !important;
+      @include media-breakpoint-up(sm) {
+        width: 160px;
+        padding:20px !important;
+        flex-direction: column-reverse;
+      }
+      .text-muted :first-child{
+        margin-right: 10px;
+        display: inline-block;
+        @include media-breakpoint-up(sm) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+//  -----------最新消息 左邊帶圖消息  右邊列表沒帶圖  s_custom_newsSummary end --------------  //
+//  -------------------------------------                   自訂輪播 - hover 背景漸變放大                       -------------------------------------  //
+#wrapwrap:not(.odoo-editor-editable) {
+    .s_custom_carouselHoverBgEffect {
+        .o_carousel_product_img_link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            transition: 20s linear;
+            &amp;gt;img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .o_carousel_product_card:hover {
+            .o_carousel_product_img_link {
+                transform: scale(2);
+            }
+        }
+        .o_carousel_product_card_body {
+            pointer-events: none;
+        }
+    }
+}
+.s_custom_carouselHoverBgEffect {
+    .o_carousel_product_card {
+        overflow: hidden;
+        &amp;amp;:hover {
+            &amp;amp;::before {
+                opacity: .5;
+            }
+            .card-footer::before {
+                opacity: 1;
+                transform: skewX(45deg) translateX(-50%);
+            }
+        }
+        &amp;amp;::before {
+            content: "";
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            opacity: .65;
+            pointer-events: none;
+            @include transition;
+        }
+    }
+    .o_carousel_product_img_link {
+        z-index: 1;
+    }
+    .o_carousel_product_card_body {
+        padding-top: 15%;
+        padding-bottom: 15%;
+        z-index: 2;
+    }
+    .card-s,
+    .card-header,
+    .card-footer,
+    .card-body {
+        background: none !important;
+        border: 0;
+    }
+    .card-header {
+        br {
+            display: none;
+        }
+    }
+    .card-body {
+        padding-top: 0;
+        &amp;gt;p {
+            color: var(--white);
+            @include clamp-3;
+            max-height: 3.1 * 18px * 1.7;
+        }
+    }
+    .card-footer {
+        padding: 6px 0;
+        &amp;amp;::before {
+            content: "";
+            width: 25px;
+            height: 8px;
+            border-right: 1px solid var(--white);
+            border-bottom: 1px solid var(--white);
+            display: block;
+            transform-origin: bottom right;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: skewX(45deg) translateX(-100%);
+            opacity: 0;
+            @include transition;
+        }
+    }
+}
+//  -------------------------------------                   自訂輪播 - hover 背景漸變放大                       -------------------------------------  //
+// ------------ footer 手機版開合選單 開始 links -------------//
+.o_footer{
+  .s_text_block{
+    &amp;gt;.container&amp;gt;.row{
+      &amp;gt;div[class*="col-"]:last-child{
+        @include media-breakpoint-up(md) {
+          order: -1;
+        }
+      }
+    }
+  }
+}
+.s_custom_footerTab{
+  .accordion{
+    .card{
+      border:0;
+      @include media-breakpoint-down(sm) {
+        .h4,.h5,.h6{
+          border-bottom:1px solid #5c5c5c;
+          margin-bottom: 0 !important;
+          padding-bottom:5px;
+          padding-top: 5px;
+        }
+      }
+      .card-header{
+        padding:0;
+        border-bottom:0;
+        margin-bottom: 0;
+        background-color:  transparent ;
+        color: var(--o-cc5-h5); //footer選單標題顏色
+        &amp;amp;.collapsed:before{
+          content: "\f107";
+        }
+        &amp;amp;::before{
+          content: "\f106";
+        }
+        &amp;amp;:hover{
+          color: var(--o-cc5-h5); //footer選單標題顏色
+          filter: none;
+        }
+      }
+      .card-body:first-child{
+        @include media-breakpoint-down(sm) {
+          padding:8px 10px;
+        }
+      }
+      .list-item{
+        a{
+          opacity: 0.7;
+          @include transition;
+          &amp;amp;:hover{
+            opacity: 1;
+            color:#fff;
+          }
+        }
+      }
+      .list-item +.list-item{
+        margin-top: 3px;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      display: flex;
+      margin-left: -15px;
+      margin-right: -15px;
+      .card{
+        flex: 1;
+        padding-left: 15px;
+        padding-right: 15px;
+        .card-header{
+          &amp;amp;::before{
+            display: none;
+          }
+        }
+        .collapse,
+        .collapsing{
+          display: block !important;
+        }
+      }
+      .card-body:first-child{
+        margin-top: 0;
+        padding:0;
+      }
+    }
+  }
+}
+// ------------ footer 手機版開合選單  Links 結束 -------------------//
+ </pre>
+                      <button class="btn btn-primary copy-scss-btn">複製 SCSS</button>
+                    </section>
+                    <style>
+@media(max-width: 1439px){:root{--header-font-size: var(--header-font-size) * 0.95 !important}}@media(max-width: 1365px){:root{--header-font-size: var(--header-font-size) * 0.89 !important}}header#top.o_header_affixed.o_header_is_scrolled .navbar-brand img{height:50px}@media(min-width: 992px){header#top.o_header_affixed.o_header_is_scrolled .dropdown-menu:not(.o_mega_menu){margin-top:21px !important}}header#top .navbar{padding:15px 0}@media(max-width: 991.98px){header#top .navbar{padding:10px 0}}header#top .navbar-brand.logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:end;-webkit-align-items:end;-ms-flex-align:end;align-items:end;margin-right:5px !important}header#top .o_no_autohide_item .font-weight-bold{font-weight:normal;font-size:15px !important}header#top .o_no_autohide_item .dropdown-menu a{font-size:16px}header#top #top_menu&gt;.nav-item&gt;a.nav-link{color:var(--o-color-5);padding:5px 15px;margin:0 5px;font-weight:600;position:relative;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}@media(max-width: 1439px){header#top #top_menu&gt;.nav-item&gt;a.nav-link{padding:5px 10px;margin:0 1px;font-size:17px}}header#top #top_menu&gt;.nav-item&gt;a.nav-link span{position:relative;z-index:2}header#top #top_menu&gt;.nav-item&gt;a.nav-link:hover{color:var(--o-color-1)}header#top #top_menu&gt;.nav-item.show&gt;a.nav-link,header#top #top_menu&gt;.nav-item.active&gt;a.nav-link{color:var(--o-color-1)}header#top #top_menu&gt;.nav-item.show&gt;a.nav-link:hover,header#top #top_menu&gt;.nav-item.active&gt;a.nav-link:hover{color:var(--o-color-1)}header#top #top_menu&gt;.nav-item.o_wsale_quote_cart{margin-left:0 !important;margin-right:0 !important}@media(min-width: 992px){header#top #top_menu&gt;.nav-item.o_wsale_quote_cart .nav-link,header#top #top_menu&gt;.nav-item.o_portal_header_user_dropdown .nav-link,header#top #top_menu&gt;.nav-item.addon_nav_searchbar .nav-link{padding:5px 10px;margin:0}}header#top #top_menu&gt;.nav-item.o_wsale_quote_cart .nav-link::after,header#top #top_menu&gt;.nav-item.o_portal_header_user_dropdown .nav-link::after,header#top #top_menu&gt;.nav-item.addon_nav_searchbar .nav-link::after{display:none}header#top #top_menu&gt;.nav-item.o_wsale_quote_cart .nav-link:hover,header#top #top_menu&gt;.nav-item.o_portal_header_user_dropdown .nav-link:hover,header#top #top_menu&gt;.nav-item.addon_nav_searchbar .nav-link:hover{color:var(--o-color-1)}header#top #top_menu&gt;.nav-item .dropdown-toggle::after{border:0}header#top #top_menu .dropdown-menu .dropdown-item,header#top #top_menu .dropdown-menu a.nav-link{font-size:17px;padding:8px 10px;color:var(--o-color-5);-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}header#top #top_menu .dropdown-menu .dropdown-item:hover,header#top #top_menu .dropdown-menu a.nav-link:hover{color:var(--o-color-1)}@media(min-width: 992px){header#top #top_menu .dropdown-menu:not(.o_mega_menu){padding:0;margin-top:26px}}@media(min-width: 992px){header#top #top_menu .dropdown-menu:not(.o_mega_menu)&gt;li+li{border-top:1px solid #ddd}}@media(min-width: 992px){header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item{-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}}@media(min-width: 992px){header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item.active{color:#fff !important;background-color:#35979c}}@media(max-width: 991.98px){header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item.active{background-color:rgba(0,0,0,0);color:#35979c !important}}header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item.active:hover{background-color:#35979c}@media(max-width: 991.98px){header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item.active:hover{background-color:rgba(0,0,0,0);color:#35979c !important}}@media(min-width: 992px){header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item:hover:not(.active){color:#fff !important;background-color:#35979c}}@media(max-width: 991.98px){header#top #top_menu .dropdown-menu:not(.o_mega_menu) .dropdown-item:hover:not(.active){background-color:rgba(0,0,0,0);color:#35979c !important}}@media(min-width: 992px){header#top #top_menu .addon_nav_searchbar.dropdown{position:static}}@media(min-width: 992px){header#top #top_menu .addon_nav_searchbar.dropdown&gt;.dropdown-menu{left:0;margin-top:0;padding-left:var(--container-pd-x) !important;padding-right:var(--container-pd-x) !important;background-color:#ddd;padding-top:16px !important;padding-bottom:16px !important}}@media(min-width: 992px){header#top #top_menu .addon_nav_searchbar.dropdown&gt;.dropdown-menu .o_searchbar_form{max-width:800px;margin:0 auto}}header#top .addon_nav_searchbar .dropdown-toggle&gt;.fa-search::before{font-size:calc(var(--header-font-size) + .2rem)}header#top .addon_nav_searchbar .dropdown-menu{padding:10px !important;border:1px solid rgba(0,0,0,.15) !important}@media(max-width: 991.98px){header#top .addon_nav_searchbar .dropdown-menu{padding:0 !important;border:0 !important}}header#top .addon_nav_searchbar .dropdown-menu .oe_search_button{padding:2px 10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}header#top .addon_nav_searchbar .dropdown-menu .oe_search_button .fa-search::before{-webkit-filter:brightness(10);filter:brightness(10);-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}header#top .addon_nav_searchbar .dropdown-menu .oe_search_button:hover{background-color:#42476d;border-color:#42476d}header#top .addon_nav_searchbar .dropdown-menu .oe_search_button:hover .fa-search{-webkit-filter:none;filter:none}header#top .addon_nav_searchbar .nav-link{line-height:1}header#top .js_language_selector{margin-top:0 !important}header#top .js_language_selector .dropdown-menu{right:0;left:auto;margin-top:8px;padding:0}header#top .js_language_selector .btn-outline-secondary{padding:0;color:var(--o-color-5)}header#top .js_language_selector .btn-outline-secondary::after{display:none}header#top .js_language_selector .btn-outline-secondary::before{content:"";font-family:"fontawesome";font-size:calc(var(--header-font-size) + .2rem);-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}header#top .js_language_selector .btn-outline-secondary img{margin-right:0;display:none}header#top .js_language_selector .btn-outline-secondary span.align-middle{display:none}header#top .js_language_selector:hover .btn-outline-secondary,header#top .js_language_selector.show .btn-outline-secondary{background-color:rgba(0,0,0,0)}header#top .js_language_selector:hover .btn-outline-secondary::before,header#top .js_language_selector.show .btn-outline-secondary::before{color:var(--o-color-1)}header#top .js_language_selector .js_change_lang img{display:none}header#top .js_language_selector .dropdown-menu .js_change_lang{font-size:17px}header#top .js_language_selector .dropdown-menu .js_change_lang.active{color:#fff !important}@media(max-width: 991.98px){.navbar-expand-lg&gt;.container{padding-left:var(--container-pd-x);padding-right:var(--container-pd-x)}}@media(min-width: 992px){header .navbar .dropdown-menu{max-height:75vh}}.navbar-toggler{width:30px;height:26px;position:relative;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.5s ease-in-out;transition:.5s ease-in-out;outline:0;border:0 !important;cursor:pointer;margin-left:10px !important;margin-right:0}@media(min-width: 375px){.navbar-toggler{width:28px;height:22px}}.navbar-toggler::before,.navbar-toggler::after{content:""}.navbar-toggler:focus{outline:0}.navbar-toggler .navbar-toggler-icon{background-image:none !important}.navbar-toggler::before,.navbar-toggler::after,.navbar-toggler .navbar-toggler-icon{display:block;position:absolute;height:2px;width:100%;background:#000;border-radius:9px;opacity:1;left:0;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;transition:.25s ease-in-out}.navbar-toggler::before{top:0}.navbar-toggler .navbar-toggler-icon{top:10px}@media(min-width: 375px){.navbar-toggler .navbar-toggler-icon{top:8px}}.navbar-toggler:after{top:20px}@media(min-width: 375px){.navbar-toggler:after{top:16px}}.navbar-toggler[aria-expanded=true]::before{top:12px;-webkit-transform:rotate(135deg);-ms-transform:rotate(135deg);transform:rotate(135deg)}@media(min-width: 375px){.navbar-toggler[aria-expanded=true]::before{top:10px}}.navbar-toggler[aria-expanded=true] .navbar-toggler-icon{opacity:0;left:-60px}.navbar-toggler[aria-expanded=true]:after{top:12px;-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);transform:rotate(-135deg)}@media(min-width: 375px){.navbar-toggler[aria-expanded=true]:after{top:10px}}@media(max-width: 991.98px){body.o_connected_user.scrolled header#top .navbar-collapse{top:70px;height:calc(100vh - (var(--o-we-toolbar-height) + 70px))}body.o_connected_user header#top .navbar-collapse{top:calc(var(--o-we-toolbar-height) + 80px);height:calc(100vh - (var(--o-we-toolbar-height) + 80px))}body:not(.o_connected_user).scrolled header#top .navbar-collapse{top:70px;height:calc(100vh - 70px)}body:not(.o_connected_user) header#top .navbar-collapse{top:80px;height:calc(100vh - 80px)}header#top .show #top_menu,header#top #top_menu{text-align:left}header#top .show #top_menu&gt;.nav-item.o_wsale_quote_cart,header#top #top_menu&gt;.nav-item.o_wsale_quote_cart{display:none !important}header#top .show #top_menu&gt;.nav-item.addon_nav_searchbar&gt;.dropdown-toggle,header#top #top_menu&gt;.nav-item.addon_nav_searchbar&gt;.dropdown-toggle{display:none}header#top .show #top_menu&gt;.nav-item.addon_nav_searchbar .dropdown-menu,header#top #top_menu&gt;.nav-item.addon_nav_searchbar .dropdown-menu{display:block !important;position:static;padding-top:10px !important;padding-bottom:10px !important;background-color:rgba(0,0,0,0) !important}header#top .show #top_menu&gt;.nav-item.show,header#top #top_menu&gt;.nav-item.show{padding-bottom:10px}header#top .show #top_menu&gt;.nav-item&gt;a.nav-link,header#top #top_menu&gt;.nav-item&gt;a.nav-link{padding:10px var(--container-pd-x);font-size:19px;font-weight:normal;margin:0}header#top .show #top_menu&gt;.nav-item.o_portal_header_user_dropdown&gt;a.nav-link.dropdown-toggle,header#top .show #top_menu&gt;.nav-item&gt;a.nav-link.dropdown-toggle,header#top #top_menu&gt;.nav-item.o_portal_header_user_dropdown&gt;a.nav-link.dropdown-toggle,header#top #top_menu&gt;.nav-item&gt;a.nav-link.dropdown-toggle{position:relative;padding-right:calc(15px + var(--container-pd-x))}header#top .show #top_menu&gt;.nav-item.o_portal_header_user_dropdown&gt;a.nav-link.dropdown-toggle::after,header#top .show #top_menu&gt;.nav-item&gt;a.nav-link.dropdown-toggle::after,header#top #top_menu&gt;.nav-item.o_portal_header_user_dropdown&gt;a.nav-link.dropdown-toggle::after,header#top #top_menu&gt;.nav-item&gt;a.nav-link.dropdown-toggle::after{content:"";font-family:"fontawesome";position:absolute;right:var(--container-pd-x);top:12px;display:block}header#top .show #top_menu&gt;.nav-item.o_portal_header_user_dropdown&gt;a.nav-link.dropdown-toggle[aria-expanded=true]::after,header#top .show #top_menu&gt;.nav-item&gt;a.nav-link.dropdown-toggle[aria-expanded=true]::after,header#top #top_menu&gt;.nav-item.o_portal_header_user_dropdown&gt;a.nav-link.dropdown-toggle[aria-expanded=true]::after,header#top #top_menu&gt;.nav-item&gt;a.nav-link.dropdown-toggle[aria-expanded=true]::after{content:""}header#top .show #top_menu .dropdown-menu,header#top #top_menu .dropdown-menu{border:0;padding:5px 0;background-color:#f5f5f5}header#top .show #top_menu .dropdown-menu .dropdown-item,header#top #top_menu .dropdown-menu .dropdown-item{padding:5px 15px;font-size:16px}header#top .show #top_menu .dropdown-menu:not(.o_mega_menu),header#top #top_menu .dropdown-menu:not(.o_mega_menu){margin:0 var(--container-pd-x)}header#top .show #top_menu .o_mega_menu .container,header#top #top_menu .o_mega_menu .container{padding-left:var(--container-pd-x);padding-right:var(--container-pd-x)}header#top .navbar-collapse{position:fixed;width:100%;left:0;background:#fff;z-index:999;opacity:0;visibility:hidden;max-height:none;-webkit-transition:opacity .5s ease-in-out,visibility .5s,-webkit-transform .5s;transition:opacity .5s ease-in-out,visibility .5s,-webkit-transform .5s;transition:opacity .5s ease-in-out,transform .5s,visibility .5s;transition:opacity .5s ease-in-out,transform .5s,visibility .5s,-webkit-transform .5s}header#top .navbar-collapse.show{opacity:1;visibility:visible;max-height:none}header#top .navbar-collapse.collapsing{opacity:0;visibility:hidden;-webkit-transition:opacity .2s ease-in-out,visibility .2s,-webkit-transform .2s;transition:opacity .2s ease-in-out,visibility .2s,-webkit-transform .2s;transition:opacity .2s ease-in-out,transform .2s,visibility .2s;transition:opacity .2s ease-in-out,transform .2s,visibility .2s,-webkit-transform .2s}header#top .js_language_selector{padding:0 var(--container-pd-x)}header#top .js_language_selector .dropdown-toggle{display:none}header#top .js_language_selector .dropdown-menu{position:static;float:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:5px 0;border:0;border-radius:0;margin-bottom:20px !important;gap:5px}header#top .js_language_selector .dropdown-menu .dropdown-item{-webkit-box-flex:1;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:120px;width:auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;white-space:nowrap;text-align:center;border-radius:var(--btn-border-radius-sm);border:1px solid #ddd}#navbar_subnav{display:block !important;margin-left:auto}#navbar_subnav&gt;.navbar-nav .o_wsale_quote_cart.nav-item{display:block !important}.oe_structure_solo .btn_cta{padding:5px 8px;font-size:15px}body.overflow-hidden{position:fixed;width:100%;overflow:hidden}body.overflow-hidden main,body.overflow-hidden footer{pointer-events:none}}@media(max-width: 450px){.oe_structure_solo .btn_cta{padding:5px;font-size:12px}}
+/* 下方只為樣板使用隱藏,實際複製的scss 不會隱藏 */
+header#top .oe_structure_solo{display: none !important}                        
+.s_custom_bannerGeometricTriangle .carousel-item::before{content:"";background:#fff;background:linear-gradient(121deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 53%, rgb(255, 255, 255) 53%, rgb(255, 255, 255) 88%, rgb(231, 231, 231) 88%, rgb(231, 231, 231) 96%, var(--o-color-1) 96%, var(--o-color-1) 100%);position:absolute;top:0;left:0;right:0;bottom:0}@media(max-width: 991.98px){.s_custom_bannerGeometricTriangle .carousel-item::before{background:linear-gradient(121deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 53%, rgba(255, 255, 255, 0.5) 53%, rgba(255, 255, 255, 0.5) 88%, rgb(231, 231, 231) 88%, rgb(231, 231, 231) 96%, var(--o-color-1) 96%, var(--o-color-1) 100%)}}.s_custom_bannerGeometricTriangle .carousel-item&gt;.container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;min-height:80vh !important}.s_custom_bannerGeometricTriangle .carousel-item&gt;.container::before,.s_custom_bannerGeometricTriangle .carousel-item&gt;.container::after{content:none !important}.s_custom_bannerGeometricTriangle .carousel-item&gt;.container&gt;.row{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;position:static}@media(max-width: 991.98px){.s_custom_bannerGeometricTriangle .carousel-item&gt;.container&gt;.row{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap}}@media(max-width: 767.98px){.s_custom_bannerGeometricTriangle .carousel-item&gt;.container&gt;.row{height:100%;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}}.s_custom_bannerGeometricTriangle .carousel-item .carousel-content{position:relative;z-index:2}@media(max-width: 767.98px){.s_custom_bannerGeometricTriangle .carousel-item .carousel-content{width:100%}}.s_custom_bannerGeometricTriangle .carousel-item .carousel-img{position:absolute;width:43%;top:50%;left:55%;-webkit-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);transform:translate(-50%, -50%);margin-top:83px;z-index:1}@media(max-width: 991.98px){.s_custom_bannerGeometricTriangle .carousel-item .carousel-img{width:50%;margin:0;position:static;-webkit-transform:none;-ms-transform:none;transform:none}}@media(max-width: 767.98px){.s_custom_bannerGeometricTriangle .carousel-item .carousel-img{width:60%;-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1;padding-bottom:0 !important}}
+.s_custom_iconCardHorizontal .o_carousel_product_card{padding:0 !important;border-color:rgba(0,0,0,0) !important;background-color:unset !important}.s_custom_iconCardHorizontal .o_carousel_product_card:hover{border-color:rgba(0,0,0,0) !important}.s_custom_iconCardHorizontal .o_carousel_product_card::after{content:none}.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row{-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;gap:10px 30px;margin:0}@media(max-width: 991.98px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row{gap:10px 0}}.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;div.icon-content{padding:10px !important}.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body{padding-top:0;padding-left:0 !important;padding-right:0 !important}@media(max-width: 767.98px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body{text-align:left}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-1{-webkit-box-flex:0;-webkit-flex:0 0 calc(8.33333333% - 30px);-ms-flex:0 0 calc(8.33333333% - 30px);flex:0 0 calc(8.33333333% - 30px);max-width:calc(8.33333333% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-2{-webkit-box-flex:0;-webkit-flex:0 0 calc(16.66666667% - 30px);-ms-flex:0 0 calc(16.66666667% - 30px);flex:0 0 calc(16.66666667% - 30px);max-width:calc(16.66666667% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-3{-webkit-box-flex:0;-webkit-flex:0 0 calc(25% - 30px);-ms-flex:0 0 calc(25% - 30px);flex:0 0 calc(25% - 30px);max-width:calc(25% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-4{-webkit-box-flex:0;-webkit-flex:0 0 calc(33.33333333% - 30px);-ms-flex:0 0 calc(33.33333333% - 30px);flex:0 0 calc(33.33333333% - 30px);max-width:calc(33.33333333% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-5{-webkit-box-flex:0;-webkit-flex:0 0 calc(41.66666667% - 30px);-ms-flex:0 0 calc(41.66666667% - 30px);flex:0 0 calc(41.66666667% - 30px);max-width:calc(41.66666667% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-6{-webkit-box-flex:0;-webkit-flex:0 0 calc(50% - 30px);-ms-flex:0 0 calc(50% - 30px);flex:0 0 calc(50% - 30px);max-width:calc(50% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-7{-webkit-box-flex:0;-webkit-flex:0 0 calc(58.33333333% - 30px);-ms-flex:0 0 calc(58.33333333% - 30px);flex:0 0 calc(58.33333333% - 30px);max-width:calc(58.33333333% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-8{-webkit-box-flex:0;-webkit-flex:0 0 calc(66.66666667% - 30px);-ms-flex:0 0 calc(66.66666667% - 30px);flex:0 0 calc(66.66666667% - 30px);max-width:calc(66.66666667% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-9{-webkit-box-flex:0;-webkit-flex:0 0 calc(75% - 30px);-ms-flex:0 0 calc(75% - 30px);flex:0 0 calc(75% - 30px);max-width:calc(75% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-10{-webkit-box-flex:0;-webkit-flex:0 0 calc(83.33333333% - 30px);-ms-flex:0 0 calc(83.33333333% - 30px);flex:0 0 calc(83.33333333% - 30px);max-width:calc(83.33333333% - 30px)}}@media(min-width: 992px){.s_custom_iconCardHorizontal .o_carousel_product_card&gt;.row&gt;.o_carousel_product_card_body.col-lg-11{-webkit-box-flex:0;-webkit-flex:0 0 calc(91.66666667% - 30px);-ms-flex:0 0 calc(91.66666667% - 30px);flex:0 0 calc(91.66666667% - 30px);max-width:calc(91.66666667% - 30px)}}.s_custom_iconCardHorizontal .card-title&gt;*{margin-bottom:0}.s_custom_iconCardHorizontal.s_custom_1x1 .o_carousel_product_card&gt;.row&gt;.icon-content{aspect-ratio:1/1}@media(max-width: 991px){.s_custom_iconCardHorizontal.s_custom_1x1 .o_carousel_product_card&gt;.row&gt;.icon-content{-webkit-box-flex:0;-webkit-flex:0 0 130px;-ms-flex:0 0 130px;flex:0 0 130px}}
+  :root{--upperSection: 150px}@media(max-width: 767.98px){:root{--upperSection: 30vh}}@media(max-width: 450px){:root{--upperSection: 10vh}}.s_custom_upperNext:not(.s_column_layout):not(.s_vertical_layout)&gt;[class*=container]{z-index:2}.s_custom_upperNext section:last-child{z-index:2}.s_custom_upperNext .o_carousel_product_img_link{margin:auto 15px 15px;padding:0 !important}.s_custom_upperNext .o_carousel_product_card_body{padding:15px 15px 0 !important;-webkit-flex-wrap:inherit !important;-ms-flex-wrap:inherit !important;flex-wrap:inherit !important}.s_custom_upperNext .o_carousel_product_card_body .o_carousel_product_img_link{margin:auto 0 15px}.s_custom_upperNext .card-title{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2*var(--h5)*1.5)}.s_custom_upperNext .o_carousel_product_card_alias{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:15px}.s_custom_upperNext+section{margin-top:calc(var(--upperSection)*-1);z-index:1}.s_custom_upperNext+section::before{content:"";display:block;height:calc(var(--upperSection));background-color:inherit}.s_custom_upperNext.s_custom_hasArrow section:last-child.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-],.s_custom_upperNext.s_custom_hasArrow section:last-child.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-],.s_custom_upperNext.s_custom_hasArrowL section:last-child.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-],.s_custom_upperNext.s_custom_hasArrowL section:last-child.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-]{-webkit-transform:none;-ms-transform:none;transform:none}.s_custom_upperNext.s_custom_hasArrow section:last-child.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a.carousel-control-prev,.s_custom_upperNext.s_custom_hasArrow section:last-child.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a.carousel-control-prev,.s_custom_upperNext.s_custom_hasArrowL section:last-child.s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a.carousel-control-prev,.s_custom_upperNext.s_custom_hasArrowL section:last-child.s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a.carousel-control-prev{margin-bottom:var(--arrowWidth)}.s_custom_upperNext.s_custom_hasArrow+section{margin-top:calc(var(--arrowWidth)*-1)}.s_custom_upperNext.s_custom_hasArrow+section::before{height:calc(var(--arrowWidth))}.s_custom_upperNext.s_custom_hasArrow .s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-],.s_custom_upperNext.s_custom_hasArrow .s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-]{top:calc(100% - var(--arrowWidth)*2.5)}.s_custom_upperNext.s_custom_hasArrowL+section{margin-top:calc(var(--arrowL)*-1)}.s_custom_upperNext.s_custom_hasArrowL+section::before{height:calc(var(--arrowL))}.s_custom_upperNext.s_custom_hasArrowL .s_custom_arrowLeft:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-],.s_custom_upperNext.s_custom_hasArrowL .s_custom_arrowRight:not(.s_custom_arrowTop):not(.s_custom_arrowBottom) a[class*=carousel-control-]{top:calc(100% - var(--arrowL)*2.5)} 
+:root{--font-size-base: 1rem}.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card{background-color:rgba(0,0,0,0);border:0;border-bottom:1px solid #f1f1f1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse}@media(max-width: 575.98px){.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-body{padding:0 0 30px}@media(min-width: 576px){.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-body{width:calc(100% - 160px);padding:20px}}.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-body .s_blog_posts_post_teaser{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2*var(--font-size-base)*1.5)}.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-footer{padding:0 0 8px !important;-webkit-box-pack:end !important;-webkit-justify-content:flex-end !important;-ms-flex-pack:end !important;justify-content:flex-end !important}@media(min-width: 576px){.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-footer{width:160px;padding:20px !important;-webkit-box-orient:vertical;-webkit-box-direction:reverse;-webkit-flex-direction:column-reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}}.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-footer .text-muted :first-child{margin-right:10px;display:inline-block}@media(min-width: 576px){.s_custom_newsSummary.s_custom_dateLeft .s_blog_posts_post .card-footer .text-muted :first-child{margin-bottom:10px}}
+#wrapwrap:not(.odoo-editor-editable) .s_custom_carouselHoverBgEffect .o_carousel_product_img_link{position:absolute;top:0;left:0;right:0;bottom:0;z-index:0;-webkit-transition:20s linear;transition:20s linear}#wrapwrap:not(.odoo-editor-editable) .s_custom_carouselHoverBgEffect .o_carousel_product_img_link&gt;img{width:100%;height:100%;-o-object-fit:cover;object-fit:cover}#wrapwrap:not(.odoo-editor-editable) .s_custom_carouselHoverBgEffect .o_carousel_product_card:hover .o_carousel_product_img_link{-webkit-transform:scale(2);-ms-transform:scale(2);transform:scale(2)}#wrapwrap:not(.odoo-editor-editable) .s_custom_carouselHoverBgEffect .o_carousel_product_card_body{pointer-events:none}.s_custom_carouselHoverBgEffect .o_carousel_product_card{overflow:hidden}.s_custom_carouselHoverBgEffect .o_carousel_product_card:hover::before{opacity:.5}.s_custom_carouselHoverBgEffect .o_carousel_product_card:hover .card-footer::before{opacity:1;-webkit-transform:skewX(45deg) translateX(-50%);-ms-transform:skewX(45deg) translateX(-50%);transform:skewX(45deg) translateX(-50%)}.s_custom_carouselHoverBgEffect .o_carousel_product_card::before{content:"";background-color:#000;position:absolute;top:0;left:0;right:0;bottom:0;z-index:1;opacity:.65;pointer-events:none;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.s_custom_carouselHoverBgEffect .o_carousel_product_img_link{z-index:1}.s_custom_carouselHoverBgEffect .o_carousel_product_card_body{padding-top:15%;padding-bottom:15%;z-index:2}.s_custom_carouselHoverBgEffect .card-s,.s_custom_carouselHoverBgEffect .card-header,.s_custom_carouselHoverBgEffect .card-footer,.s_custom_carouselHoverBgEffect .card-body{background:none !important;border:0}.s_custom_carouselHoverBgEffect .card-header br{display:none}.s_custom_carouselHoverBgEffect .card-body{padding-top:0}.s_custom_carouselHoverBgEffect .card-body&gt;p{color:var(--white);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;max-height:5.23125rem;max-height:94.86px}.s_custom_carouselHoverBgEffect .card-footer{padding:6px 0}.s_custom_carouselHoverBgEffect .card-footer::before{content:"";width:25px;height:8px;border-right:1px solid var(--white);border-bottom:1px solid var(--white);display:block;-webkit-transform-origin:bottom right;-ms-transform-origin:bottom right;transform-origin:bottom right;position:absolute;bottom:0;left:50%;-webkit-transform:skewX(45deg) translateX(-100%);-ms-transform:skewX(45deg) translateX(-100%);transform:skewX(45deg) translateX(-100%);opacity:0;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}
+@media(min-width: 768px){.o_footer .s_text_block&gt;.container&gt;.row&gt;div[class*=col-]:last-child{-webkit-box-ordinal-group:0;-webkit-order:-1;-ms-flex-order:-1;order:-1}}.s_custom_footerTab .accordion .card{border:0}@media(max-width: 767.98px){.s_custom_footerTab .accordion .card .h4,.s_custom_footerTab .accordion .card .h5,.s_custom_footerTab .accordion .card .h6{border-bottom:1px solid #5c5c5c;margin-bottom:0 !important;padding-bottom:5px;padding-top:5px}}.s_custom_footerTab .accordion .card .card-header{padding:0;border-bottom:0;margin-bottom:0;background-color:rgba(0,0,0,0);color:var(--o-cc5-h5)}.s_custom_footerTab .accordion .card .card-header.collapsed:before{content:""}.s_custom_footerTab .accordion .card .card-header::before{content:""}.s_custom_footerTab .accordion .card .card-header:hover{color:var(--o-cc5-h5);-webkit-filter:none;filter:none}@media(max-width: 767.98px){.s_custom_footerTab .accordion .card .card-body:first-child{padding:8px 10px}}.s_custom_footerTab .accordion .card .list-item a{opacity:.7;-webkit-transition:all .5s ease-in-out;transition:all .5s ease-in-out}.s_custom_footerTab .accordion .card .list-item a:hover{opacity:1;color:#fff}.s_custom_footerTab .accordion .card .list-item+.list-item{margin-top:3px}@media(min-width: 768px){.s_custom_footerTab .accordion{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-left:-15px;margin-right:-15px}.s_custom_footerTab .accordion .card{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;padding-left:15px;padding-right:15px}.s_custom_footerTab .accordion .card .card-header::before{display:none}.s_custom_footerTab .accordion .card .collapse,.s_custom_footerTab .accordion .card .collapsing{display:block !important}.s_custom_footerTab .accordion .card-body:first-child{margin-top:0;padding:0}}
+  </style>
+                  </div>
+                </section>
+                <div class="s_text pt8" data-snippet="s_text" data-name="Text">
+                  <h6>
+                    <font class="text-o-color-5">整組xml (html 貼進去之後! 記得複製scss 到你的scss 結構裡面，貼在系統預設的後面)</font>
+                    <br/>
+                    <font style="color: rgb(255, 0, 0);">最後請刪除整個區塊</font>
+                  </h6>
+                </div>
+                <section class="s_embed_code o_colored_level text-center pt24 pb16" data-snippet="s_embed_code" style="background-image: none;" data-name="Custom JS控制複製主程式">
+                  <div class="s_embed_code_embedded o_not_editable container">
+                    <div class="text-monospace pt8 text-whit bg-dark o_default_snippet_text">
+                      <h4 class="o_default_snippet_text">不要變更裡面的任何內容</h4>
+                      <h6>
+                        <span style="color:red">為了複製存在，最後請刪除此區塊</span>
+                      </h6>
+                    </div>
+                    <script class="o_default_snippet_text">
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".copy-btn").forEach(button =&gt; {
+        button.addEventListener("click", function () {
+            let parentSection = this.closest("section");
+            let targetSection = parentSection?.nextElementSibling;
+            if (targetSection &amp;&amp; targetSection.tagName.toLowerCase() === "section") {
+                // **克隆 targetSection**
+                let clonedSection = targetSection.cloneNode(true);
+                // **移除 .dynamic_snippet_template 內的內容**
+                clonedSection.querySelectorAll(".dynamic_snippet_template").forEach(el =&gt; {
+                    while (el.firstChild) {
+                        el.removeChild(el.firstChild); // 清空所有子元素
+                    }
+                });
+                // **使用 XMLSerializer 轉換為 XML 格式**
+                let serializer = new XMLSerializer();
+                let xmlContent = serializer.serializeToString(clonedSection);
+                // **確保 XML 格式正確**
+                xmlContent = xmlContent.replace(/xmlns="http:\/\/www.w3.org\/1999\/xhtml"/g, ""); // 移除 xmlns
+                xmlContent = xmlContent.replace(/&lt;br&gt;/g, "&lt;br/&gt;"); // 修正 &lt;br&gt; 為自閉合標籤
+                xmlContent = xmlContent.replace(/&lt;img([^&gt;]*?)\/{2,}&gt;/g, "&lt;img$1/&gt;"); // 修正 &lt;img&gt;，確保只有一個 /
+                // **創建隱藏的 textarea 來存放 XML 並複製**
+                let textarea = document.createElement("textarea");
+                textarea.value = xmlContent;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                document.body.removeChild(textarea);
+                alert("已成功複製 XML 格式的 HTML 區塊！");
+            } else {
+                alert("找不到可複製的區塊！");
+            }
+        });
+    });
+    // 新增複製 SCSS 的功能
+    document.querySelectorAll(".copy-scss-btn").forEach(button =&gt; {
+    button.addEventListener("click", function () {
+        let parentSection = this.closest("section"); // 找到按鈕所在的 section
+        let scssElement = parentSection?.querySelector("#scss-code"); // 在該 section 內尋找 scss 代碼
+        if (scssElement) {
+            let scssContent = scssElement.textContent;
+            let textarea = document.createElement("textarea");
+            textarea.value = scssContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            alert("已成功複製 SCSS 代碼！");
+        } else {
+            alert("找不到 SCSS 代碼區塊！");
+        }
+    });
+});
+});
+</script>
+                  </div>
+                </section>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_carousel_wrapper o_full_screen_height s_custom_bannerGeometricTriangle" data-vxml="001" data-snippet="s_carousel" data-name="Carousel" data-custom-name="bannerGeometricTriangle" style="">
+        <div class="s_carousel s_carousel_default carousel slide pointer-event" data-interval="10000" data-ride="carousel" data-pause="false" id="myCarousel1733819452549" style="background-image: none;">
+          <ol class="carousel-indicators o_we_no_overlay">
+            <li data-target="#myCarousel1733819452549" data-slide-to="0" class="active">
+            </li>
+            <li data-target="#myCarousel1733819452549" data-slide-to="1">
+            </li>
+            <li data-target="#myCarousel1733819452549" data-slide-to="2">
+          </li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/1828-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip505277" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip89252">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-3 offset-lg-9" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <h2 style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip976342">Banner 01</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip415901" style="text-align: left;"><a href="/" class="btn btn-primary mb-2" data-original-title="" title="">Start your journey</a>&amp;nbsp;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1832-dee70335/preview_square.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip989869" data-original-id="1817" data-original-src="/web/image/1817-dee70335/preview_square.png" data-mimetype="image/png" data-resize-width="690"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1829-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip505277" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip89252">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-4" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <h2 style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip976342">Banner 02</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip415901" style="text-align: left;"><a href="/" class="btn btn-primary mb-2" data-original-title="" title="">Start your journey</a>&amp;nbsp;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1833-dee70335/preview_square.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip989869" data-original-id="1817" data-original-src="/web/image/1817-dee70335/preview_square.png" data-mimetype="image/png" data-resize-width="690"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item pt96 pb96 o_colored_level oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1830-c4b41a2f/preview_bg.jpg&quot;);" data-name="Slide" data-original-title="" title="" aria-describedby="tooltip505277" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920">
+              <div class="oe_unremovable container">
+                <div class="row content" data-original-title="" title="" aria-describedby="tooltip89252">
+                  <div class="carousel-content text-center pt48 pb40 o_colored_level col-lg-3 offset-lg-9" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <h2 style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip976342">Banner 03</h2>
+                    <div class="s_hr pt8 pb24" data-snippet="s_hr" data-name="Separator">
+                      <hr class="mx-auto w-100" style="border-top-width: 1px; border-top-style: solid;"/>
+                    </div>
+                    <p style="text-align: left;">Storytelling is powerful.<br/> It draws readers in and engages them.</p>
+                    <p data-original-title="" title="" aria-describedby="tooltip415901" style="text-align: left;"><a href="/" class="btn btn-primary mb-2" data-original-title="" title="">Start your journey</a>&amp;nbsp;<br/></p>
+                  </div>
+                  <div class="carousel-img text-center pb40 o_colored_level col-lg-12 pt0" data-original-title="" title="" aria-describedby="tooltip470638">
+                    <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/1831-dee70335/preview_square.png" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip989869" data-original-id="1817" data-original-src="/web/image/1817-dee70335/preview_square.png" data-mimetype="image/png" data-resize-width="690"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev o_not_editable o_we_no_overlay" data-slide="prev" role="img" aria-label="Previous" title="Previous" href="#myCarousel1733819452549">
+            <span class="carousel-control-prev-icon"/>
+            <span class="sr-only o_default_snippet_text">Previous</span>
+          </a>
+          <a class="carousel-control-next o_not_editable o_we_no_overlay" data-slide="next" role="img" aria-label="Next" title="Next" href="#myCarousel1733819452549">
+            <span class="carousel-control-next-icon"/>
+            <span class="sr-only o_default_snippet_text">Next</span>
+          </a>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb72 pt80" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+              <div class="container s_allow_columns">
+                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
+                </h6>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
+              <div class="s_allow_columns container">
+                <h2>
+                  <strong>Contrary to popular belief</strong>
+                  <br/>
+                </h2>
+              </div>
+            </section>
+            <section data-snippet="s_static_snippet" class="s_static_snippet o_colored_level pb32 pt32 s_custom_iconCardHorizontal s_custom_1x1" data-name="Static Snippet" data-staticsnippet-template="horizontal" data-custom-name="iconCardHorizontal 1x1" style="background-image: none;">
+              <div class="container" data-original-title="" title="" aria-describedby="tooltip515079">
+                <div class="static_snippet_template s_product_product_horizontal">
+                  <div class="row">
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content" style="background-color: rgb(237, 237, 237) !important;">
+                            <img class="img img-fluid mx-auto" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                            <div>
+                              <div class="card-title">
+                                <h4><font class="text-o-color-1">L</font>ong established fact
+                                </h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip116803">指定 icon 比例 1:1 (正方形/正圓形)<br/><strong>增加</strong>&amp;nbsp;<u>自訂樣式 : 1x1</u><br/></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content rounded" style="background-color: rgb(237, 237, 237) !important; border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                            <div>
+                              <div class="card-title">
+                                <h4><font class="text-o-color-1">C</font>ontrary to popular belief&amp;nbsp;<br/></h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip116803">Web page editors now use Lorem Ipsum as their default model text,&amp;nbsp;readable content of a page when looking at its layout.<br/></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content rounded" style="background-color: rgb(237, 237, 237) !important; border-radius: 150px !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                            <div>
+                              <div class="card-title">
+                                <h4><font class="text-o-color-1">S</font>imply random text&amp;nbsp;<br/></h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip116803">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br/></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-lg-6 pt16 pb16">
+                      <div class="o_carousel_product_card card-s bg-transparent w-100 p-3" data-original-title="" title="" aria-describedby="tooltip664592">
+                        <div class="row h-100">
+                          <div class="position-static o_colored_level col-lg-2 overflow-hidden icon-content" style="background-color: rgb(237, 237, 237) !important;">
+                            <img class="img img-fluid mx-auto rounded-circle" src="/web/image/1834-a5acc51b/demo-icon.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip987083" data-original-id="1834" data-original-src="/web/image/1834-a5acc51b/demo-icon.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                          </div>
+                          <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
+                            <div>
+                              <div class="card-title">
+                                <h4><font class="text-o-color-1">M</font>any variations of passages&amp;nbsp;<br/></h4>
+                              </div>
+                              <div class="mb-2">
+                                <p data-original-title="" title="" aria-describedby="tooltip116803">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
+              <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip772807">
+                <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip581929">
+                  <a href="#" class="btn btn-primary" data-original-title="" title="">Learn more</a>
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt80 parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb0 o_auto_screen_height o_cc o_cc1 s_custom_upperNext s_custom_fullContainer s_custom_hasArrowL" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" data-scroll-background-ratio="1" data-custom-name="upperNext fullContainer hasArrowL" data-original-title="" title="" aria-describedby="tooltip788295" style="background-image: none;">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/1839-c4b41a2f/preview_bg.jpg&quot;); background-position: 44.8% 100%; background-color: rgb(18, 18, 18) !important;" data-original-id="1816" data-original-src="/web/image/1816-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920"/>
+        <div class="col-wrapper container-fluid">
+          <div class="row d-flex align-items-stretch" data-original-title="" title="" aria-describedby="tooltip315361">
+            <div class="s_col_no_bgcolor col-left col-lg-8 offset-lg-2">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section class="s_text_image o_colored_level pt0 s_custom_titleUnderLine pb32" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-custom-name="titleUnderLine" data-original-title="" title="" aria-describedby="tooltip462343">
+                  <div class="container">
+                    <div class="row align-items-center" data-original-title="" title="" aria-describedby="tooltip555296">
+                      <div class="pt16 pb16 o_colored_level col-lg-7" data-original-title="" title="" aria-describedby="tooltip151679">
+                        <h2 class="mb-4">Products<br/></h2>
+                        <p class="mb-0">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.<br/></p>
+                      </div>
+                      <div class="pt16 o_colored_level offset-lg-1 col-lg-3 pb0" data-original-title="" title="" aria-describedby="tooltip151679">
+                        <p data-original-title="" title="" aria-describedby="tooltip450039" class="text-md-right">
+                          <a href="#" class="btn btn-primary mb-2" data-original-title="" title="">Learn more</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-10">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+                <section data-snippet="s_dynamic_snippet_products" class="s_dynamic_snippet_products s_dynamic o_colored_level pt0 pb0 s_product_product_borderless_1 o_cc o_cc1 dingL s_custom_products01 s_custom_titleUp s_custom_nameHoverUnderLine s_custom_arrowRight s_custom_arrowL s_custom_arrowNoSeparate s_custom_arrowNoGap s_custom_noGap s_custom_scaleL s_custom_fullContainer s_custom_default o_dynamic_empty" data-name="Products" data-filter-id="5" data-template-key="website_sale.dynamic_filter_template_product_product_borderless_1" data-product-category-id="all" data-number-of-elements="4" data-number-of-elements-small-devices="1" data-number-of-records="16" data-carousel-interval="5000000" data-custom-name="products01 titleUp nameHoverUnderLine arrowRight arrowL arrowNoSeparate arrowNoGap noGap scaleL fullContainer default" style="background-image: none; background-color: rgba(255, 0, 0, 0) !important;">
+                  <div class="o_not_editable container-fluid">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb0 pt112" data-name="Vertical Layout" data-original-title="" title="" aria-describedby="tooltip93617" data-custom-name="" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty" data-editor-message="拖曳區塊到這裡">
+            <section class="s_text_block o_colored_level pt0 pb0 o_cc o_cc1 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" data-custom-name="titleUnderLine" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h2 style="text-align: left;">
+                  <strong>Customized carousel</strong>
+                  <br/>
+                </h2>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 o_cc o_cc1 pt0" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+              <div class="s_allow_columns container">
+                <h6 style="text-align: left;">Hover background image is clearly enlarged&amp;nbsp;<br/>
+                </h6>
+              </div>
+            </section>
+            <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
+              <div class="container s_allow_columns" data-original-title="" title="" aria-describedby="tooltip772807">
+                <p style="text-align: left;" data-original-title="" title="" aria-describedby="tooltip581929">
+                  <a href="#" class="btn btn-primary" data-original-title="" title="">Learn more</a>
+                </p>
+              </div>
+            </section>
+            <section data-snippet="s_static_carousel" class="s_static_carousel o_colored_level pt0 pb88 o_cc o_cc4 s_custom_carouselHoverBgEffect s_custom_arrowTop s_custom_arrowRight s_custom_default" data-name="Static Carousel" data-number-of-elements="3" data-number-of-elements-small-devices="1" data-staticarousel-template="default" data-number-desktop="3" data-original-title="" title="" aria-describedby="tooltip531539" data-custom-name="carouselHoverBgEffect arrowTop arrowRight default" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
+              <div class="container" data-original-title="" title="" aria-describedby="tooltip825838">
+                <div class="s_carousel carousel slide static_snippet_template s_product_product_borderless_1 pointer-event" data-interval="10000" data-ride="carousel" id="myCarousel1733814994253">
+                  <div class="content oe_unremovable"/>
+                  <div class="carousel-inner">
+                    <div class="carousel-item o_colored_level active" data-name="Slide" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip652016">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3" data-original-title="" title="" aria-describedby="tooltip793601">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2367-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip613733" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip981403" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 01</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text o_default_snippet_text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2368-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip767975" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip953583" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 02</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et viverra augue, a aliquam mi. Fusce eu sem sed erat rutrum vulputate. Nam id purus auctor tortor posuere bibendum. Vestibulum vehicula diam ac commodo cursus. Sed eget gravida nibh. Proin cursus ultrices dolor, a condimentum massa egestas in. Integer ac feugiat sem, a consequat tortor.
+                                          <br/>
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4" data-original-title="" title="" aria-describedby="tooltip849389">
+                            <div class="o_carousel_product_card w-100 card-s p-3" data-original-title="" title="" aria-describedby="tooltip304218">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2370-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item o_colored_level" data-name="Slide" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip652016">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2375-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2376-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2373-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-is-image-link-open-popup="false" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item o_colored_level" data-name="Slide" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip652016">
+                      <div class="static_snippet_template s_product_product_borderless_1" data-col="4" data-col-sm="1">
+                        <div class="row my-4 s_col_no_resize">
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2380-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex flex-grow-0 flex-shrink-0 o_colored_level col-4">
+                            <div class="o_carousel_product_card w-100 card-s p-3">
+                              <a class="o_carousel_product_img_link o_dynamic_product_hovered" href="#" data-original-title="" title="">
+                                <img class="o_carousel_product_card_img_top card-img-top" src="/web/image/2381-5c67ccff/image_1024.jpg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip87512" data-original-id="1893" data-original-src="/web/image/1893-5c67ccff/image_1024.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
+                              </a>
+                              <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
+                                <div>
+                                  <div class="mt-2">
+                                    <div class="s_card card w-100" data-snippet="s_card" data-name="Card" style="background-color: rgba(255, 0, 0, 0) !important;">
+                                      <p class="card-header o_default_snippet_text">
+                                        <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
+                                        <br/>
+                                      </p>
+                                      <h4 class="card-header" style="text-align: center;">
+                                        <strong>
+                                          <font class="text-white">Feature title 03</font>
+                                        </strong>
+                                      </h4>
+                                      <div class="card-body">
+                                        <p class="card-text">
+                                          A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
+                                        </p>
+                                      </div>
+                                      <div class="card-footer">
+            </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="prev" data-target="#myCarousel1733814994253">
+                    <span class="fa fa-chevron-circle-left fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Previous</span>
+                  </a>
+                  <a class="carousel-control-next o_not_editable carousel-control o_we_no_overlay" role="img" type="button" data-slide="next" data-target="#myCarousel1733814994253">
+                    <span class="fa fa-chevron-circle-right fa-2x"/>
+                    <span class="sr-only o_default_snippet_text">Next</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pt72 pb56" data-name="Vertical Layout" style="background-image: none;" data-scroll-background-ratio="1" data-original-title="" title="" aria-describedby="tooltip674608">
+        <span class="s_parallax_bg oe_img_bg o_bg_img_center" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1920" style="background-image: url(&quot;/web/image/2384-c4b41a2f/preview_bg.jpg&quot;);"/>
+        <div class="o_we_bg_filter bg-black-15"/>
+        <div class="container-fluid">
+          <div class="oe_structure oe_structure_not_nest oe_empty">
+            <section class="s_text_image pt32 pb32 o_colored_level s_custom_titleUnderLine" data-snippet="s_image_text" data-name="Image - Text" style="background-image: none;" data-custom-name="titleUnderLine">
+              <div class="container">
+                <div class="row align-items-center" data-original-title="" title="" aria-describedby="tooltip846152">
+                  <div class="col-lg-6 pt16 pb16 o_colored_level">
+                    <img src="/web/image/2385-e52c3a89/preview_bg.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="730"/>
+                  </div>
+                  <div class="col-lg-6 pt16 pb16 o_colored_level" data-original-title="" title="" aria-describedby="tooltip925742">
+                    <h2 class="o_default_snippet_text">Section Subtitle</h2>
+                    <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
+                    <p class="o_default_snippet_text">Start with the customer – find out what they want and give it to them.</p>
+                    <p>
+                      <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Discover more</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="s_column_layout o_colored_level pt72 pb72 o_auto_screen_height" data-sticky="used" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none; background-color: rgb(250, 250, 250) !important;" data-original-title="" title="" aria-describedby="tooltip454821">
+        <div class="col-wrapper container">
+          <div class="row d-flex align-items-stretch" data-original-title="" title="" aria-describedby="tooltip888681">
+            <div class="s_col_no_bgcolor col-left col-lg-12 pb40">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" style="top: 83px;">
+                <section class="s_title o_colored_level pt0 pb0 s_custom_titleUnderLine" data-vcss="001" data-snippet="s_title" style="background-image: none;" data-name="Title" data-custom-name="titleUnderLine">
+                  <div class="s_allow_columns container">
+                    <h2 style="text-align: left;">News</h2>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="s_col_no_bgcolor col-left pb24 col-lg-5" data-original-title="" title="" aria-describedby="tooltip16010">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty col-sticky" data-editor-message="拖曳區塊到這裡" style="top: 83px;">
+                <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_dynamic o_colored_level s_blog_post_big_picture pt0 pb0 s_custom_hoverUnderLine o_dynamic_empty" data-name="Blog Posts" style="background-image: none;" data-filter-id="9" data-template-key="website_blog.dynamic_filter_template_blog_post_big_picture" data-number-of-elements="1" data-filter-by-blog-id="-1" data-number-of-elements-small-devices="1" data-number-of-records="1" data-force-minimum-max-limit-to16="1" data-blog-sort-id="1" data-custom-name="hoverUnderLine">
+                  <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="col-right o_colored_level col-lg-7" data-original-title="" title="" aria-describedby="tooltip43408">
+              <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
+                <section data-snippet="s_blog_posts" class="s_blog_posts s_dynamic_snippet_blog_posts s_blog_posts_effect_marley s_dynamic pb32 o_colored_level pt0 s_blog_post_card s_custom_newsSummary s_custom_noPic s_custom_hoverUnderLine s_custom_dateLeft s_custom_default o_dynamic_empty" data-name="Blog Posts" style="background-image: none;" data-filter-id="1" data-template-key="website_blog.dynamic_filter_template_blog_post_card" data-number-of-elements="1" data-filter-by-blog-id="2" data-number-of-elements-small-devices="1" data-number-of-records="4" data-force-minimum-max-limit-to16="1" data-custom-name="newsSummary noPic hoverUnderLine dateLeft default">
+                  <div class="o_not_editable container">
+                    <div class="css_non_editable_mode_hidden">
+                      <div class="missing_option_warning alert alert-info rounded-0 fade show d-none d-print-none o_default_snippet_text"/>
+                    </div>
+                    <div class="dynamic_snippet_template"/>
+                  </div>
+                </section>
+                <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
+                  <div class="s_allow_columns container" data-original-title="" title="" aria-describedby="tooltip43508">
+                    <p style="text-align: center;" data-original-title="" title="" aria-describedby="tooltip918415">
+                      <a href="#" class="btn btn-primary" data-original-title="" title="">More News</a>
+                    </p>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </t>
+</t>
