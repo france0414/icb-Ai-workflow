@@ -7,6 +7,9 @@ homepage_machine_tool_v4.xml
 homepage_parker.xml
 homepage_parker_v2.xml
 temp_page.xml
+icb_company_intro.xml
+user_homepage_parker_v2.scss
+user_icb_company_intro.scss
 
 # 忽略 webInfo 資料夾
 webInfo/

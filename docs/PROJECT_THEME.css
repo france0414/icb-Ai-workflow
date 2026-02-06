@@ -58,7 +58,9 @@
     --o-cc3-text: #FFFFFF;
     --o-cc3-headings: #FFFFFF;
     --o-cc3-btn-primary: #35979c;
+    --o-cc3-btn-primary-border: #35979c;
     /* 在主色底上通常會有邊框或變色 */
+    --o-cc3-btn-secondary: #EDEDED;
     --o-cc3-btn-secondary-border: #EDEDED;
     --o-cc3-link: #57c1c6;
 
