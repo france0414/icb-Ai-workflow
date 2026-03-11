@@ -76,7 +76,6 @@ cd icb-Ai-workflow
 - 若你要提供 AI 參考內容，請放到 `clientInfo/`；公版結構放在 `templates/`
 - 可放文字資料、圖片資料、PPT、Excel 或其他需求整理檔
 - `clientInfo/` 是輸入素材區，不是正式產出區
-
 ### 3. 使用 AI Agent
 - 參考 `.agent/workflows/` 中的工作流程
 - 使用 `.agent/skills/` 中定義的技能
@@ -134,7 +133,6 @@ C:/Users/france0414/AppData/Local/Programs/Python/Python313/python.exe scripts/s
 - 讓 Gemini、Copilot、OpenCode 維持一致
 - 後續更容易請 AI 協助維護 skill
 - 出問題時更容易追查是主來源還是同步腳本有問題
-
 ## 📖 開發規範
 - 遵循 ODOO 官方 XML 結構標準
 - 使用專案定義的樣式規範

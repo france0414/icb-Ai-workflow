@@ -1,0 +1,181 @@
+<t t-name="website.why-parker">
+    <t t-call="website.layout">
+        <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_text_image pt96 pb96 o_cc o_cc1 s_custom_WhyHero" data-snippet="s_text_image" data-name="Text - Image" data-custom-name="WhyHero">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <div class="h5 text-uppercase text-primary">Why Parker</div>
+                            <h1>Why Choose Parker</h1>
+                            <p class="lead">Bring you wealth, reputation, and reliable production results.</p>
+                            <p>Over three decades of blow molding expertise, trusted worldwide for stable quality, efficient production, and long-term value.</p>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/900/700?random=101" class="img img-fluid mx-auto" alt="Parker production line" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_title pt32 pb8 o_cc o_cc1 s_custom_WhyStatsTitle" data-snippet="s_title" data-name="Title" data-custom-name="WhyStatsTitle">
+                <div class="container s_allow_columns">
+                    <h2 class="text-center">Global Commitment in Numbers</h2>
+                </div>
+            </section>
+
+            <section class="s_numbers o_cc o_cc2 pt24 pb24 s_custom_WhyStats" data-snippet="s_numbers" data-name="Numbers" data-custom-name="WhyStats">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 text-center pt24 pb24 o_colored_level">
+                            <span class="s_number display-4 o_default_snippet_text">30+</span><br/>
+                            <h6 class="o_default_snippet_text">Years Experience</h6>
+                        </div>
+                        <div class="col-lg-3 text-center pt24 pb24 o_colored_level">
+                            <span class="s_number display-4 o_default_snippet_text">3,100+</span><br/>
+                            <h6 class="o_default_snippet_text">Production Lines</h6>
+                        </div>
+                        <div class="col-lg-3 text-center pt24 pb24 o_colored_level">
+                            <span class="s_number display-4 o_default_snippet_text">102</span><br/>
+                            <h6 class="o_default_snippet_text">Countries Served</h6>
+                        </div>
+                        <div class="col-lg-3 text-center pt24 pb24 o_colored_level">
+                            <span class="s_number display-4 o_default_snippet_text">368+</span><br/>
+                            <h6 class="o_default_snippet_text">Customers Growing</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_features pt48 pb48 o_cc o_cc1 s_custom_GlobalCommitment" data-snippet="s_features" data-name="Features" data-custom-name="GlobalCommitment">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 pb24 text-center o_colored_level">
+                            <h2>Why Parker Brings Results</h2>
+                            <p class="lead">A reliable partner focused on efficiency, speed, and profitability.</p>
+                        </div>
+                        <div class="col-lg-3 pt24 pb24 text-center o_colored_level">
+                            <i class="fa fa-3x fa-globe rounded bg-primary m-3"></i>
+                            <h3 class="o_default_snippet_text">Global Commitment</h3>
+                            <p class="o_default_snippet_text">Proven in plastic fabrication with long-term performance and trusted service.</p>
+                        </div>
+                        <div class="col-lg-3 pt24 pb24 text-center o_colored_level">
+                            <i class="fa fa-3x fa-cogs rounded bg-primary m-3"></i>
+                            <h3 class="o_default_snippet_text">Simple and Easy</h3>
+                            <p class="o_default_snippet_text">Advanced technology with intuitive operation for stable, high-quality output.</p>
+                        </div>
+                        <div class="col-lg-3 pt24 pb24 text-center o_colored_level">
+                            <i class="fa fa-3x fa-clock-o rounded bg-primary m-3"></i>
+                            <h3 class="o_default_snippet_text">Fast Delivery</h3>
+                            <p class="o_default_snippet_text">Precision tooling and modular assembly shorten lead time without compromise.</p>
+                        </div>
+                        <div class="col-lg-3 pt24 pb24 text-center o_colored_level">
+                            <i class="fa fa-3x fa-line-chart rounded bg-primary m-3"></i>
+                            <h3 class="o_default_snippet_text">Low Production Cost</h3>
+                            <p class="o_default_snippet_text">Energy-efficient systems, optimized cooling, and recycling-ready extruders.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_text_image pt64 pb64 o_cc o_cc2 s_custom_BringSatisfaction" data-snippet="s_text_image" data-name="Text - Image" data-custom-name="BringSatisfaction">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <h2>Bring You Satisfaction</h2>
+                            <p class="lead">Excellent after sales service and complete training.</p>
+                            <p>We provide turnkey consultation, technical assistance, and fast after sales support to keep your production on track.</p>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/900/700?random=102" class="img img-fluid mx-auto" alt="After sales support" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_text_image pt64 pb64 o_cc o_cc1 s_custom_BringLucky" data-snippet="s_image_text" data-name="Image - Text" data-custom-name="BringLucky">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/900/700?random=103" class="img img-fluid mx-auto" alt="Customer success" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <h2>Bring You Lucky</h2>
+                            <p class="lead">Customers grow year after year and keep winning bids.</p>
+                            <p>Many customers say Parker machines help fulfill their goals and bring lasting success.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_text_image pt64 pb64 o_cc o_cc2 s_custom_BetterLife" data-snippet="s_text_image" data-name="Text - Image" data-custom-name="BetterLife">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <h2>Bring You Better Life</h2>
+                            <p class="lead">Efficient, stable, and environmentally friendly production.</p>
+                            <p>Low power consumption and advanced extruder design support high calcium and recycled materials for a cleaner future.</p>
+                        </div>
+                        <div class="col-lg-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/900/700?random=104" class="img img-fluid mx-auto" alt="Sustainable production" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_references pt48 pb32 o_cc o_cc1 s_custom_WorldComponents" data-snippet="s_references" data-name="References" data-custom-name="WorldComponents">
+                <div class="container">
+                    <h2 class="text-center">World Class Components</h2>
+                    <p class="text-center lead">Built in compliance with CE directives and powered by top quality electrical components for reliable performance and global spare-part availability.</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=201" class="img img-fluid mx-auto" alt="Component brand 1" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=202" class="img img-fluid mx-auto" alt="Component brand 2" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=203" class="img img-fluid mx-auto" alt="Component brand 3" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=204" class="img img-fluid mx-auto" alt="Component brand 4" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=205" class="img img-fluid mx-auto" alt="Component brand 5" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=206" class="img img-fluid mx-auto" alt="Component brand 6" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=207" class="img img-fluid mx-auto" alt="Component brand 7" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=208" class="img img-fluid mx-auto" alt="Component brand 8" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=209" class="img img-fluid mx-auto" alt="Component brand 9" loading="lazy"/>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-6 pt16 pb16 o_colored_level">
+                            <img src="https://picsum.photos/200/120?random=210" class="img img-fluid mx-auto" alt="Component brand 10" loading="lazy"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s_call_to_action o_cc o_cc3 pt48 pb24 s_custom_WhyCta" data-snippet="s_call_to_action" data-name="Call to Action" data-custom-name="WhyCta">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 pb16 o_colored_level">
+                            <h3 class="o_default_snippet_text">Ready to build a more profitable production line?</h3>
+                            <p class="o_default_snippet_text">Talk to Parker about a turnkey solution tailored to your needs.</p>
+                        </div>
+                        <div class="col-lg-3 pt8 o_colored_level">
+                            <p class="text-right">
+                                <a class="btn btn-primary btn-lg mb-2 o_default_snippet_text" href="/contact">Contact Us</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </t>
+</t>

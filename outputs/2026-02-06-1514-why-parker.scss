@@ -1,0 +1,68 @@
+.s_custom_WhyHero {
+    background: radial-gradient(120% 120% at 10% 10%, #ffffff 0%, #f2f6f9 45%, #e6edf3 100%);
+}
+
+.s_custom_WhyHero h1 {
+    letter-spacing: 0.3px;
+}
+
+.s_custom_WhyHero .lead {
+    max-width: 32rem;
+}
+
+.s_custom_WhyHero img {
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(16, 24, 40, 0.15);
+}
+
+.s_custom_GlobalCommitment {
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
+}
+
+.s_custom_GlobalCommitment .fa {
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    color: #ffffff;
+}
+
+.s_custom_BringSatisfaction img,
+.s_custom_BringLucky img,
+.s_custom_BetterLife img {
+    border-radius: 14px;
+    box-shadow: 0 14px 28px rgba(16, 24, 40, 0.12);
+}
+
+.s_custom_WorldComponents img {
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.s_custom_WorldComponents .row > [class*="col"] {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+@media (max-width: 991.98px) {
+    .s_custom_WorldComponents .row > [class*="col"] {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .s_custom_WorldComponents .row > [class*="col"] {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.s_custom_WorldComponents img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.s_custom_WhyCta {
+    background: linear-gradient(135deg, #0f6aa6 0%, #0b4f7a 100%);
+}
