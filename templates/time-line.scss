@@ -1,0 +1,68 @@
+//  -------------------------------------                  time line 01      開始                 -------------------------------------  //
+.s_custom_timeLine01 {
+    &::before {
+        content: "";
+        width: 1px;
+        background-color: #333;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        @include media-breakpoint-down(sm) {
+            left: var(--container-pd-x);
+        }
+    }
+    h3 {
+        font-size: 52px;
+        margin-top: -78px;
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        @include media-breakpoint-down(sm) {
+        }
+        &::before {
+            content: "";
+            height: 1px;
+            width: 30px;
+            background: currentColor;
+        }
+    }
+    .s_text_block {
+        width: 50%;
+        padding-top: 80px !important;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+        &:nth-child(odd) {
+            >.container>.row {
+              flex-direction: row-reverse;
+            }
+            h3 {
+                flex-direction: row-reverse;
+                margin-right: calc(var(--container-pd-x) * -1);
+                @include media-breakpoint-down(sm) {
+                    flex-direction: row;
+                    margin-right: 0;
+                    margin-left: calc(var(--container-pd-x) * -1);
+                }
+            }
+        }
+        &:nth-child(even) {
+            margin-left: auto;
+            h3 {
+                margin-left: calc(var(--container-pd-x) * -1);
+            }
+        }
+        >.container {
+            padding-right: var(--container-pd-x);
+            padding-left: var(--container-pd-x);
+            @include media-breakpoint-down(sm) {
+                padding-left: calc(var(--container-pd-x) * 2);
+            }
+        }
+        [class*=col] {
+            position: static;
+        }
+    }
+}
+//  -------------------------------------                  time line 01       結束                -------------------------------------  //
