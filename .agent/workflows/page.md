@@ -2,9 +2,10 @@
 description: 生成 Odoo 14 頁面（靜態 / 動態 / 整頁樣板）
 ---
 
-# /page
+# /page（🏷️ 套版模式）
 
-依照 Odoo 14 Snippet 規則或現有樣板配方，生成完整頁面（XML + SCSS）。
+依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。
+若需要全新設計，請改用 `/create`（創作模式）。
 
 ## 1. 讀取 Skill
 // turbo

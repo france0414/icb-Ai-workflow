@@ -34,7 +34,7 @@
     "圖片：使用 https://picsum.photos/[width]/[height] 作為佔位圖",
     "樣式：所有樣式只能寫在 SCSS，禁止 inline style 或 XML 內嵌 style",
     "間距：使用 Bootstrap 4 的 pt/pb 規則，優先採用 8 的倍數",
-    "AI 雙核心任務模式：1.【內建積木組裝】要求生成新頁面/區塊時，必須優先從 `templates/` (設計資源庫) 尋找客製化結構、SCSS與JS做積木式拼裝，確保風格一致。`templates/` 裡的檔案並不需要全部強迫改為 Odoo 拖曳 Snippet，它們是供 AI 取材的「優質積木」。2.【外部佈景翻譯】要求抓取外部網站區塊時，AI 要拆解對方版型，優先找 `templates/` 內是否有可套用的積木，若無則生成相容 Odoo 的全新結構。外部參考素材統一放 clientInfo/。",
+    "AI 雙模式任務與 templates/ 定位：`templates/` 是「靈感庫 + 積木庫」，不是「直接成品庫」。嚴禁直接複製 templates/ 任一檔案完整結構作為最終輸出。1.【套版模式 `/page`】允許從 `templates/` 和 `page_templates.md` 配方直接組裝，替換文案圖片即可。2.【創作模式 `/create`】`templates/` 僅作結構寫法參考，AI 必須重新設計 section 順序、比例、視覺重心，且先出文字骨架確認後才生成 XML+SCSS。3.【外部佈景翻譯 `/clone`】拆解外部版型，優先找 `templates/` 可套用積木，若無則生成全新結構。",
     "公版與客製 SCSS 提取原則：當 AI 判斷需要為特定組件（如特殊按鈕風格、動態區塊特有樣式）補上 SCSS 時，主來源絕對是 `templates/` 目錄中，與該 XML/HTML 檔名完全相同的 `.scss` 檔案（例如：要抓 `banner.xml` 的樣式，就去讀 `banner.scss`）！AI 必須精準提取原生代碼，嚴禁自行發明或通靈 CSS",
     "輸出位置：產出檔案放在 outputs/，檔名必須包含日期與時間",
     "重用全域樣式：若 user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 scss_reference.md",
@@ -95,7 +95,11 @@
   "commands": [
     [
       "/page",
-      "生成完整 Odoo 頁面（靜態或動態）"
+      "生成完整頁面（套版模式）"
+    ],
+    [
+      "/create",
+      "創作全新頁面（先骨架後生成）"
     ],
     [
       "/dynamic",
@@ -145,13 +149,14 @@
     "接著讀 docs/PROJECT_THEME.css 了解專案配色。",
     "若使用者提供參考文字、圖片、PPT、Excel 或其他素材，優先從 clientInfo/ 讀取；公版結構參考從 templates/ 讀取。",
     "所有 Odoo 相關指令在 .opencode/commands/ 目錄中：",
-    "- page.md → 生成完整頁面",
+    "- page.md → 套版模式快速生成頁面",
+    "- create.md → 創作模式（先文字骨架，確認後才生成 XML+SCSS）",
     "- dynamic.md → 加入動態區塊",
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",
     "- block.md → 呼叫已整理的客製化歷史區塊",
     "- clone.md → 抓取競品網站區塊轉化草稿",
-    "當使用者執行 /page home-1 時，直接輸出 templates/home-1.xml + templates/home-1.scss 的完整頁面，不做混搭與清理；保留 inline style，圖片替換為 https://picsum.photos/。",
+    "/page 為套版模式，允許依配方快速組裝；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",

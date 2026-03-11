@@ -1,6 +1,6 @@
-# page
+# page（🏷️ 套版模式）
 
-依照 Odoo 14 Snippet 規則或樣板配方，生成頁面的完整 XML + SCSS。
+依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。若需全新設計改用 /create。
 
 ## Steps
 
