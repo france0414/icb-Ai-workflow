@@ -1,7 +1,7 @@
 # 客製化區塊索引 (Custom Blocks Index)
 
 > [!IMPORTANT]
-> 此檔為**索引**，不包含程式碼。AI 需要某個元件時，請到 `D:/gemini/odoo/templates/` 讀取對應檔案的指定行數範圍，並讀取同名 `.scss` 取得樣式。
+> 此檔為**索引**，不包含程式碼。AI 需要某個元件時，請到 `D:/gemini/icbAi/templates/` 讀取對應檔案的指定行數範圍，並讀取同名 `.scss` 取得樣式。
 
 ---
 
@@ -100,3 +100,16 @@
 - **Pre-Footer CTA** (行動呼叫區塊)
 - **s_counting** (數字計數器)
 - **titleUnderLine** (標題底線裝飾)
+
+## J. Timeline (歷史沿革)
+
+| 編號 | 中文名稱 | `data-custom-name` | XML 來源 | SCSS 來源 |
+|------|---------|---------------------|---------|----------|
+| Timeline-01 | 中線交錯圖文 | `timeLine01` | `time-line.xml` time line-01 | `time-line.scss` time line 01 |
+| Timeline-02 | 中線卡片交錯 | `timeLine02` | `time-line.xml` time line-02 | `time-line.scss` time line 02 |
+| Timeline-03 | 波浪背景時間軸 | `timeLine03` | `time-line.xml` time line-03 | `time-line.scss` time line 03 |
+| Timeline-04 | 左線卡片列 | `timeLine04` | `time-line.xml` time line-04 | `time-line.scss` time line 04 |
+| Timeline-05 | 日期浮框卡片 | `timeLine05` | `time-line.xml` time line-05 | `time-line.scss` time line 05 |
+| Timeline-06 | 雙色背景交錯 | `timeLine06` | `time-line.xml` time line-06 | `time-line.scss` time line 06 |
+| Timeline-07 | 圖文左右流程 | `time-line-07` | `time-line.xml` time line-07 | `time-line.scss` time line 07 |
+| Timeline-08 | 中線左右交錯 | `time-line-08` | `time-line.xml` time line-08 | `time-line.scss` time line 08 |

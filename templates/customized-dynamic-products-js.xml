@@ -31,11 +31,9 @@
                 <div class="dynamic_snippet_template"/>
               </div>
             </section>
-            <section class="s_embed_code o_colored_level pt0 pb0 text-center s_custom_hidden" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hidden">
+            <section class="s_embed_code o_colored_level pt0 pb0 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="noRemove">
               <div class="s_embed_code_embedded o_not_editable container">
-                <div class="text-monospace pt8 bg-light o_default_snippet_text" data-original-title="" title="">
-    JS 勿變更、刪除
-</div>
+
                 <script>
     document.addEventListener("DOMContentLoaded", function () {
         if (document.body.classList.contains("editor_started")) return;

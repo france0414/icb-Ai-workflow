@@ -8,7 +8,7 @@ description: 抓取競品網站區塊並轉化為 Odoo 14 草稿 (Scraping & Clo
 
 ## 1. 抓取分析 (Scrape & Analyze)
 // turbo-all
-**MUST** 先使用 `curl` 抓取目標網址的 HTML，存入 `d:/gemini/odoo/outputs/[sitename].html`。
+**MUST** 先使用 `curl` 抓取目標網址的 HTML，存入 `d:/gemini/icbAi/outputs/[sitename].html`。
 接著分析下載的 HTML，定位使用者指定的區塊（如：首頁的 Hero 區塊、帶 Tab 的 News 區塊、或者特製的卡片輪播）。
 
 ## 2. 結構轉化規則 (Structure Conversion - 鐵律)
@@ -19,9 +19,10 @@ description: 抓取競品網站區塊並轉化為 Odoo 14 草稿 (Scraping & Clo
 
 ## 3. 輸出規範 (Output Rules - 鐵律)
 1. **沙盒原則：** 轉化出來的程式碼**絕對不可以**直接寫入 `templates/`。這只是實驗性的草稿（Sandbox）。
-2. **皮肉分離：** **絕對不可以**在 XML 中寫 `<style id="scss-code">`。
-3. **還原轉義字元 (Unescape)：** 從 XML 提取 SCSS 獨立成檔案時，**絕對必須**檢查並將 HTML 跳脫字元還原（例如：將 `&amp;` 還原為 `&`，`&gt;` 還原為 `>` 等），確保 SCSS 語法正確不會編譯錯誤。
-4. 必須分別產出兩個檔案，放在 `outputs/` 目錄：
+2. **晉升保守原則：** 預設**只產出當下專案草稿**，不得自動元件化、不得自動晉升公版；只有在使用者明確指示「請晉升為公版/元件化」時，才可規劃寫入 `templates/`。
+3. **皮肉分離：** **絕對不可以**在 XML 中寫 `<style id="scss-code">`。
+4. **還原轉義字元 (Unescape)：** 從 XML 提取 SCSS 獨立成檔案時，**絕對必須**檢查並將 HTML 跳脫字元還原（例如：將 `&amp;` 還原為 `&`，`&gt;` 還原為 `>` 等），確保 SCSS 語法正確不會編譯錯誤。
+5. 必須分別產出兩個檔案，放在 `outputs/` 目錄：
    - `outputs/draft-[name].xml`：只有純淨的 Odoo QWeb 結構。
    - `outputs/draft-[name].scss`：包含所有的變數、版塊佈局與動畫樣式。
 

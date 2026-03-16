@@ -9,11 +9,11 @@ description: 生成 Odoo 14 頁面（靜態 / 動態 / 整頁樣板）
 
 ## 1. 讀取 Skill
 // turbo
-**MUST** 讀取 Skill 主檔：`d:/gemini/odoo/.agent/skills/icb_page_generator/SKILL.md`
+**MUST** 讀取 Skill 主檔：`d:/gemini/icbAi/.agent/skills/icb_page_generator/SKILL.md`
 
 ## 2. 讀取專案配色
 // turbo
-讀取 `d:/gemini/odoo/docs/PROJECT_THEME.css`，了解 `--primary`、`o_cc1`~`o_cc5` 等色彩變數。
+讀取 `d:/gemini/icbAi/docs/PROJECT_THEME.css`，了解 `--primary`、`o_cc1`~`o_cc5` 等色彩變數。
 
 ## 3. 分析需求
 

@@ -1,21 +1,12 @@
 # 忽略個別頁面檔案
-about_parker.xml
-homepage_machine_tool.scss
-homepage_machine_tool.xml
-homepage_machine_tool_v3.xml
-homepage_machine_tool_v4.xml
-homepage_parker.xml
-homepage_parker_v2.xml
-temp_page.xml
-icb_company_intro.xml
-user_homepage_parker_v2.scss
-user_icb_company_intro.scss
+
 
 # 忽略 clientInfo 資料夾（使用者本地參考素材區）
 clientInfo/
 
 # 忽略 outputs 資料夾（使用者本地參考素材區）
 outputs/
+
 # 忽略 webInfo 資料夾
 webInfo/
 
@@ -24,6 +15,9 @@ preview/
 
 # 忽略 VS Code 設定
 .vscode/
+
+# 忽略 pen 資料夾
+pen/
 
 # 可以加入其他不需要版本控制的檔案
 *.tmp

@@ -38,9 +38,9 @@ description: 套用按鈕風格到網站
 
 2. **確認顏色偏好**（預設使用 o_cc 變數，可改固定色）
 
-3. **讀取按鈕樣式** → `d:/gemini/odoo/.agent/skills/icb_page_generator/resources/button_styles.md`
+3. **讀取按鈕樣式** → `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/button_styles.md`
 
-4. **取得完整 SCSS** → 從 `d:/gemini/odoo/templates/btn-style.xml` 中對應風格的 `<pre id="scss-code">` 複製完整版 SCSS（含 o_cc1~o_cc5 色彩變數）
+4. **取得完整 SCSS** → 從 `d:/gemini/icbAi/templates/btn-style.xml` 中對應風格的 `<pre id="scss-code">` 複製完整版 SCSS（含 o_cc1~o_cc5 色彩變數）
 
 5. **輸出完整 SCSS**（含開頭結尾標記 `// 按鈕區 開始` ~ `// 按鈕區 結束`）
    - ⚠️ SCSS 為**全域套用**，直接作用於 `#wrapwrap .btn` 等選擇器，**不需要** `s_custom_btn0x` 包裹 class

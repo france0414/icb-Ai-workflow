@@ -128,11 +128,9 @@
           </div>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_jqCode" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="jqCode" style="background-image: none;">
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
-          <div class="text-monospace pt8 btn btn-fill-primary o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip259175">
-    內容為崁入的js 代碼
-</div>
+
           <script>
     // 選擇所有容器
     const containers = document.querySelectorAll('.s_custom_fullImgHoevr1 .s_custom_boxWrap');
@@ -355,11 +353,9 @@
           </div>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_jqCode" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="jqCode" style="background-image: none;">
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
-          <div class="text-monospace pt8 btn btn-fill-primary o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip259175">
-    內容為崁入的js 代碼
-</div>
+
           <script>
 document.addEventListener('DOMContentLoaded', function () {
   // 確認 body 上是否沒有 'editor_started' class，才執行邏輯
@@ -457,11 +453,9 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_jqCode" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="jqCode" style="background-image: none;">
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
-          <div class="text-monospace pt8 btn btn-fill-primary o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip259175">
-    內容為崁入的js 代碼
-</div>
+
           <script>
             document.querySelector('.s_custom_controlBtn').addEventListener('click', function() {
             // 檢查 &lt;body&gt; 是否有 .editor_started 類別
@@ -622,11 +616,9 @@ document.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 s_custom_jqCode text-center" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="jqCode" style="background-image: none;">
+      <section class="s_embed_code o_colored_level pb16 pt16 s_custom_noRemove text-center" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
-          <div class="text-monospace pt8 btn btn-fill-primary o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip259175">
-    內容為崁入的js 代碼
-</div>
+
           <script>
     document.addEventListener("DOMContentLoaded", function () {
         if (document.body.classList.contains("editor_started")) return;
@@ -847,13 +839,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
               </div>
             </section>
-            <section class="s_text_block o_colored_level pt0 pb0 s_custom_hidden" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="hidden">
+            <section class="s_text_block o_colored_level pt0 pb0 s_custom_noRemove" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="noRemove">
               <div class="s_allow_columns container">
                 <section class="s_embed_code o_colored_level text-center pt0 pb0" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;">
                   <div class="s_embed_code_embedded o_not_editable container">
-                    <div class="text-monospace pt8 bg-light o_default_snippet_text">
-    地圖定位點CSS自訂區
-</div>
+
                     <style>
 /*  第一個  */
 body:not(.editor_started) .map-brief-description .s_text:nth-child(1) {
@@ -878,11 +868,9 @@ body:not(.editor_started) .map-brief-description .s_text:nth-child(3) {
           </div>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_jqCode" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="jqCode" style="background-image: none;">
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
-          <div class="text-monospace pt8 btn btn-fill-primary o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip259175">
-    內容為崁入的js 代碼
-</div>
+
           <script>
     document.addEventListener("DOMContentLoaded", () =&gt; {
     const body = document.body;
@@ -930,7 +918,7 @@ body:not(.editor_started) .map-brief-description .s_text:nth-child(3) {
       <section class="s_embed_code o_colored_level pt0 pb0 o_cc o_cc2 text-left s_custom_copyBtn" data-snippet="s_embed_code" data-name="Embed Code" data-custom-name="copyBtn" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
           <section>
-            <pre id="scss-code" class="d-none">     
+            <pre id="scss-code" class="d-none">
 //  -------------------------------------                  內文固定+ 背景圖 fix      開始                 -------------------------------------  //
 .s_custom_stickyBG {
     .img-content {
@@ -980,7 +968,7 @@ body:not(.editor_started) .map-brief-description .s_text:nth-child(3) {
 body:not(.editor_started) {
     .s_custom_stickyBG {
         .col-sticky {
-            z-index: -1; 
+            z-index: -1;
             @include media-breakpoint-down(sm) {
                 position: sticky;
             }
@@ -1299,11 +1287,9 @@ body:not(.editor_started) .s_collapse[data-preview-height='#{$heightDisplayNone}
           </div>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_jqCode" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="jqCode" style="background-image: none;">
+      <section class="s_embed_code o_colored_level pb16 pt16 text-center s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" data-original-title="" title="" aria-describedby="tooltip677327" data-custom-name="noRemove" style="background-image: none;">
         <div class="s_embed_code_embedded o_not_editable container">
-          <div class="text-monospace pt8 btn btn-fill-primary o_default_snippet_text" data-original-title="" title="" aria-describedby="tooltip259175">
-    內容為崁入的js 代碼
-</div>
+
           <script>
     document.addEventListener("DOMContentLoaded", function () {
         if (document.body.classList.contains("editor_started")) return;
@@ -1357,7 +1343,7 @@ body:not(.editor_started) .s_collapse[data-preview-height='#{$heightDisplayNone}
       <section class="s_embed_code o_colored_level pt0 pb0 text-left s_custom_copyBtn o_cc o_cc2" data-snippet="s_embed_code" data-name="Embed Code" data-custom-name="copyBtn">
         <div class="s_embed_code_embedded o_not_editable container">
           <section>
-            <pre id="scss-code" class="d-none">     
+            <pre id="scss-code" class="d-none">
 //  -------------------------------------                  icon 背景圖互動      開始                 -------------------------------------  //
 body:not(.editor_started) {
     .s_custom_fullHoverBackground {
@@ -1801,9 +1787,7 @@ body:not(.editor_started) {
                 </p>
                 <section class="s_embed_code pt64 pb64 o_colored_level text-center s_custom_hedden s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hedden noRemove">
                   <div class="s_embed_code_embedded container o_not_editable">
-                    <div class="text-monospace pt8 bg-light o_default_snippet_text">
-    將其替換為您自己的 HTML 代碼
-</div>
+
                     <script>
 document.addEventListener('DOMContentLoaded', function () {
   const isLargeScreen = window.innerWidth &gt; 991;
@@ -2141,7 +2125,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <section class="s_embed_code o_colored_level pt0 pb0 text-left s_custom_copyBtn" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="copyBtn">
         <div class="s_embed_code_embedded o_not_editable container">
           <section>
-            <pre id="scss-code" class="d-none">     
+            <pre id="scss-code" class="d-none">
 //  -------------------------------------                  上圖下文:下方文字x卷軸      開始                 -------------------------------------  //
 body:not(.editor_started) {
     .s_custom_worldwide {
@@ -2383,9 +2367,7 @@ body:not(.editor_started) {
             </section>
             <section class="s_embed_code pt64 pb64 o_colored_level text-center s_custom_hidden s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hidden noRemove">
               <div class="s_embed_code_embedded o_not_editable container">
-                <div class="text-monospace pt8 bg-light o_default_snippet_text">
-    將其替換為您自己的 HTML 代碼
-</div>
+
                 <script>
     document.addEventListener("DOMContentLoaded", function () {
         function debounce(fn, delay) {
@@ -2512,7 +2494,7 @@ body:not(.editor_started) {
       <section class="s_embed_code o_colored_level pt0 pb0 text-left s_custom_copyBtn" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="copyBtn">
         <div class="s_embed_code_embedded o_not_editable container">
           <section>
-            <pre id="scss-code" class="d-none">     
+            <pre id="scss-code" class="d-none">
  //  -------------------------------------                  上圖下文:下方文字x卷軸 (RWD收合)     開始                 -------------------------------------  //
  body:not(.editor_started) {
      .s_custom_worldwideRWDcollapse {
@@ -2753,9 +2735,7 @@ body:not(.editor_started) {
             </section>
             <section class="s_embed_code pt64 pb64 o_colored_level text-center s_custom_hidden s_custom_noRemove" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="hidden noRemove">
               <div class="s_embed_code_embedded o_not_editable container">
-                <div class="text-monospace pt8 bg-light o_default_snippet_text">
-    將其替換為您自己的 HTML 代碼
-</div>
+
                 <script>
     document.addEventListener("DOMContentLoaded", function () {
         function debounce(fn, delay) {
@@ -2869,7 +2849,7 @@ body:not(.editor_started) {
           </div>
         </div>
       </section>
-    
+
     </div>
   </t>
 </t>

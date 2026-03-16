@@ -34,12 +34,16 @@
     "Icon 規範：主要使用 Font Awesome v4（例如 `fa fa-star`）",
     "圖片：使用 https://picsum.photos/[width]/[height] 作為佔位圖",
     "樣式原則：新寫樣式一律放 SCSS，禁止在 XML 內寫 <style>；style=\"\" 僅在 Odoo 系統元件本身必須或既有結構已依賴時可保留/最小使用",
+    "可編輯色彩規則：凡是 Odoo 後台 UI 本來可直接調整的色彩/濾鏡（例如 carousel 的 .o_we_bg_filter）必須保留為 XML 行內樣式，避免被搬到 SCSS 造成使用者無法在介面調整。",
+    "主題色保留規則：當需要沿用 o_cc 類別的字體/按鈕配色但想換背景色時，請保留 o_cc (如 o_cc3) 並使用 XML 行內 style 覆寫背景色/漸層（如 text-block 範例），避免移到 SCSS 影響後台可調性。",
     "間距：使用 Bootstrap 4 的 pt/pb 規則，優先採用 8 的倍數",
-    "AI 雙模式任務與 templates/ 定位：`templates/` 是「靈感庫 + 積木庫」，不是「直接成品庫」。嚴禁直接複製 templates/ 任一檔案完整結構作為最終輸出。1.【套版模式 `/page`】允許從 `templates/` 和 `page_templates.md` 配方直接組裝，替換文案圖片即可。2.【創作模式 `/create`】`templates/` 僅作結構寫法參考，AI 必須重新設計 section 順序、比例、視覺重心，且先出文字骨架確認後才生成 XML+SCSS。3.【外部佈景翻譯 `/clone`】拆解外部版型後，直接依需求生成相容 Odoo 的全新結構；`templates/` 僅可作語法參考，不需優先套用。",
+    "AI 雙模式任務與 templates/ 定位：`templates/` 是「靈感庫 + 積木庫」，不是「直接成品庫」。嚴禁直接複製 templates/ 任一檔案完整結構作為最終輸出。1.【套版模式 `/page`】允許從 `templates/` 和 `page_templates.md` 配方直接組裝，替換文案圖片即可。2.【創作模式 `/create`】`templates/` 僅作結構寫法參考，AI 必須重新設計 section 順序、比例、視覺重心，且先出文字骨架確認後才生成 XML+SCSS。3.【外部佈景翻譯 `/clone`】拆解外部版型後，直接依需求生成相容 Odoo 的全新結構；`templates/` 僅可作語法參考，不需優先套用。4.【元件晉升保守策略】`/clone` 預設只產出當下專案草稿，不自動拆成公版元件、不自動寫入 templates/；僅在使用者明確要求晉升公版/元件化時才執行。",
     "公版與客製 SCSS 提取原則：當 AI 判斷需要為特定組件（如特殊按鈕風格、動態區塊特有樣式）補上 SCSS 時，主來源絕對是 `templates/` 目錄中，與該 XML/HTML 檔名完全相同的 `.scss` 檔案（例如：要抓 `banner.xml` 的樣式，就去讀 `banner.scss`）！AI 必須精準提取原生代碼，嚴禁自行發明或通靈 CSS",
     "輸出位置：產出檔案放在 outputs/，檔名必須包含日期與時間",
     "重用全域樣式：若 user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 scss_reference.md",
     "抓取競品轉化原則 (Scraping Sandbox)：當執行 /clone 或要求抓取外部網站區塊時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id=\"scss-code\">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call=\"website.layout\"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。"
+    ,"/clone 1:1 優先：除非使用者明確要求等價替換，/clone 預設以 1:1 結構還原為優先（含區塊順序與核心佈局），再視 Odoo 限制做必要調整。"
+    ,"/clone 結構優先：先解析原站 DOM+CSS 的呈現邏輯，能用 Odoo/Bootstrap 既有結構（row/col/容器）還原左右/層次者，優先用結構取代 CSS，避免多寫 SCSS；只有結構無法達成時才補 SCSS。"
   ],
   "knowledge_map": [
     [
@@ -103,6 +107,10 @@
       "創作全新頁面（先骨架後生成）"
     ],
     [
+      "/clone",
+      "外站翻譯為 Odoo 草稿（預設不晉升公版）"
+    ],
+    [
       "/dynamic",
       "快速加入動態產品或部落格區塊"
     ],
@@ -152,15 +160,16 @@
     "所有 Odoo 相關指令在 .opencode/commands/ 目錄中：",
     "- page.md → 套版模式快速生成頁面",
     "- create.md → 創作模式（先文字骨架，確認後才生成 XML+SCSS）",
+    "- clone.md → 外站翻譯草稿（預設 Free-First：先用 Playwright MCP）",
     "- dynamic.md → 加入動態區塊",
     "- btn.md → 套用按鈕風格",
     "- js.md → 加入互動 JS 元件",
     "- block.md → 呼叫已整理的客製化歷史區塊",
-    "- clone.md → 抓取競品網站區塊轉化草稿",
     "/page 為套版模式，允許依配方快速組裝；/create 為創作模式，必須先輸出文字骨架並等待使用者確認，再生成 XML+SCSS。",
     "深度知識庫在 .agent/skills/icb_page_generator/resources/ 目錄中。",
     "AI 新生成的 XML、SCSS 與其他交付檔，統一輸出到 outputs/。",
     "抓站草稿：嚴禁將抓站草稿放入 templates/，且必須分離 XML/SCSS，並遵守 QWeb 外框與動態 Snippet 規則。",
+    "/clone 採 Free-First：預設先用 Playwright MCP（或等價瀏覽器抓取工具）；僅在使用者提供 FIRECRAWL_API_KEY 且明確要求批次抓取時才啟用 Firecrawl。",
     "抽出 SCSS：從 XML 提取 SCSS 獨立成檔案時，絕對必須將 HTML 跳脫字元（如 &amp;, &gt;）還原（如 &, >），避免 SCSS 編譯錯誤。",
     "若需求屬於 Header、Footer、Blog、Shop 或其他 Odoo 系統自動生成頁面，預設只能輸出 SCSS，不可直接輸出 XML。"
   ]

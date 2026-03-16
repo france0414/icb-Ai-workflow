@@ -22,12 +22,12 @@ description: 呼叫歷史開發過的優良區塊與版面配置
 
 ### 1. 讀取客製化區塊庫
 
-讀取 `d:/gemini/odoo/.agent/skills/icb_page_generator/resources/custom_blocks.md`
+讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/custom_blocks.md`
 （文件尾部含 **Templates 公版結構庫** 完整檔案對照表）
 
 ### 2. 查找公版結構 (templates/)
 
-若使用者需求與某個公版結構接近，到 `d:/gemini/odoo/templates/` 讀取對應 XML 骨架：
+若使用者需求與某個公版結構接近，到 `d:/gemini/icbAi/templates/` 讀取對應 XML 骨架：
 - **靜態版型** → `basd-Static-Snippet.xml`, `customized-Static-Snippet.xml`
 - **靜態輪播** → `Static-Snippet-carousel.xml`, `customized-static-carousel.xml`
 - **動態產品** → `dynamic-products.xml`, `customized-dynamic-products.xml`, `customized-dynamic-products-js.xml`

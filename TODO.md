@@ -36,7 +36,12 @@
 
 ## Phase 6：待辦
 
-- [ ] 導入 MCP Scraper 工具，建立「抓取競品網頁 → AI 洗成 Odoo 格式 → **作為當下專案草稿直接使用**」的自動化水管 (並確立嚴格的「晉升為公版 (Promotion)」審核機制，避免圖書館垃圾山化)
+- [x] 導入 MCP Scraper 基礎能力（Playwright MCP）
+- [x] 建立 `/clone` Free-First 規則（預設先用 Playwright，非必要不啟用付費服務）
+- [x] 建立草稿沙盒原則（抓站結果只落在 `outputs/`，不自動寫入 `templates/`）
+- [x] 建立 Promotion 保守機制（僅在使用者明確要求時才晉升公版/元件化）
+- [ ] （可選）導入 Firecrawl 作為批次抓站加速器（需 API Key / 可能付費）
+- [ ] 補一份 `/clone` 自動化驗證清單（抽樣頁面、動態區塊、QWeb 外框、RWD）
 
 ---
 

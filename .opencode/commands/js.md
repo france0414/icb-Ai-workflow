@@ -4,7 +4,7 @@
 
 ## Steps
 
-1. 讀取 `d:/gemini/odoo/.agent/skills/icb_page_generator/resources/component_library.md`
+1. 讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/component_library.md`
 2. 參考以下菜單選擇適合的互動元件：
 
 | # | 元件名稱 | Custom Class | 效果描述 |
