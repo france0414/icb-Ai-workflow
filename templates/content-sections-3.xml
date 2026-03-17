@@ -3,11 +3,11 @@
     <div id="wrap" class="oe_structure oe_empty">
       <section class="s_text_block o_colored_level pb0 pt32 o_cc o_cc2" data-snippet="s_text_block" data-name="編號" style="background-image: none;">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>
               <font class="text-o-color-5">排版區塊-21</font>
             </strong>
-          </h4>
+          </p>
         </div>
       </section>
       <section data-snippet="s_vertical_layout" class="s_vertical_layout o_colored_level pb56 pt56" data-name="Vertical Layout" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip775194">
@@ -86,11 +86,11 @@
       </section>
       <section class="s_text_block o_colored_level pb0 pt32 o_cc o_cc5" data-snippet="s_text_block" data-name="編號" style="background-image: none;">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>
               排版區塊-22
             </strong>
-          </h4>
+          </p>
         </div>
       </section>
       <section class="s_column_layout o_colored_level parallax s_parallax_is_fixed s_parallax_no_overflow_hidden pb48 pt0 s_custom_fixBGList o_auto_screen_height" data-sticky="none" data-snippet="s_column_layout" data-name="Horizontal Layout" style="background-image: none;" data-scroll-background-ratio="1" data-custom-name="fixBG-List">
@@ -140,14 +140,14 @@
       </section>
       <section class="s_text_block pt40 o_colored_level pb32 o_cc o_cc5" data-snippet="s_text_block" data-name="標題">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>
               排版區塊-23&amp;nbsp;
               <span style="font-size: 18px;">
                 (搭配點擊視窗+圖片輪播)
               </span>
             </strong>
-          </h4>
+          </p>
           <p>第一個展示彈框</p>
         </div>
       </section>
@@ -218,7 +218,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6>Sed laoreet molestie sapien</h6>
+                            <p class="h6">Sed laoreet molestie sapien</p>
                           </div>
                         </div>
                       </div>
@@ -230,7 +230,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6>Sed laoreet molestie sapien</h6>
+                            <p class="h6">Sed laoreet molestie sapien</p>
                           </div>
                         </div>
                       </div>
@@ -242,7 +242,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6>Sed laoreet molestie sapien</h6>
+                            <p class="h6">Sed laoreet molestie sapien</p>
                           </div>
                         </div>
                       </div>
@@ -254,7 +254,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6>Sed laoreet molestie sapien</h6>
+                            <p class="h6">Sed laoreet molestie sapien</p>
                           </div>
                         </div>
                       </div>

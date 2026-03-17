@@ -47,7 +47,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6>Title&amp;nbsp;Title&amp;nbsp;Title<br/></h6>
+                                  <p class="h6">Title&amp;nbsp;Title&amp;nbsp;Title<br/></p>
                                 </div>
                                 <div>
                                   <div class="mt-2">
@@ -116,7 +116,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h6>
+                            <p class="h6 o_default_snippet_text">Lorem ipsum dolor sit amet</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -133,7 +133,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Curabitur volutpat</h6>
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -150,7 +150,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Fusce bibendum lacus</h6>
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -167,7 +167,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Sed laoreet molestie sapien</h6>
+                            <p class="h6 o_default_snippet_text">Sed laoreet molestie sapien</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -184,7 +184,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Fusce bibendum lacus</h6>
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -201,7 +201,7 @@
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Curabitur volutpat</h6>
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
                           </div>
                           <div>
                             <div class="mt-2">

@@ -6,8 +6,8 @@
           <div class="oe_structure oe_structure_not_nest oe_empty">
             <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
               <div class="container s_allow_columns">
-                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
-                </h6>
+                <p class="h6">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
+                </p>
               </div>
             </section>
             <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
@@ -31,8 +31,8 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">L</font>ong established fact
-                                </h4>
+                                <p class="h4"><font class="text-o-color-1">L</font>ong established fact
+                                </p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">指定 icon 比例 1:1 (正方形/正圓形)<br/><strong>增加</strong>&amp;nbsp;<u>自訂樣式 : 1x1</u><br/></p>
@@ -51,7 +51,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">C</font>ontrary to popular belief&amp;nbsp;<br/></h4>
+                                <p class="h4"><font class="text-o-color-1">C</font>ontrary to popular belief&amp;nbsp;<br/></p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">Web page editors now use Lorem Ipsum as their default model text,&amp;nbsp;readable content of a page when looking at its layout.<br/></p>
@@ -70,7 +70,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">S</font>imply random text&amp;nbsp;<br/></h4>
+                                <p class="h4"><font class="text-o-color-1">S</font>imply random text&amp;nbsp;<br/></p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br/></p>
@@ -89,7 +89,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">M</font>any variations of passages&amp;nbsp;<br/></h4>
+                                <p class="h4"><font class="text-o-color-1">M</font>any variations of passages&amp;nbsp;<br/></p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/></p>
@@ -143,7 +143,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 01</h5>
+                                <p class="h5" style="text-align: center;">Feature 01</p>
                               </div>
                             </div>
                           </div>
@@ -159,7 +159,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 02</h5>
+                                <p class="h5" style="text-align: center;">Feature 02</p>
                               </div>
                             </div>
                           </div>
@@ -175,7 +175,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 03</h5>
+                                <p class="h5" style="text-align: center;">Feature 03</p>
                               </div>
                             </div>
                           </div>
@@ -191,7 +191,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 04</h5>
+                                <p class="h5" style="text-align: center;">Feature 04</p>
                               </div>
                             </div>
                           </div>
@@ -207,7 +207,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 05</h5>
+                                <p class="h5" style="text-align: center;">Feature 05</p>
                               </div>
                             </div>
                           </div>
@@ -469,8 +469,8 @@
             </section>
             <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
               <div class="s_allow_columns container">
-                <h6 style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
-                </h6>
+                <p class="h6" style="text-align: center;">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
+                </p>
               </div>
             </section>
             <section class="s_text_block o_colored_level pb24 pt16" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
@@ -593,9 +593,9 @@
               <div class="s_allow_columns container">
                 <div class="row">
                   <div class="o_colored_level col-lg-6 col-md-6 col-sm-6 pt88 pb88">
-                    <h3>
+                    <h2>
                       <strong>Title</strong>
-                    </h3>
+                    </h2>
                     <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
                   </div>
                 </div>
@@ -607,10 +607,10 @@
               <div class="s_allow_columns container">
                 <div class="row">
                   <div class="o_colored_level col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-sm-6 offset-sm-6 pt88 pb88">
-                    <h3>
+                    <h2>
                       <strong>Title</strong>
                       <br/>
-                    </h3>
+                    </h2>
                     <p>Great stories have a <b class="o_default_snippet_text">personality</b>. Consider telling a great story that provides personality. Writing a story with personality for potential clients will assist with making a relationship connection. This shows up in small quirks like word choices or phrases. Write from your point of view, not from someone else's experience.</p>
                   </div>
                 </div>
@@ -694,7 +694,7 @@
               <div class="s_column_layout_content oe_structure oe_structure_not_nest oe_empty">
                 <section class="s_text_block o_colored_level pt0 pb16" data-snippet="s_text_block" style="background-image: none;" data-name="Text">
                   <div class="container s_allow_columns">
-                    <h3>Title</h3>
+                    <h2>Title</h2>
                     <p class="o_default_snippet_text">Great stories are <b class="o_default_snippet_text">for everyone</b> even when only written <b class="o_default_snippet_text">for just one person</b>. If you try to write with a wide, general audience in mind, your story will sound fake and lack emotion. No one will be interested. Write for one person. If it’s genuine for the one, it’s genuine for the rest.</p>
                   </div>
                 </section>
@@ -809,7 +809,7 @@
                         <img src="/web/image/2668-5acd1555/preview_bg.jpg" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="690"/>
                       </div>
                       <div class="col-lg-6 pt16 pb16 o_colored_level">
-                        <h2 class="o_default_snippet_text">Section Subtitle</h2>
+                        <p class="h3 o_default_snippet_text">Section Subtitle</p>
                         <p class="o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.</p>
                         <p class="o_default_snippet_text">Start with the customer – find out what they want and give it to them.</p>
                         <p>
@@ -919,7 +919,7 @@
                         <img src="/web/image/2801-8c5773d9/preview_bg.jpg" class="s_media_list_img h-100 w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip672798" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
                       </div>
                       <div class="s_media_list_body col-lg-6" data-original-title="" title="" aria-describedby="tooltip758346">
-                        <h3 class="o_default_snippet_text">Media heading</h3>
+                        <p class="h3 o_default_snippet_text">Media heading</p>
                         <p class="o_default_snippet_text">Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fits your needs.</p>
                         <a href="#" class="btn btn-primary mb-2 o_default_snippet_text">Discover</a>
                       </div>
@@ -931,7 +931,7 @@
                         <img src="/web/image/2800-8c5773d9/preview_bg.jpg" class="s_media_list_img h-100 w-100" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip974664" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="962"/>
                       </div>
                       <div class="s_media_list_body col-lg-6">
-                        <h3 class="o_default_snippet_text">Event heading</h3>
+                        <p class="h3 o_default_snippet_text">Event heading</p>
                         <p class="o_default_snippet_text">Speakers from all over the world will join our experts to give inspiring talks on various topics. Stay on top of the latest business management trends &amp;amp; technologies</p>
                       </div>
                     </div>

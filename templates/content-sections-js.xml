@@ -3,9 +3,9 @@
     <div id="wrap" class="oe_structure oe_empty">
       <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>排版區塊(含Js) - 01</strong>
-          </h4>
+          </p>
         </div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
@@ -169,9 +169,9 @@
       </section>
       <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>排版區塊(含Js) - 02</strong>
-          </h4>
+          </p>
         </div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
@@ -204,7 +204,7 @@
               </div>
             </section>
             <section class="s_text_block o_colored_level pt0 pb0 s_custom_boxWrap" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="boxWrap">
-              <div class="s_allow_columns show container-fluid">
+              <div class="s_allow_columns container-fluid">
                 <div class="s_text img-wrap" data-snippet="s_text" data-name="Text">
                   <div class="s_text img-content" data-name="Text">
                     <img class="img-fluid o_we_custom_image" src="/web/image/3620-813b5d34/preview_bg.jpg" alt="" data-original-title="" title="" aria-describedby="tooltip813688" loading="lazy" data-original-id="2043" data-original-src="/web/image/2043-c4b41a2f/preview_bg.jpg" data-mimetype="image/jpeg" data-resize-width="1554"/>
@@ -391,9 +391,9 @@ document.addEventListener('DOMContentLoaded', function () {
       </section>
       <section class="s_text_block o_colored_level pt32 pb0" data-snippet="s_text_block" style="background-image: none;" data-name="標題">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>排版區塊(含Js) - 03</strong>
-          </h4>
+          </p>
           <p>* 它就是 fix 在旁邊的 News</p>
         </div>
       </section>
@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', function () {
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6>排版區塊(含Js) - 03<br/></h6>
+                                  <p class="h6">排版區塊(含Js) - 03<br/></p>
                                 </div>
                                 <div>
                                   <div class="mt-2">
@@ -468,11 +468,11 @@ document.addEventListener('DOMContentLoaded', function () {
       </section>
       <section class="s_text_block o_colored_level pt32 pb0 o_cc o_cc2" data-snippet="s_text_block" data-name="標題" style="background-image: none;">
         <div class="s_allow_columns container">
-          <h4>
+          <p class="h4">
             <strong>
               <font class="text-o-color-5">排版區塊(含Js) - 04</font>
             </strong>
-          </h4>
+          </p>
         </div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="複製html 按鈕" style="background-image: none;">
@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h6>
+                            <p class="h6 o_default_snippet_text">Lorem ipsum dolor sit amet</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Curabitur volutpat</h6>
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -548,7 +548,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Fusce bibendum lacus</h6>
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -565,7 +565,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Sed laoreet molestie sapien</h6>
+                            <p class="h6 o_default_snippet_text">Sed laoreet molestie sapien</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Fusce bibendum lacus</h6>
+                            <p class="h6 o_default_snippet_text">Fusce bibendum lacus</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -599,7 +599,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         </a>
                         <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                           <div class="card-title mt-4">
-                            <h6 class="o_default_snippet_text">Curabitur volutpat</h6>
+                            <p class="h6 o_default_snippet_text">Curabitur volutpat</p>
                           </div>
                           <div>
                             <div class="mt-2">
@@ -844,23 +844,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <section class="s_embed_code o_colored_level text-center pt0 pb0" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;">
                   <div class="s_embed_code_embedded o_not_editable container">
 
-                    <style>
-/*  第一個  */
-body:not(.editor_started) .map-brief-description .s_text:nth-child(1) {
-  right: 13%;
-  top: 33.5%;
-}
-/*  第二個  */
-body:not(.editor_started) .map-brief-description .s_text:nth-child(2) {
-  right: 14%;
-  top: 29%;
-}
-/*  第三個  */
-body:not(.editor_started) .map-brief-description .s_text:nth-child(3) {
-  left: 12%;
-  bottom: 45%;
-}
-</style>
                   </div>
                 </section>
               </div>
@@ -915,200 +898,7 @@ body:not(.editor_started) .map-brief-description .s_text:nth-child(3) {
           </p>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pt0 pb0 o_cc o_cc2 text-left s_custom_copyBtn" data-snippet="s_embed_code" data-name="Embed Code" data-custom-name="copyBtn" style="background-image: none;">
-        <div class="s_embed_code_embedded o_not_editable container">
-          <section>
-            <pre id="scss-code" class="d-none">
-//  -------------------------------------                  內文固定+ 背景圖 fix      開始                 -------------------------------------  //
-.s_custom_stickyBG {
-    .img-content {
-        @include media-breakpoint-down(md) {
-            z-index: -1;
-        }
-    }
-}
-.s_custom_anchorArea {
-    .row {
-        gap: 30px 0;
-    }
-    .col-lg-6.shadow,
-    .col-lg-6.border {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 15px;
-        margin-right: 15px;
-        flex: 0 0 calc(50% - 30px);
-        max-width: calc(50% - 30px);
-        @include media-breakpoint-down(md) {
-            flex: 0 0 calc(100% - 30px);
-            max-width: calc(100% - 30px);
-        }
-    }
-    .s_card,
-    .card-header {
-        border: none;
-    }
-    .s_card {
-        height: 100%;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .card-header {
-        padding-bottom: 0;
-        background-color: unset;
-    }
-    .card-body {
-        padding-top: 6px;
-        &amp;gt;*:first-child {
-            padding-top: 18px;
-            border-top: 1px solid var(--o-color-1);
-        }
-    }
-}
-body:not(.editor_started) {
-    .s_custom_stickyBG {
-        .col-sticky {
-            z-index: -1;
-            @include media-breakpoint-down(sm) {
-                position: sticky;
-            }
-        }
-        .text-content {
-            margin-right: calc(100% / 12 * -5);
-            @include media-breakpoint-down(md) {
-                padding-top: 26vh;
-                margin-right: -100%;
-            }
-        }
-    }
-    .s_custom_fixImg {
-        margin-right: calc((#{$wrap-size} - 100vw) / 2);
-        @media (max-width: $wrap-size ) {
-            margin-right: calc(var(--container-pd-x) * -1);
-            margin-left: calc(var(--container-pd-x) * -1);
-        }
-    }
-}
-//  -------------------------------------                  內文固定+ 背景圖 fix       結束                -------------------------------------  //
-//  -------------------------------------                   Inner text - 文字對齊 小 icon  開始                     -------------------------------------  //
-.s_text.align-icon {
-    &amp;gt;p {
-        padding-left: 24px;
-        position: relative;
-        .fa {
-            position: absolute;
-            top: 3px;
-            left: 0;
-        }
-    }
-}
-//  -------------------------------------                   Inner text - 文字對齊 小 icon  結束                     -------------------------------------  //
-//  -------------------------------------                  手風琴 - 下拉清單   開始                     -------------------------------------  //
-.s_custom_customDropdown {
-    min-width: 320px;
-    display: inline-block;
-    @include transition;
-    @include mobile-s {
-        min-width: 100%;
-    }
-    &amp;amp;:hover {
-        .card-header {
-            color: var(--o-color-1);
-            &amp;amp;::before {
-                background-color: var(--o-color-1);
-                transform: rotate(180deg);
-            }
-        }
-    }
-    .card {
-        border: none;
-        overflow: visible;
-    }
-    .card-header {
-        color: initial;
-        font-size: var(--h6);
-        padding: 14px;
-        margin-bottom: 0 !important;
-        border: 1px solid #000;
-        background-color: unset;
-        &amp;amp;::before {
-            content: "\f107" !important;
-            color: #fff !important;
-            font-size: 1.25rem;
-            width: 26px;
-            height: 26px;
-            background-color: #000;
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .collapse,
-    .collapsing {
-        .card-body {
-            padding-top: 0;
-            padding-bottom: 0;
-            margin-top: 0 !important;
-            border: 1px solid #000;
-            border-radius: 0;
-            background-color: #fff !important;
-            display: flex;
-            flex-direction: column;
-            a {
-                display: block;
-                padding: 8px;
-                @include media-breakpoint-down(md) {
-                    padding: 4px;
-                }
-                &amp;amp;:hover {
-                    background-color: #f5f5f5;
-                }
-            }
-        }
-    }
-}
-body:not(.editor_started) {
-    .s_custom_customDropdown {
-        .card:not(:hover) .collapse,
-        .card:not(:hover) .collapsing {
-            display: none;
-            max-height: 0;
-        }
-        .card:hover .collapse,
-        .card:hover .collapsing {
-            display: block;
-            max-height: 500px;
-        }
-        .collapse,
-        .collapsing {
-            position: absolute;
-            top: 100%;
-            width: 100%;
-            height: unset !important;
-            margin-top: -1px;
-            max-height: 0;
-            z-index: 1;
-        }
-    }
-}
-//  -------------------------------------                  手風琴 - 下拉清單   結束                     -------------------------------------  //
-//  -------------------------------------                   收合內容 - 內容全部隱藏(只剩下按鈕)  開始                     -------------------------------------  //
-$heightDisplayNone: 50px;   // 設定單顆 icon 所需的高度，數值需與 '預覽高度' 一樣
-body:not(.editor_started) .s_collapse[data-preview-height='#{$heightDisplayNone}'] {
-    .s_collapse_content_wrap {
-        opacity: 0;
-        @include transition;
-    }
-    .s_collapse_height_wrap.full .s_collapse_content_wrap {
-        opacity: 1;
-    }
-}
-//  -------------------------------------                   收合內容 - 內容全部隱藏(只剩下按鈕)  結束                     -------------------------------------  //
-  </pre>
-            <button class="btn btn-primary copy-scss-btn" style="position: absolute;&#10;    right: 120px; z-index:3">複製 SCSS</button>
-          </section>
-        </div>
+</div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="Text" data-custom-name="">
         <div class="s_allow_columns container" style="text-align: right;">
@@ -1340,236 +1130,7 @@ body:not(.editor_started) .s_collapse[data-preview-height='#{$heightDisplayNone}
           <p>複製使用後<br/>請<u>手動移除</u>第一個section的 <u>自訂樣式: hidden</u> </p>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pt0 pb0 text-left s_custom_copyBtn o_cc o_cc2" data-snippet="s_embed_code" data-name="Embed Code" data-custom-name="copyBtn">
-        <div class="s_embed_code_embedded o_not_editable container">
-          <section>
-            <pre id="scss-code" class="d-none">
-//  -------------------------------------                  icon 背景圖互動      開始                 -------------------------------------  //
-body:not(.editor_started) {
-    .s_custom_fullHoverBackground {
-        .s_custom_allCatBtn {
-            @include media-breakpoint-up(lg) {
-                display: none;
-            }
-        }
-    }
-    .s_custom_indexApplication {
-        background-repeat: no-repeat;
-        background-size: cover;
-        aspect-ratio: 10 / 3.3;
-        display: flex;
-        align-items: center;
-        padding-top: clamp(50px, 10vw, 80px) !important;
-        padding-bottom: clamp(50px, 10vw, 80px) !important;
-        position: relative;
-        overflow: hidden;
-        @include media-breakpoint-down(lg) {
-            aspect-ratio: 12 / 5.5;
-        }
-        @include media-breakpoint-down(md) {
-            aspect-ratio: unset;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-            background-color: #fff !important;
-        }
-        .bg-image {
-            position: absolute;
-            inset: 0;
-            background-size: cover;
-            background-position: center;
-            transition: opacity 0.8s ease;
-            background-attachment: fixed;
-            z-index: 1;
-            opacity: 0;
-            pointer-events: none;
-            @include media-breakpoint-down(md) {
-                display: none;
-            }
-            &amp;amp;::before {
-                content: "";
-                width: 100%;
-                height: 100%;
-                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e5e5e5+0,f4f4f4+43,f4f4f4+100&amp;amp;1+0,1+43,0+100 */
-                background: linear-gradient(66deg, rgba(191, 191, 191, 1) 0%, rgba(244, 244, 244, 1) 35%, rgba(244, 244, 244, 0) 56%);
-                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                display: block;
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                opacity: 0;
-                transition: opacity 0.8s ease;
-            }
-            &amp;amp;.active {
-                opacity: 1;
-                z-index: 2;
-                &amp;amp;::before {
-                    opacity: 1;
-                }
-            }
-        }
-        .s_product_product_horizontal {
-            .row.my-4 {
-                @include media-breakpoint-up(lg) {
-                    display: none;
-                }
-            }
-        }
-        .cus-wrap {
-            width: 660px;
-            background-color: rgba(59, 59, 59, 0.7);
-            color: #fff;
-            padding: 50px 40px 50px;
-            position: relative;
-            z-index: 3;
-            @include media-breakpoint-down(lg) {
-                padding: 30px;
-            }
-            @include media-breakpoint-down(md) {
-                display: none;
-            }
-            h4 {
-                color: #fff;
-                font-size: var(--h3);
-            }
-        }
-        .cus-info-wrap {
-            position: relative;
-            min-height: 200px;
-            @include media-breakpoint-down(lg) {
-                min-height: 180px;
-            }
-            .info-wrap {
-                margin-bottom: 20px;
-                .mb-2 {
-                    p {
-                        @include clamp-2;
-                    }
-                }
-            }
-        }
-        .cus-info-list {
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            pointer-events: none;
-            @include transition;
-            &amp;amp;.show {
-                opacity: 1;
-                position: relative;
-                animation: fadeOut 0.5s ease forwards;
-                pointer-events: fill;
-            }
-            .btn-wrap {
-                a {
-                    color: #fff !important;
-                    @include transition;
-                    &amp;amp;:hover {
-                        color: $primary !important;
-                    }
-                }
-            }
-        }
-        .cus-btn-wrap {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 -10px;
-            .cus-btn-list {
-                display: inline-flex;
-                margin: 0 10px;
-                &amp;amp;.active {
-                    .cus-icon-btn {
-                        background-color: $primary;
-                    }
-                }
-            }
-            .cus-icon-btn {
-                &amp;amp;:hover {
-                    background-color: $primary;
-                }
-            }
-        }
-        .cus-all-btn-wrap {
-            margin-top: 30px;
-            a.btn {
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.25) !important;
-                border: 0;
-                padding: 8px 20px !important;
-                border-radius: 0;
-                color: #fff !important;
-                border-radius: 0 !important;
-                &amp;amp;:hover {
-                    background-color: rgba(0, 0, 0, 0.65) !important;
-                }
-                &amp;amp;::before {
-                    display: none;
-                }
-            }
-        }
-        .o_carousel_product_card {
-            .position-static {
-                overflow: hidden;
-                img {
-                    @include transition;
-                }
-            }
-            &amp;amp;:hover {
-                .position-static {
-                    img {
-                        transform: scale(1.05);
-                    }
-                }
-            }
-        }
-        .o_carousel_product_card_body {
-            @include media-breakpoint-down(md) {
-                position: static;
-            }
-            .icon-wrap {
-                @include media-breakpoint-down(md) {
-                    order: -1;
-                }
-                .o_dynamic_snippet_btn_wrapper {
-                    @include media-breakpoint-down(md) {
-                        margin-top: -40px;
-                        margin-left: 15px;
-                        z-index: 2;
-                    }
-                }
-            }
-            .btn-wrap {
-                a {
-                    @include media-breakpoint-down(md) {
-                        color: $primary
-                    }
-                    &amp;amp;::before {
-                        @include media-breakpoint-down(md) {
-                            content: "";
-                            width: 100%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                            position: absolute;
-                            left: 0;
-                            top: 0;
-                            right: 0;
-                            bottom: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-//  -------------------------------------                  icon 背景圖互動       結束                -------------------------------------  //
-  </pre>
-            <button class="btn btn-primary copy-scss-btn" style="position: absolute;&#10;    right: 120px; z-index:3">複製 SCSS</button>
-          </section>
-        </div>
+</div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb24 o_cc o_cc2" data-snippet="s_text_block" data-name="Text" data-custom-name="">
         <div class="s_allow_columns container" style="text-align: right;">
@@ -2122,161 +1683,7 @@ document.addEventListener('DOMContentLoaded', function () {
           </p>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pt0 pb0 text-left s_custom_copyBtn" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="copyBtn">
-        <div class="s_embed_code_embedded o_not_editable container">
-          <section>
-            <pre id="scss-code" class="d-none">
-//  -------------------------------------                  上圖下文:下方文字x卷軸      開始                 -------------------------------------  //
-body:not(.editor_started) {
-    .s_custom_worldwide {
-        margin-top: -220px;
-        @include media-breakpoint-down(sm) {
-            margin-top: -150px;
-        }
-        @include media-breakpoint-down(xs) {
-            margin-top: -50px;
-        }
-    }
-}
-:root {
-    --scroll-distance2: 380px;
-    --list-row: 2; // ul 條列式，一行幾筆
-}
-@include media-breakpoint-down(md) {
-    :root {
-        --list-row: 1;
-    }
-}
-@include mobile-s {
-    :root {
-        --scroll-distance2: 280px;
-    }
-}
-.s_custom_worldwide {
-    &amp;gt;.container {
-        &amp;amp;:hover {
-            .carousel-arrow:not(.disabled) {
-                opacity: 1;
-            }
-        }
-    }
-    .accordion {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        padding: 25px 0;
-    }
-    .card {
-        width: 380px !important;
-        max-width: 380px !important;
-        flex: 0 0 380px !important;
-        margin: 0 10px;
-        border: 1px solid rgba(0, 0, 0, 0.125);
-        background-color: rgba(255, 255, 255, 0.8) !important;
-        box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.09);
-        overflow: hidden;
-        @include mobile-s {
-            width: 280px !important;
-            max-width: 280px !important;
-            flex: 0 0 280px !important;
-        }
-        &amp;amp;:last-child {
-            margin-right: 0;
-        }
-        .collapse {
-            display: block !important;
-        }
-        .card-header {
-            background-color: transparent;
-            font-weight: 700;
-            &amp;amp;::before {
-                display: none !important;
-            }
-        }
-        ul.card-text {
-            padding-left: 20px;
-            margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3px 28px;
-            li {
-                width: calc((100% / var(--list-row)) - (28px * (var(--list-row) - 1)) / var(--list-row));
-            }
-        }
-    }
-        // 箭頭
-    .carousel-arrow {
-        height: var(--arrowWidth);
-        width: var(--arrowWidth);
-        border: 1px solid var(--arrowColor);
-        border-radius: var(--arrowRadius);
-        background: var(--arrowBg);
-        position: absolute;
-        top: calc(100vw / #{$showItem} / #{$proListAspectRatio} / 2);
-        cursor: pointer;
-        z-index: 2;
-        @include transition;
-        @include wrap {
-            top: calc(100vw /(#{$showItem} - 1.4) / #{$proListAspectRatio} / 2);
-        }
-        @include media-breakpoint-down(md) {
-            top: calc(100vw / (#{$showItem} - 2.8) / #{$proListAspectRatio} / 2);
-        }
-        @include mobile-s {
-            top: calc(100vw / (#{$showItem} - 3.4) / #{$proListAspectRatio} / 2);
-        }
-        &amp;amp;:hover {
-            background-color: var(--arrowBgHover);
-            border-color: var(--arrowColorHover);
-            .fa::before {
-                border-color: var(--arrowColorHover) !important;
-            }
-        }
-        &amp;amp;.carousel-arrow-left {
-            left: calc(var(--container-pd-x) * 2);
-            @include media-breakpoint-down(md) {
-                left: var(--container-pd-x);
-            }
-        }
-        &amp;amp;.carousel-arrow-right {
-            right: calc(var(--container-pd-x) * 2);
-            @include media-breakpoint-down(md) {
-                right: var(--container-pd-x);
-            }
-        }
-        .fa::before {
-            content: "";
-            display: block;
-            width: calc(var(--arrowWidth) * .36);
-            height: calc(var(--arrowWidth) * .36);
-            background-color: unset;
-            border-top: 1px solid var(--arrowColor);
-            border-left: 1px solid var(--arrowColor);
-            border-right: none;
-            border-bottom: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            @include transition;
-        }
-        .fa-angle-left::before {
-            transform: translate(-50%, -50%) rotate(-45deg);
-            margin-left: calc(var(--arrowWidth) * .4 / 4);
-        }
-        .fa-angle-right::before {
-            transform: translate(-50%, -50%) rotate(135deg);
-            margin-left: calc(var(--arrowWidth) * .4 / -4);
-        }
-        &amp;amp;.disabled {
-            opacity: 0;
-        }
-    }
-}
-//  -------------------------------------                  上圖下文:下方文字x卷軸       結束                -------------------------------------  //
-  </pre>
-            <button class="btn btn-primary copy-scss-btn" style="position: absolute;&#10;    right: 120px; z-index:3">複製 SCSS</button>
-          </section>
-        </div>
+</div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
         <div class="s_allow_columns container" style="text-align: right;">
@@ -2491,160 +1898,7 @@ body:not(.editor_started) {
             桌機與 08&amp;nbsp;相同，RWD 改收合</p>
         </div>
       </section>
-      <section class="s_embed_code o_colored_level pt0 pb0 text-left s_custom_copyBtn" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-custom-name="copyBtn">
-        <div class="s_embed_code_embedded o_not_editable container">
-          <section>
-            <pre id="scss-code" class="d-none">
- //  -------------------------------------                  上圖下文:下方文字x卷軸 (RWD收合)     開始                 -------------------------------------  //
- body:not(.editor_started) {
-     .s_custom_worldwideRWDcollapse {
-         margin-top: -220px;
-        @include media-breakpoint-down(sm) {
-             margin-top: -150px;
-         }
-        @include media-breakpoint-down(xs) {
-             margin-top: -50px;
-         }
-     }
- }
- :root {
-     --scroll-distance2: 380px;
-     --list-row2: 2; // ul 條列式，一行幾筆
- }
- @include media-breakpoint-down(sm) {
-     :root {
-         --list-row2: 1;
-     }
- }
- .s_custom_worldwideRWDcollapse {
-     &amp;gt;.container {
-         &amp;amp;:hover {
-             .carousel-arrow:not(.disabled) {
-                 opacity: 1;
-             }
-         }
-     }
-     @include media-breakpoint-up(lg) {
-         .accordion {
-             display: flex;
-             flex-wrap: nowrap;
-             overflow-x: auto;
-             padding: 25px 0;
-         }
-         .card {
-             width: 380px !important;
-             max-width: 380px !important;
-             flex: 0 0 380px !important;
-             margin: 0 10px;
-             border: 1px solid rgba(0, 0, 0, 0.125);
-             background-color: rgba(255, 255, 255, 0.8) !important;
-             box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.09);
-             overflow: hidden;
-            @include mobile-s {
-                 width: 280px !important;
-                 max-width: 280px !important;
-                 flex: 0 0 280px !important;
-             }
-             &amp;amp;:last-child {
-                 margin-right: 0;
-             }
-             .collapse {
-                 display: block !important;
-             }
-             .card-header {
-                 background-color: transparent;
-                 &amp;amp;::before {
-                     display: none !important;
-                 }
-             }
-         }
-     }
-     .card-header {
-         font-weight: 700;
-     }
-     ul.card-text {
-         padding-left: 20px;
-         margin: 0;
-         display: flex;
-         flex-wrap: wrap;
-         gap: 3px 28px;
-         li {
-             width: calc((100% / var(--list-row2)) - (28px * (var(--list-row2) - 1)) / var(--list-row2));
-         }
-     }
-     // 箭頭
-     .carousel-arrow {
-         height: var(--arrowWidth);
-         width: var(--arrowWidth);
-         border: 1px solid var(--arrowColor);
-         border-radius: var(--arrowRadius);
-         background: var(--arrowBg);
-         position: absolute;
-         top: calc(100vw / #{$showItem} / #{$proListAspectRatio} / 2);
-         cursor: pointer;
-         z-index: 2;
-         @include transition;
-         @include wrap {
-             top: calc(100vw /(#{$showItem} - 1.4) / #{$proListAspectRatio} / 2);
-         }
-         @include media-breakpoint-down(md) {
-             top: calc(100vw / (#{$showItem} - 2.8) / #{$proListAspectRatio} / 2);
-         }
-         @include  mobile-s {
-             top: calc(100vw / (#{$showItem} - 3.4) / #{$proListAspectRatio} / 2);
-         }
-         &amp;amp;:hover {
-             background-color: var(--arrowBgHover);
-             border-color: var(--arrowColorHover);
-             .fa::before {
-                 border-color: var(--arrowColorHover) !important;
-             }
-         }
-         &amp;amp;.carousel-arrow-left {
-             left: calc(var(--container-pd-x) * 2);
-             @include media-breakpoint-down(md) {
-                 left: var(--container-pd-x);
-             }
-         }
-         &amp;amp;.carousel-arrow-right {
-             right: calc(var(--container-pd-x) * 2);
-             @include media-breakpoint-down(md) {
-                 right: var(--container-pd-x);
-             }
-         }
-         .fa::before {
-             content: "";
-             display: block;
-             width: calc(var(--arrowWidth) * .36);
-             height: calc(var(--arrowWidth) * .36);
-             background-color: unset;
-             border-top: 1px solid var(--arrowColor);
-             border-left: 1px solid var(--arrowColor);
-             border-right: none;
-             border-bottom: none;
-             position: absolute;
-             top: 50%;
-             left: 50%;
-             @include transition;
-         }
-         .fa-angle-left::before {
-             transform: translate(-50%, -50%) rotate(-45deg);
-             margin-left: calc(var(--arrowWidth) * .4 / 4);
-         }
-         .fa-angle-right::before {
-             transform: translate(-50%, -50%) rotate(135deg);
-             margin-left: calc(var(--arrowWidth) * .4 / -4);
-         }
-         &amp;amp;.disabled {
-             opacity: 0;
-         }
-     }
- }
- //  -------------------------------------                  上圖下文:下方文字x卷軸 (RWD收合)       結束                -------------------------------------  //
-  </pre>
-            <button class="btn btn-primary copy-scss-btn" style="position: absolute;&#10;    right: 120px; z-index:3">複製 SCSS</button>
-          </section>
-        </div>
+</div>
       </section>
       <section class="s_text_block o_colored_level pt0 pb24" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="">
         <div class="s_allow_columns container" style="text-align: right;">

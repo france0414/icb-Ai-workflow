@@ -51,6 +51,10 @@
 | ContentJS-03 | 固定側欄最新消息 | `exhibitionUpdates fixed` | `content-sections-js.xml` L409~L474 |
 | ContentJS-04 | 水平滑動產品列表 | `productRightScroll` | `content-sections-js.xml` L489~L776 |
 | ContentJS-05 | 互動地圖效果 | `mapEffect` | `content-sections-js.xml` L792+ |
+| ContentJS-06 | 內文固定 + 背景圖 fix | `stickyBG` | `content-sections-js.xml` L1118~L1290 |
+| ContentJS-07 | icon 背景圖互動 | `fullHoverBackground` | `content-sections-js.xml` L1579~L2113 |
+| ContentJS-08 | 上圖下文：下方文字 x 卷軸 | `worldwide` | `content-sections-js.xml` L2297~L2483 |
+| ContentJS-09 | 上圖下文：下方文字 x 卷軸 (RWD 收合) | `worldwideRWDcollapse simpleFAQ` | `content-sections-js.xml` L2665~L2736 |
 
 ## D. Static Snippet (靜態卡片)
 

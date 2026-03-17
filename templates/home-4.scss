@@ -124,7 +124,8 @@ body:not(.editor_started) {
         }
     }
     p,
-    h6 {
+    h6,
+    .h6 {
         @include media-breakpoint-up(sm) {
             margin-bottom: 0 !important;
         }
@@ -625,7 +626,8 @@ $blogAspectRatioEffect: 16/9;
             margin: 0 !important;
         }
     }
-    .card-body h4 {
+    .card-body h4,
+    .card-body .h4 {
         margin-bottom: 0 !important;
     }
     .s_blog_posts_post_cover {

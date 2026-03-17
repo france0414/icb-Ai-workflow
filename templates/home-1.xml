@@ -80,8 +80,8 @@
           <div class="oe_structure oe_structure_not_nest oe_empty">
             <section class="s_text_block o_colored_level pt0 pb0" data-snippet="s_text_block" data-name="Text" style="background-image: none;">
               <div class="container s_allow_columns">
-                <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
-                </h6>
+                <p class="h6">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br/>
+                </p>
               </div>
             </section>
             <section class="s_text_block o_colored_level pt0 pb0 s_custom_titleUnderLine" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-custom-name="titleUnderLine">
@@ -105,8 +105,8 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">L</font>ong established fact
-                                </h4>
+                                <p class="h4"><font class="text-o-color-1">L</font>ong established fact
+                                </p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">指定 icon 比例 1:1 (正方形/正圓形)<br/><strong>增加</strong>&amp;nbsp;<u>自訂樣式 : 1x1</u><br/></p>
@@ -125,7 +125,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">C</font>ontrary to popular belief&amp;nbsp;<br/></h4>
+                                <p class="h4"><font class="text-o-color-1">C</font>ontrary to popular belief&amp;nbsp;<br/></p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">Web page editors now use Lorem Ipsum as their default model text,&amp;nbsp;readable content of a page when looking at its layout.<br/></p>
@@ -144,7 +144,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">S</font>imply random text&amp;nbsp;<br/></h4>
+                                <p class="h4"><font class="text-o-color-1">S</font>imply random text&amp;nbsp;<br/></p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br/></p>
@@ -163,7 +163,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-10">
                             <div>
                               <div class="card-title">
-                                <h4><font class="text-o-color-1">M</font>any variations of passages&amp;nbsp;<br/></h4>
+                                <p class="h4"><font class="text-o-color-1">M</font>any variations of passages&amp;nbsp;<br/></p>
                               </div>
                               <div class="mb-2">
                                 <p data-original-title="" title="" aria-describedby="tooltip116803">Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,<br/></p>
@@ -238,8 +238,8 @@
             </section>
             <section class="s_text_block o_colored_level pb0 o_cc o_cc1 pt0" data-snippet="s_text_block" data-name="Text" style="background-color: rgb(250, 250, 250) !important; background-image: none;">
               <div class="s_allow_columns container">
-                <h6 style="text-align: left;">Hover background image is clearly enlarged&amp;nbsp;<br/>
-                </h6>
+                <p class="h6" style="text-align: left;">Hover background image is clearly enlarged&amp;nbsp;<br/>
+                </p>
               </div>
             </section>
             <section class="s_text_block o_colored_level pb0 pt0" data-snippet="s_text_block" data-name="Text" style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip913066">
@@ -270,11 +270,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip981403" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 01</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text o_default_snippet_text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options.
@@ -301,11 +301,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip953583" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 02</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et viverra augue, a aliquam mi. Fusce eu sem sed erat rutrum vulputate. Nam id purus auctor tortor posuere bibendum. Vestibulum vehicula diam ac commodo cursus. Sed eget gravida nibh. Proin cursus ultrices dolor, a condimentum massa egestas in. Integer ac feugiat sem, a consequat tortor.
@@ -333,11 +333,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 03</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
@@ -370,11 +370,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 03</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
@@ -401,11 +401,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 03</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
@@ -432,11 +432,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="690"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 03</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
@@ -469,11 +469,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 03</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.
@@ -500,11 +500,11 @@
                                         <img class="img-fluid o_we_custom_image mx-auto d-block" src="/web/image/2379-c8c94fc1/demo-icon_s.svg" alt="" loading="lazy" data-original-title="" title="" aria-describedby="tooltip735243" data-original-id="2379" data-original-src="/web/image/2379-c8c94fc1/demo-icon_s.svg" data-mimetype="image/svg+xml" data-resize-width="undefined"/>
                                         <br/>
                                       </p>
-                                      <h4 class="card-header" style="text-align: center;">
+                                      <p class="h4 card-header" style="text-align: center;">
                                         <strong>
                                           <font class="text-white">Feature title 03</font>
                                         </strong>
-                                      </h4>
+                                      </p>
                                       <div class="card-body">
                                         <p class="card-text">
                                           A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content.

@@ -82,7 +82,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 01</h5>
+                                <p class="h5" style="text-align: center;">Feature 01</p>
                               </div>
                             </div>
                           </div>
@@ -98,7 +98,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 02</h5>
+                                <p class="h5" style="text-align: center;">Feature 02</p>
                               </div>
                             </div>
                           </div>
@@ -114,7 +114,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 03</h5>
+                                <p class="h5" style="text-align: center;">Feature 03</p>
                               </div>
                             </div>
                           </div>
@@ -130,7 +130,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 04</h5>
+                                <p class="h5" style="text-align: center;">Feature 04</p>
                               </div>
                             </div>
                           </div>
@@ -146,7 +146,7 @@
                           <div class="o_carousel_product_card_body pl-3 d-flex flex-column justify-content-between o_colored_level col-lg-12">
                             <div>
                               <div class="card-title">
-                                <h5 style="text-align: center;">Feature 05</h5>
+                                <p class="h5" style="text-align: center;">Feature 05</p>
                               </div>
                             </div>
                           </div>
@@ -183,7 +183,7 @@
                       </div>
                       <div class="o_colored_level bg-white-75 pt32 pb32 col-lg-5 offset-lg-1">
                         <h2>Title title</h2>
-                        <h5>Sub title&amp;nbsp;Sub title&amp;nbsp;Sub title&amp;nbsp;Sub title</h5>
+                        <p class="h5">Sub title&amp;nbsp;Sub title&amp;nbsp;Sub title&amp;nbsp;Sub title</p>
                         <p data-original-title="" title="" aria-describedby="tooltip108238">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                         <p>
                           <a href="#" data-require-form="false" class="btn btn-primary">Learn more</a>
@@ -220,7 +220,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Lorem ipsum dolor sit amet</h4>
+                                <p class="h4 o_default_snippet_text">Lorem ipsum dolor sit amet</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -237,7 +237,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Curabitur volutpat</h4>
+                                <p class="h4 o_default_snippet_text">Curabitur volutpat</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -254,7 +254,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Fusce bibendum lacus</h4>
+                                <p class="h4 o_default_snippet_text">Fusce bibendum lacus</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -271,7 +271,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Sed laoreet molestie sapien</h4>
+                                <p class="h4 o_default_snippet_text">Sed laoreet molestie sapien</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -288,7 +288,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Sed laoreet molestie sapien</h4>
+                                <p class="h4 o_default_snippet_text">Sed laoreet molestie sapien</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -305,7 +305,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Sed laoreet molestie sapien</h4>
+                                <p class="h4 o_default_snippet_text">Sed laoreet molestie sapien</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -322,7 +322,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Sed laoreet molestie sapien</h4>
+                                <p class="h4 o_default_snippet_text">Sed laoreet molestie sapien</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -339,7 +339,7 @@
                             </a>
                             <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                               <div class="card-title mt-4">
-                                <h4 class="o_default_snippet_text">Sed laoreet molestie sapien</h4>
+                                <p class="h4 o_default_snippet_text">Sed laoreet molestie sapien</p>
                               </div>
                               <div>
                                 <div class="mt-2">
@@ -402,7 +402,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 01</h6>
+                                  <p class="h6 o_default_snippet_text">Name 01</p>
                                 </div>
                               </div>
                             </div>
@@ -414,7 +414,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 02</h6>
+                                  <p class="h6 o_default_snippet_text">Name 02</p>
                                 </div>
                               </div>
                             </div>
@@ -426,7 +426,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 03</h6>
+                                  <p class="h6 o_default_snippet_text">Name 03</p>
                                 </div>
                               </div>
                             </div>
@@ -438,7 +438,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 04</h6>
+                                  <p class="h6 o_default_snippet_text">Name 04</p>
                                 </div>
                               </div>
                             </div>
@@ -456,7 +456,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 05</h6>
+                                  <p class="h6 o_default_snippet_text">Name 05</p>
                                 </div>
                               </div>
                             </div>
@@ -468,7 +468,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 06</h6>
+                                  <p class="h6 o_default_snippet_text">Name 06</p>
                                 </div>
                               </div>
                             </div>
@@ -480,7 +480,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 07</h6>
+                                  <p class="h6 o_default_snippet_text">Name 07</p>
                                 </div>
                               </div>
                             </div>
@@ -492,7 +492,7 @@
                               </a>
                               <div class="o_carousel_product_card_body d-flex flex-wrap flex-column justify-content-between h-100">
                                 <div class="card-title mt-4">
-                                  <h6 class="o_default_snippet_text">Name 08</h6>
+                                  <p class="h6 o_default_snippet_text">Name 08</p>
                                 </div>
                               </div>
                             </div>

@@ -311,7 +311,7 @@ body:not(.editor_started) {
         }
       }
     }
-    .title h4{
+    .title .h4{
       @include mobile-xs{
         font-size: var(--h5);
       }
@@ -579,7 +579,7 @@ body:not(.editor_started) {
         }
     }
     p,
-    h6 {
+    .h6 {
         @include media-breakpoint-up(sm) {
             margin-bottom: 0 !important;
         }
@@ -1044,23 +1044,23 @@ body:not(.editor_started) {
     } 
 }
 // 自訂編輯區的預設內容
-// body:not(.editor_started) .map-brief-description {
-//     // 第一個
-//     .s_text:nth-child(1) {
-//         right: 13%;
-//         top: 33.5%;
-//     }
-//     // 第二個
-//     .s_text:nth-child(2) {
-//         right: 14%;
-//         top: 29%;
-//     }
-//     // 第三個
-//     .s_text:nth-child(3) {
-//         left: 12%;
-//         bottom: 45%;
-//     }
-// }
+body:not(.editor_started) .map-brief-description {
+    // 第一個
+    .s_text:nth-child(1) {
+        right: 13%;
+        top: 33.5%;
+    }
+    // 第二個
+    .s_text:nth-child(2) {
+        right: 14%;
+        top: 29%;
+    }
+    // 第三個
+    .s_text:nth-child(3) {
+        left: 12%;
+        bottom: 45%;
+    }
+}
 //  -------------------------------------             JS 互動地圖 結束          -------------------------------------  //
 
 //  -------------------------------------                  內文固定+ 背景圖 fix      開始                 -------------------------------------  //
@@ -1335,7 +1335,7 @@ body:not(.editor_started) {
             @include media-breakpoint-down(md) {
                 display: none;
             }
-            h4 {
+            .h4 {
                 color: #fff;
                 font-size: var(--h3);
             }
