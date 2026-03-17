@@ -13,6 +13,9 @@ webInfo/
 # 忽略 preview 資料夾
 preview/
 
+# 忽略 worktrees 資料夾
+.worktrees/
+
 # 忽略 VS Code 設定
 .vscode/
 
