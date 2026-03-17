@@ -8,7 +8,7 @@ description: 快速加入動態產品或動態消息區塊
 
 ## 1. 讀取規則
 // turbo
-**MUST**1. 讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/dynamic_rules.md`
+**MUST**1. 讀取 `.agent/skills/icb_page_generator/resources/dynamic_rules.md`
 2. 確認使用者要生成的是 **動態產品 (Products)** 還是 **動態消息/部落格 (Blogs)**。
 
 ### 👉 動態產品 (Products) 參數表

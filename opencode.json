@@ -3,6 +3,7 @@
   "instructions": [
     "此專案的 Odoo skill 採用統一知識來源：AGENTS.md + TODO.md + .agent/skills/icb_page_generator/resources/。",
     "如需 Odoo 頁面、Snippet、按鈕、動態區塊、互動元件規則，先對照 .agent/skills/icb_page_generator/SKILL.md 或 .agents/skills/icb_page_generator/SKILL.md；兩者應維持相同語意。",
+    "規劃呈現：除 /create Phase A 文字骨架外，禁止輸出 plan.md 或任何規劃檔；規劃僅在對話中簡短說明，使用者確認後直接執行。",
     "請先讀以下兩份文件，了解專案規則與待辦工作：",
     "1. AGENTS.md（全域規則：XML 結構、輸出規則、可用指令）",
     "2. TODO.md（目前尚未完成的知識庫補充工作）",

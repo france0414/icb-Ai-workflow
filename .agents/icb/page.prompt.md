@@ -19,10 +19,10 @@ description: 生成 Odoo 14 頁面（靜態 / 動態 / 整頁樣板）
 ## 執行步驟
 
 ### 1. 讀取 Skill
-讀取 `d:/gemini/icbAi/.agents/skills/icb_page_generator/SKILL.md`
+讀取 `.agents/skills/icb_page_generator/SKILL.md`
 
 ### 2. 讀取專案配色
-讀取 `d:/gemini/icbAi/docs/PROJECT_THEME.css`
+讀取 `docs/PROJECT_THEME.css`
 
 ### 3. 分析需求
 

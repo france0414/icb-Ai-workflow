@@ -8,7 +8,7 @@ description: 抓取競品網站區塊並轉化為 Odoo 14 草稿 (Scraping & Clo
 
 ## 1. 抓取分析 (Scrape & Analyze)
 // turbo-all
-**MUST** 先使用 `curl` 抓取目標網址的 HTML，存入 `d:/gemini/icbAi/outputs/[sitename].html`。
+**MUST** 先使用 `curl` 抓取目標網址的 HTML，存入 `outputs/[sitename].html`。
 接著分析下載的 HTML，定位使用者指定的區塊（如：首頁的 Hero 區塊、帶 Tab 的 News 區塊、或者特製的卡片輪播）。
 
 ## 2. 結構轉化規則 (Structure Conversion - 鐵律)

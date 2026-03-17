@@ -27,6 +27,7 @@
     "XML 結構：所有頁面都必須由 <t t-name=\"...\"><t t-call=\"website.layout\">...</t></t> 包覆",
     "首頁：首頁需加 <t t-set=\"pageName\" t-value=\"'homepage'\"/>",
     "佈局容器：每個 <section> 內的核心框架必須明確選擇使用 .container (限制寬度置中) 或 .container-fluid (滿版)，不可遺漏或隨意自創網格外殼",
+    "規劃呈現：除 /create Phase A 文字骨架外，禁止輸出 plan.md 或任何規劃檔；規劃僅在對話中簡短說明，使用者確認後直接執行",
     "重疊與絕對定位保護：所有會導致元素重疊的 SCSS (如負邊距 mt-n5、絕對定位 position:absolute 覆蓋圖文) 必須加上 `#wrapwrap:not(.odoo-editor-editable)` 前綴，確保在 Odoo 編輯模式下元素會解開重疊，讓使用者能正常點擊並替換文字與圖片",
     "斷點規範：符合 Bootstrap 4.5 的斷點，請使用 Bootstrap 4.5 的斷點寫法（含 media-breakpoint-up/down mixin）。若需額外斷點，請使用 docs/user_custom_rules.scss 的自訂 RWD 斷點變數與 mixin（//--自訂RWD 斷點變數 開始--// 區塊）",
     "Snippet：必須有 data-snippet 和 data-name 屬性",
@@ -153,6 +154,7 @@
   "opencode_instructions": [
     "此專案的 Odoo skill 採用統一知識來源：AGENTS.md + TODO.md + .agent/skills/icb_page_generator/resources/。",
     "如需 Odoo 頁面、Snippet、按鈕、動態區塊、互動元件規則，先對照 .agent/skills/icb_page_generator/SKILL.md 或 .agents/skills/icb_page_generator/SKILL.md；兩者應維持相同語意。",
+    "規劃呈現：除 /create Phase A 文字骨架外，禁止輸出 plan.md 或任何規劃檔；規劃僅在對話中簡短說明，使用者確認後直接執行。",
     "請先讀以下兩份文件，了解專案規則與待辦工作：",
     "1. AGENTS.md（全域規則：XML 結構、輸出規則、可用指令）",
     "2. TODO.md（目前尚未完成的知識庫補充工作）",

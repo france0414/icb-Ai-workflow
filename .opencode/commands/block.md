@@ -8,8 +8,8 @@ description: 呼叫歷史開發過的優良區塊與版面配置
 
 ## 1. 讀取區塊知識庫
 // turbo-all
-**MUST** 讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/layout_patterns.md`
-**MUST** 讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/custom_blocks.md`
+**MUST** 讀取 `.agent/skills/icb_page_generator/resources/layout_patterns.md`
+**MUST** 讀取 `.agent/skills/icb_page_generator/resources/custom_blocks.md`
 
 ## 2. 11 款客製化區塊菜單 (Block Menu)
 當使用者詢問或未指定時，請直接向使用者展示此菜單，讓他們選擇：

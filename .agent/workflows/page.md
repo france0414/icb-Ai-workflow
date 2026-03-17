@@ -7,13 +7,15 @@ description: 生成 Odoo 14 頁面（靜態 / 動態 / 整頁樣板）
 依照現有樣板配方或 Snippet 規則，快速生成頁面（XML + SCSS）。
 若需要全新設計，請改用 `/create`（創作模式）。
 
+本專案**不使用** git worktree，請直接在專案根目錄工作。
+
 ## 1. 讀取 Skill
 // turbo
-**MUST** 讀取 Skill 主檔：`d:/gemini/icbAi/.agent/skills/icb_page_generator/SKILL.md`
+**MUST** 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`
 
 ## 2. 讀取專案配色
 // turbo
-讀取 `d:/gemini/icbAi/docs/PROJECT_THEME.css`，了解 `--primary`、`o_cc1`~`o_cc5` 等色彩變數。
+讀取 `docs/PROJECT_THEME.css`，了解 `--primary`、`o_cc1`~`o_cc5` 等色彩變數。
 
 ## 3. 分析需求
 

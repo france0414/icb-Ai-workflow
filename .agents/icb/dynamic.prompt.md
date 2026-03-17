@@ -19,7 +19,7 @@ description: 快速加入動態產品或部落格區塊
 
 ### 1. 讀取動態規則
 
-讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/dynamic_rules.md`
+讀取 `.agent/skills/icb_page_generator/resources/dynamic_rules.md`
 
 ### 2. 判斷類型
 

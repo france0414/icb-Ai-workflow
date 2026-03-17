@@ -4,6 +4,8 @@ Rules:
 
 - 你正在做 Odoo 14 WebBuilder 的頁面開發
 
+- 本專案**不使用** git worktree，請直接在專案根目錄工作，不要建立 `.worktrees/` 或其他 worktree 目錄
+
 - 所有 XML 必須由以下母節點包覆:
 ```xml
 <t t-name="website.xxxxxx">
@@ -24,6 +26,7 @@ Rules:
 ```
 
 - 輸出目錄在 `outputs/`，檔名必須含日期與時間
+- 規劃呈現：除 `/create` Phase A 文字骨架外，禁止輸出 `plan.md` 或任何規劃檔；規劃僅在對話中簡短說明，使用者確認後直接執行
 - 🚨 **AI 雙模式任務與 `templates/` 定位：**
   `templates/` 是「靈感庫 + 積木庫」，不是「直接成品庫」。嚴禁直接複製 templates/ 任一檔案完整結構作為最終輸出。
   1. **【套版模式 `/page`】** 允許從 `templates/` 和 `page_templates.md` 配方直接組裝，替換文案圖片即可。

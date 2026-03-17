@@ -1,7 +1,7 @@
 # 客製化區塊索引 (Custom Blocks Index)
 
 > [!IMPORTANT]
-> 此檔為**索引**，不包含程式碼。AI 需要某個元件時，請到 `D:/gemini/icbAi/templates/` 讀取對應檔案的指定行數範圍，並讀取同名 `.scss` 取得樣式。
+> 此檔為**索引**，不包含程式碼。AI 需要某個元件時，請到 `templates/` 讀取對應檔案的指定行數範圍，並讀取同名 `.scss` 取得樣式。
 
 ---
 

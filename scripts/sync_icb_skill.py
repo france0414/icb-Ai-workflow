@@ -15,7 +15,7 @@ def load_source() -> dict:
 
 
 def render_skill(source: dict) -> str:
-    repo_posix = REPO_ROOT.as_posix()
+    repo_posix = "."
     resources_root = f"{repo_posix}/.agent/skills/icb_page_generator/resources/"
 
     def format_lines(values: list[str]) -> list[str]:

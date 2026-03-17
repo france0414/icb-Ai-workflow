@@ -159,7 +159,7 @@
 
 ## 3. 動態內容 (Dynamic)
 
-> 詳細規則請參考 → [dynamic_rules.md](file:///d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/dynamic_rules.md)
+> 詳細規則請參考 → [dynamic_rules.md](.agent/skills/icb_page_generator/resources/dynamic_rules.md)
 
 | Snippet | `data-snippet` | 說明 |
 |---------|---------------|------|

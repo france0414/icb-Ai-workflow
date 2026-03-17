@@ -5,8 +5,8 @@
 ## Steps
 
 ### Phase A：規劃骨架（先輸出，等待確認）
-1. 讀取 Skill 主檔：`d:/gemini/icbAi/.agent/skills/icb_page_generator/SKILL.md`
-2. 讀取專案配色：`d:/gemini/icbAi/docs/PROJECT_THEME.css`
+1. 讀取 Skill 主檔：`.agent/skills/icb_page_generator/SKILL.md`
+2. 讀取專案配色：`docs/PROJECT_THEME.css`
 3. 若使用者未明確說明，需先確認：產業類型、視覺風格、重點訴求、是否需動態區塊
 4. 讀取 `resources/custom_blocks.md` 了解 templates/ 可用積木類型（僅作語法參考）
 5. 輸出文字骨架：每個 section 的類型、設計概念、參考積木、與既有差異

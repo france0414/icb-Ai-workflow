@@ -20,7 +20,7 @@ description: 加入互動 JS 元件
 
 ### 1. 讀取元件庫
 
-讀取 `d:/gemini/icbAi/.agent/skills/icb_page_generator/resources/component_library.md`
+讀取 `.agent/skills/icb_page_generator/resources/component_library.md`
 
 ### 2. 選擇元件
 
