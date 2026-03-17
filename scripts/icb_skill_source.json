@@ -41,7 +41,8 @@
     "公版與客製 SCSS 提取原則：當 AI 判斷需要為特定組件（如特殊按鈕風格、動態區塊特有樣式）補上 SCSS 時，主來源絕對是 `templates/` 目錄中，與該 XML/HTML 檔名完全相同的 `.scss` 檔案（例如：要抓 `banner.xml` 的樣式，就去讀 `banner.scss`）！AI 必須精準提取原生代碼，嚴禁自行發明或通靈 CSS",
     "輸出位置：產出檔案放在 outputs/，檔名必須包含日期與時間",
     "重用全域樣式：若 user_custom_rules.scss 已有客製樣式（如 .s_custom_titleUnderLine, .s_custom_scaleL, 輪播箭頭位置等），AI 只需要套用 class，禁止重寫；若沒有對應樣式，則必須在輸出 SCSS 補上。詳見 scss_reference.md",
-    "抓取競品轉化原則 (Scraping Sandbox)：當執行 /clone 或要求抓取外部網站區塊時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id=\"scss-code\">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call=\"website.layout\"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。"
+    "抓取競品轉化原則 (Scraping Sandbox)：當執行 /clone 或要求抓取外部網站區塊時，1. 嚴禁直接將草稿寫入 templates/，必須放在 outputs/。2. 嚴禁在 XML 內寫 <style id=\"scss-code\">，必須產出獨立的 .scss 與 .xml。3. XML 最外圍必須遵守 <t t-name...><t t-call=\"website.layout\"> 的 QWeb 標準層級。4. 動態區塊如新聞、產品必須對接 s_dynamic_snippet，嚴禁寫死前端假卡片結構。",
+    "Menu-01~04 SCSS 來源：統一在 templates/header-menus.scss，依 MENU-1~MENU-4 的 START/END 區塊擷取；當使用者要求 /page menu-0X 時，只輸出對應 SCSS 片段（含 START/END 註解）。"
     ,"/clone 1:1 優先：除非使用者明確要求等價替換，/clone 預設以 1:1 結構還原為優先（含區塊順序與核心佈局），再視 Odoo 限制做必要調整。"
     ,"/clone 結構優先：先解析原站 DOM+CSS 的呈現邏輯，能用 Odoo/Bootstrap 既有結構（row/col/容器）還原左右/層次者，優先用結構取代 CSS，避免多寫 SCSS；只有結構無法達成時才補 SCSS。"
   ],
