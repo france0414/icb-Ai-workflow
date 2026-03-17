@@ -68,6 +68,11 @@ git clone https://github.com/france0414/icb-Ai-workflow.git
 cd icb-Ai-workflow
 ```
 
+### 1-1. Worktree 使用規範
+- 本專案**不使用** git worktree
+- 請直接在專案根目錄工作，不要建立 `.worktrees/` 或其他 worktree 目錄
+- 詳細規範請見 `CLAUDE.md`
+
 ### 2. 查看文檔
 - 閱讀 `docs/` 資料夾中的開發規範
 - 參考 `library/component_library.xml` 了解可用組件
